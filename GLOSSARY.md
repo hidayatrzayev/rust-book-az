@@ -150,10 +150,10 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 
 | English | Azərbaycanca | Qeyd | Status |
 | ------- | ------------ | ---- | ------ |
-| install | quraşdırmaq | *quraşdırma* (installation). *installer* → *quraşdırıcı*. | təklif |
+| install | quraşdırmaq | *quraşdırma* (installation), *quraşdırılıb* (installed), *installer* → *quraşdırıcı*. *yükləmək* yalnız download üçündür; ikisi eyni cümlədə ayrı addımlardır. | təsdiqlənib |
 | uninstall | silmək | "Rust-ı silmək". | təklif |
 | update | yeniləmək | *yeniləmə*. | təklif |
-| download | yükləmək | | təklif |
+| download | yükləmək | İnternetdən götürmək: *yükləmə*, *yüklənmiş*. Install mənasında işlədilmir (bax *quraşdırmaq*). | təsdiqlənib |
 | operating system | əməliyyat sistemi | | təklif |
 | documentation | dokumentasiya | Proqramçı dili. Alternativ: *sənədlər*. | təklif |
 | script | skript | | təklif |
