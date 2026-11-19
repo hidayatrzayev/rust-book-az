@@ -19,6 +19,8 @@ from check_listings import strip_comments  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 AZ_SRC = ROOT / "rustbook-az" / "src"
 EN_SRC = ROOT / "rustbook-en" / "src"
+# Files that exist only in the Azerbaijani book (generated or original), so have no English twin.
+AZ_ONLY = {"appendix-08-glossary.md"}
 
 FENCE_RE = re.compile(r"^(?P<prefix>[ \t>]*)(?P<fence>`{3,}|~{3,})(?P<info>.*)$")
 DIRECTIVE_RE = re.compile(r"\{\{#[^}]*\}\}")
@@ -233,7 +235,10 @@ def check_file(az: Path, en_dir: Path = EN_SRC, az_dir: Path | None = None) -> l
         return [f"no English original at {en}"]
     az_md = az.read_text(encoding="utf-8")
     en_md = en.read_text(encoding="utf-8")
-    problems = compare(az_md, en_md)
+    cmp_md = az_md
+    if az.name == "SUMMARY.md":  # entries for az-only files have no English counterpart
+        cmp_md = "\n".join(l for l in az_md.split("\n") if not any(f"({n})" in l for n in AZ_ONLY))
+    problems = compare(cmp_md, en_md)
     # Anchors that are already broken upstream are not the translator's fault.
     inherited = {b.split(" (")[0] for b in broken_anchors(en_md, en_dir, az.name)}
     problems += [b for b in broken_anchors(az_md, az_dir or az.parent, az.name) if b.split(" (")[0] not in inherited]
@@ -242,6 +247,7 @@ def check_file(az: Path, en_dir: Path = EN_SRC, az_dir: Path | None = None) -> l
 
 def main(argv: list[str]) -> int:
     files = [Path(a).resolve() for a in argv] or sorted(AZ_SRC.glob("*.md"))
+    files = [f for f in files if f.name not in AZ_ONLY]
     failed = False
     for az in files:
         problems = check_file(az)

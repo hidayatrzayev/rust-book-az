@@ -117,3 +117,13 @@ def test_inherited_broken_anchor_not_reported(tmp_path):
 
 def test_heading_in_html_comment_ignored():
     assert heading_anchors("## A\n\n<!-- x\n# copy the output here\n-->\n") == {"a"}
+
+
+def test_summary_az_only_entry_allowed(tmp_path):
+    from check_chapter import check_file
+
+    en_dir, az_dir = tmp_path / "en", tmp_path / "az"
+    en_dir.mkdir(), az_dir.mkdir()
+    (en_dir / "SUMMARY.md").write_text("- [A](a.md)\n", encoding="utf-8")
+    (az_dir / "SUMMARY.md").write_text("- [A](a.md)\n- [Lüğət](appendix-08-glossary.md)\n", encoding="utf-8")
+    assert check_file(az_dir / "SUMMARY.md", en_dir, az_dir) == []
