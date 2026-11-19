@@ -42,6 +42,9 @@ python tools/status.py                            # counts + files outdated vs. 
 python tools/status.py set <file> <status>
 ```
 
+`tools/az_note.py` is an mdBook preprocessor (wired in `book.toml`): it renders `> Qeyd: ` blockquotes as note boxes,
+because upstream `trpl-note` only recognises `> Note: `. Translated notes always start with `> Qeyd: `.
+
 ### Bumping the English submodule
 
 1. `git -C rustbook-en fetch && git -C rustbook-en checkout <new rev>`; `git add rustbook-en`.

@@ -15,6 +15,11 @@ use-boolean-and = true
 [preprocessor.trpl-note]
 command = "cargo run --manifest-path ../rustbook-en/packages/mdbook-trpl/Cargo.toml --bin mdbook-trpl-note"
 
+# Azerbaijani "> Qeyd: " notes → same markup as trpl-note (tools/az_note.py).
+[preprocessor.az-note]
+command = "python3 ../tools/az_note.py"
+before = ["trpl-note"]
+
 [preprocessor.trpl-listing]
 command = "cargo run --manifest-path ../rustbook-en/packages/mdbook-trpl/Cargo.toml --bin mdbook-trpl-listing"
 output-mode = "default"

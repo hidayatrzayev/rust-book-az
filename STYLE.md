@@ -31,6 +31,10 @@ Heç vaxt dəyişdirilmir:
 
 Kompilyatorun çıxışı və xəta mesajları kod bloklarında **ingiliscə** qalır (oxucu öz ekranında məhz bunu görəcək); onları izah edən mətn tərcümə olunur.
 
+## Qeydlər
+
+`> Note: ` ilə başlayan qeyd blokları `> Qeyd: ` kimi yazılır (dəqiq bu formada, iki nöqtə və boşluqla); `tools/az_note.py` onları qeyd qutusuna çevirir.
+
 ## Başlıqlar
 
 Başlıqlar tərcümə olunur. mdBook lövbərləri başlıqdan yaradıldığı üçün həmin fəsildəki və digər fəsillərdəki `#lövbər` keçidləri yeni lövbərə uyğun yenilənir. `python tools/check_chapter.py` mövcud olmayan lövbərləri tapır. Başlıqda ingiliscə mötərizə yazılmır (ilk işlənmə qaydası mətn hissəsinə aiddir).
@@ -47,4 +51,5 @@ Kod nümunələrindəki şərhlər (`//`, `///`, `//!`, `/* */`) **tərcümə ol
 - General terms: Azerbaijani first, English in parentheses on first use per chapter. Rust-specific terms (borrow checker, ownership, mutable…): English kept, Azerbaijani gloss in parentheses on first use; later uses English only.
 - Terms kept in English take hyphenated suffixes (*trait-in*, *crate-ə*).
 - Never touch code, inline code, directives, `<Listing>` attributes (only `caption` text is translated), link targets (only `#anchor` follows translated headings), `<!-- ignore -->`, ANCHOR lines, `output.txt`.
+- Notes: `> Note: ` becomes exactly `> Qeyd: ` (rendered as a note box by `tools/az_note.py`).
 - Compiler output stays English; the prose around it is translated. Comments in code listings are translated.
