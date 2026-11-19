@@ -187,3 +187,19 @@ def test_softened_stem_only_before_vowel():
     terms = [Term("bug", "baq")]
     assert lint("Bununla bağlı baqlar (bugs).", terms) == []
     assert [i.message.split("`")[1] for i in lint("Bu bağa baxın.", terms)] == ["bağa"]
+
+
+def test_reference_labels_not_flagged():
+    terms = [Term("tool", "alət"), Term("macro", "makro")]
+    md = "Bax [alətlər (tools) səhifəsi][tools] və [20-ci fəsil][ch20-macros].\n\n[tools]: https://x.org/tools\n[ch20-macros]: ch20-05-macros.html\n"
+    assert lint(md, terms) == []
+
+
+def test_term_wrapped_inside_blockquote():
+    terms = [Term("version control system", "versiya nəzarəti sistemi")]
+    assert lint("> Git versiya nəzarəti sistemidir (version control\n> system).", terms) == []
+
+
+def test_quoted_section_title_is_not_first_use():
+    terms = [Term("troubleshooting", "problemlərin aradan qaldırılması")]
+    assert lint("Bax [“Problemlərin aradan qaldırılması”][t] hissəsi.\n\n[t]: a.html#x\n", terms) == []

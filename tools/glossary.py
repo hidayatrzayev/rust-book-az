@@ -126,7 +126,8 @@ def mask_protected(md: str, en_terms: set[str]) -> str:
         text = re.sub(r"`+[^`]+`+", _blank, text)
         text = DIRECTIVE_RE.sub(_blank, text)
         text = re.sub(r"\]\([^)]*\)", lambda m: "]" + " " * (len(m.group(0)) - 1), text)
-        text = re.sub(r"^([ \t>]*\[[^\]]+\]:).*$", lambda m: m.group(1) + " " * (len(m.group(0)) - len(m.group(1))), text, flags=re.M)
+        text = re.sub(r"^[ \t>]*\[[^\]]+\]:.*$", _blank, text, flags=re.M)  # reference definitions
+        text = re.sub(r"\]\[[^\]]*\]", lambda m: "]" + " " * (len(m.group(0)) - 1), text)  # [text][label]
         text = re.sub(r"https?://\S+", _blank, text)
         text = re.sub(r"[\w.~-]*[/\\][\w./\\~-]*", _blank, text)  # file paths: target/release
         text = re.sub(r'(?:number|file-name)="[^"]*"', _blank, text)
@@ -137,7 +138,7 @@ def mask_protected(md: str, en_terms: set[str]) -> str:
 
 
 def _is_en_term(s: str, en_terms: set[str]) -> bool:
-    s = " ".join(fold(s).split())
+    s = " ".join(fold(re.sub(r"\n[ \t]*(?:>[ \t]*)*", " ", s)).split())
     return any(s == t or s in _plurals(t) for t in en_terms)
 
 
@@ -155,7 +156,7 @@ def _en_regex(en: str) -> re.Pattern[str]:
 
 def _ws(literal: str) -> str:
     """Regex for `literal` where any space may also be a line break."""
-    return r"\s+".join(re.escape(w) for w in literal.split(" "))
+    return r"\s+(?:>\s*)*".join(re.escape(w) for w in literal.split(" "))
 
 
 def _line_of(text: str, pos: int) -> int:
@@ -174,6 +175,8 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
     heading_blank = re.sub(
         r"^[ >]*#{1,6} .*$", lambda m: " " * len(m.group(0)), folded, flags=re.M
     )
+    # quoted section titles (“Problemlərin aradan qaldırılması”) refer to headings: no first-use rule
+    heading_blank = re.sub(r"“[^”]*”", _blank, heading_blank)
 
     for t in terms:
         if t.keep_english:

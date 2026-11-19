@@ -1,201 +1,221 @@
-# Introduction
+# Giriş
 
-> Note: This edition of the book is the same as [The Rust Programming
-> Language][nsprust] available in print and ebook format from [No Starch
-> Press][nsp].
+> Qeyd: Kitabın bu nəşri [No Starch Press][nsp] tərəfindən çap və elektron
+> kitab formatında buraxılan [The Rust Programming Language][nsprust] kitabı ilə
+> eynidir.
 
 [nsprust]: https://nostarch.com/rust-programming-language-3rd-edition
 [nsp]: https://nostarch.com/
 
-Welcome to _The Rust Programming Language_, an introductory book about Rust.
-The Rust programming language helps you write faster, more reliable software.
-High-level ergonomics and low-level control are often at odds in programming
-language design; Rust challenges that conflict. Through balancing powerful
-technical capacity and a great developer experience, Rust gives you the option
-to control low-level details (such as memory usage) without all the hassle
-traditionally associated with such control.
+Rust haqqında giriş kitabı olan _The Rust Programming Language_ kitabına xoş
+gəlmisiniz. Rust proqramlaşdırma dili daha sürətli və daha etibarlı proqram
+təminatı (software) yazmağınıza kömək edir. Proqramlaşdırma dillərinin
+dizaynında yüksək səviyyəli erqonomika ilə aşağı səviyyəli (low-level)
+idarəetmə çox vaxt bir-biri ilə ziddiyyət təşkil edir; Rust bu ziddiyyətə meydan
+oxuyur. Güclü texniki imkanlarla əla developer təcrübəsi arasında tarazlıq
+yaradaraq Rust sizə aşağı səviyyəli təfərrüatları — məsələn, yaddaşdan (memory)
+istifadəni — ənənəvi olaraq belə idarəetmə ilə bağlı olan çətinliklər olmadan
+idarə etmək imkanı verir.
 
-## Who Rust Is For
+## Rust kimin üçündür
 
-Rust is ideal for many people for a variety of reasons. Let’s look at a few of
-the most important groups.
+Rust müxtəlif səbəblərdən bir çox insan üçün idealdır. Ən vacib qruplardan bir
+neçəsinə baxaq.
 
-### Teams of Developers
+### Developer komandaları
 
-Rust is proving to be a productive tool for collaborating among large teams of
-developers with varying levels of systems programming knowledge. Low-level code
-is prone to various subtle bugs, which in most other languages can only be
-caught through extensive testing and careful code review by experienced
-developers. In Rust, the compiler plays a gatekeeper role by refusing to
-compile code with these elusive bugs, including concurrency bugs. By working
-alongside the compiler, the team can spend its time focusing on the program’s
-logic rather than chasing down bugs.
+Rust sistem proqramlaşdırması (systems programming) üzrə bilikləri müxtəlif
+səviyyədə olan böyük developer komandalarının birgə işi üçün məhsuldar alət
+(tool) olduğunu sübut edir. Aşağı səviyyəli kodda müxtəlif incə baqlar (bugs)
+yaranmağa meyllidir; əksər digər dillərdə onları yalnız geniş testlər və
+təcrübəli developerlərin diqqətli code review-u ilə tutmaq olar. Rust-da
+kompilyator (compiler) bu çətin tutulan baqları, o cümlədən concurrency (eyni
+vaxtlılıq) ilə bağlı baqları ehtiva edən kodu kompilyasiya etməkdən (compile)
+imtina edərək qapıçı rolunu oynayır. Kompilyatorla birlikdə işləyərək komanda
+vaxtını baqların arxasınca qaçmağa deyil, proqramın məntiqinə fokuslanmağa sərf
+edə bilər.
 
-Rust also brings contemporary developer tools to the systems programming world:
+Rust həmçinin sistem proqramlaşdırması dünyasına müasir developer alətləri
+gətirir:
 
-- Cargo, the included dependency manager and build tool, makes adding,
-  compiling, and managing dependencies painless and consistent across the Rust
-  ecosystem.
-- The `rustfmt` formatting tool ensures a consistent coding style across
-  developers.
-- The Rust Language Server powers integrated development environment (IDE)
-  integration for code completion and inline error messages.
+- Cargo — Rust ilə birlikdə gələn build aləti və asılılıqları (dependencies)
+  idarə edən alət — asılılıqları əlavə etməyi, kompilyasiya etməyi və idarə
+  etməyi bütün Rust ekosistemində (ecosystem) problemsiz və eyni cür edir.
+- `rustfmt` formatlama aləti (formatter) developerlər arasında vahid kod
+  üslubunu təmin edir.
+- Rust Language Server kodun avtomatik tamamlanması (code completion) və
+  redaktorda kodun yanında göstərilən xəta mesajları (error messages) üçün inteqrasiya olunmuş inkişaf
+  mühiti (integrated development environment, IDE) inteqrasiyasını təmin edir.
 
-By using these and other tools in the Rust ecosystem, developers can be
-productive while writing systems-level code.
+Rust ekosistemindəki bu və digər alətlərdən istifadə edərək developerlər sistem
+səviyyəli kod yazarkən də məhsuldar ola bilərlər.
 
-### Students
+### Tələbələr
 
-Rust is for students and those who are interested in learning about systems
-concepts. Using Rust, many people have learned about topics like operating
-systems development. The community is very welcoming and happy to answer
-students’ questions. Through efforts such as this book, the Rust teams want to
-make systems concepts more accessible to more people, especially those new to
-programming.
+Rust tələbələr və sistem anlayışlarını öyrənməyə maraq göstərənlər üçündür.
+Rust-dan istifadə edərək bir çox insan əməliyyat sistemlərinin (operating
+systems) hazırlanması kimi mövzuları öyrənib. İcma çox qonaqpərvərdir və
+tələbələrin suallarını məmnuniyyətlə cavablandırır. Bu kitab kimi səylər
+vasitəsilə Rust komandaları sistem anlayışlarını daha çox insan, xüsusən
+proqramlaşdırmaya yeni başlayanlar üçün daha əlçatan etmək istəyir.
 
-### Companies
+### Şirkətlər
 
-Hundreds of companies, large and small, use Rust in production for a variety of
-tasks, including command line tools, web services, DevOps tooling, embedded
-devices, audio and video analysis and transcoding, cryptocurrencies,
-bioinformatics, search engines, Internet of Things applications, machine
-learning, and even major parts of the Firefox web browser.
+Böyük və kiçik yüzlərlə şirkət Rust-ı production-da müxtəlif tapşırıqlar üçün
+istifadə edir: komanda sətri (command line) alətləri, veb servislər (web
+services), DevOps alətləri, daxili qurğular (embedded devices), audio və video
+analizi və transkodlaşdırma, kriptovalyutalar, bioinformatika, axtarış
+sistemləri, Əşyaların İnterneti (Internet of Things, IoT) tətbiqləri, maşın
+öyrənməsi (machine learning) və hətta Firefox brauzerinin (browser) əsas
+hissələri.
 
-### Open Source Developers
+### Açıq mənbə developerləri
 
-Rust is for people who want to build the Rust programming language, community,
-developer tools, and libraries. We’d love to have you contribute to the Rust
-language.
+Rust, Rust proqramlaşdırma dilini, icmasını, developer alətlərini və
+kitabxanalarını (libraries) inkişaf etdirmək istəyən insanlar üçündür. Rust
+dilinə töhfə verməyinizi (contribute) çox istərdik.
 
-### People Who Value Speed and Stability
+### Sürətə və stabilliyə dəyər verən insanlar
 
-Rust is for people who crave speed and stability in a language. By speed, we
-mean both how quickly Rust code can run and the speed at which Rust lets you
-write programs. The Rust compiler’s checks ensure stability through feature
-additions and refactoring. This is in contrast to the brittle legacy code in
-languages without these checks, which developers are often afraid to modify. By
-striving for zero-cost abstractions—higher-level features that compile to
-lower-level code as fast as code written manually—Rust endeavors to make safe
-code be fast code as well.
+Rust sürətli və stabil (stable) dil arzulayan insanlar üçündür. Sürət dedikdə
+həm Rust kodunun nə qədər tez işləyə bildiyini, həm də Rust-ın proqramları nə
+qədər tez yazmağa imkan verdiyini nəzərdə tuturuq. Rust kompilyatorunun
+yoxlamaları yeni imkanlar əlavə edildikdə və refaktorinq (refactoring) zamanı
+stabilliyi təmin edir. Bu, belə yoxlamaları olmayan dillərdəki kövrək legacy
+koddan (legacy code) fərqlidir; developerlər çox vaxt belə kodu dəyişməkdən
+qorxurlar. Sıfır xərcli abstraksiyalara (zero-cost abstractions), yəni əl ilə
+yazılmış kod qədər sürətli aşağı səviyyəli koda kompilyasiya olunan yüksək
+səviyyəli imkanlara can ataraq Rust təhlükəsiz kodun həm də sürətli kod olmasına
+çalışır.
 
-The Rust language hopes to support many other users as well; those mentioned
-here are merely some of the biggest stakeholders. Overall, Rust’s greatest
-ambition is to eliminate the trade-offs that programmers have accepted for
-decades by providing safety _and_ productivity, speed _and_ ergonomics. Give
-Rust a try, and see if its choices work for you.
+Rust dili bir çox başqa istifadəçiləri də dəstəkləməyə ümid edir; burada adı
+çəkilənlər ən böyük maraqlı tərəflərdən sadəcə bəziləridir. Ümumilikdə Rust-ın
+ən böyük ambisiyası təhlükəsizlik _və_ məhsuldarlıq, sürət _və_ erqonomika təmin
+edərək proqramçıların onilliklərdir razılaşdığı kompromisləri aradan
+qaldırmaqdır. Rust-ı sınayın və onun seçimlərinin sizə uyğun olub-olmadığını
+görün.
 
-## Who This Book Is For
+## Bu kitab kimin üçündür
 
-This book assumes that you’ve written code in another programming language, but
-it doesn’t make any assumptions about which one. We’ve tried to make the
-material broadly accessible to those from a wide variety of programming
-backgrounds. We don’t spend a lot of time talking about what programming _is_
-or how to think about it. If you’re entirely new to programming, you would be
-better served by reading a book that specifically provides an introduction to
-programming.
+Bu kitab sizin artıq başqa bir proqramlaşdırma dilində kod yazdığınızı fərz
+edir, amma hansı dil olduğu barədə heç bir fərziyyə etmir. Materialı müxtəlif
+proqramlaşdırma təcrübəsi olan insanlar üçün geniş şəkildə əlçatan etməyə
+çalışmışıq. Proqramlaşdırmanın nə _olduğu_ və ya bu barədə necə düşünmək
+lazım olduğu haqqında çox danışmırıq. Proqramlaşdırmada tamamilə yenisinizsə,
+xüsusi olaraq proqramlaşdırmaya giriş təqdim edən kitab oxumağınız daha
+faydalı olar.
 
-## How to Use This Book
+## Bu kitabdan necə istifadə etməli
 
-In general, this book assumes that you’re reading it in sequence from front to
-back. Later chapters build on concepts in earlier chapters, and earlier
-chapters might not delve into details on a particular topic but will revisit
-the topic in a later chapter.
+Ümumiyyətlə, bu kitab sizin onu əvvəldən sonadək ardıcıl oxuduğunuzu fərz edir.
+Sonrakı fəsillər əvvəlki fəsillərdəki anlayışlar üzərində qurulur; əvvəlki
+fəsillər müəyyən mövzunun təfərrüatlarına girməyə bilər, amma həmin mövzuya
+sonrakı fəsildə yenidən qayıdacağıq.
 
-You’ll find two kinds of chapters in this book: concept chapters and project
-chapters. In concept chapters, you’ll learn about an aspect of Rust. In project
-chapters, we’ll build small programs together, applying what you’ve learned so
-far. Chapter 2, Chapter 12, and Chapter 21 are project chapters; the rest are
-concept chapters.
+Bu kitabda iki növ fəsil tapacaqsınız: anlayış fəsilləri və layihə fəsilləri.
+Anlayış fəsillərində Rust-ın hər hansı bir cəhəti haqqında öyrənəcəksiniz.
+Layihə fəsillərində isə indiyədək öyrəndiklərinizi tətbiq edərək birlikdə kiçik
+proqramlar yazacağıq. 2-ci, 12-ci və 21-ci fəsillər layihə fəsilləridir;
+qalanları anlayış fəsilləridir.
 
-**Chapter 1** explains how to install Rust, how to write a “Hello, world!”
-program, and how to use Cargo, Rust’s package manager and build tool. **Chapter
-2** is a hands-on introduction to writing a program in Rust, having you build
-up a number-guessing game. Here, we cover concepts at a high level, and later
-chapters will provide additional detail. If you want to get your hands dirty
-right away, Chapter 2 is the place for that. If you’re a particularly
-meticulous learner who prefers to learn every detail before moving on to the
-next, you might want to skip Chapter 2 and go straight to **Chapter 3**, which
-covers Rust features that are similar to those of other programming languages;
-then, you can return to Chapter 2 when you’d like to work on a project applying
-the details you’ve learned.
+**1-ci fəsil** Rust-ı necə quraşdırmağı (install), “Hello, world!” proqramını
+necə yazmağı və Rust-ın paket meneceri (package manager) və build aləti olan
+Cargo-dan necə istifadə etməyi izah edir. **2-ci fəsil** Rust-da proqram
+yazmağa praktiki girişdir: burada ədəd tapma oyunu yazacaqsınız. Burada
+anlayışları ümumi şəkildə əhatə edirik, sonrakı fəsillər isə əlavə təfərrüatlar
+verəcək. Dərhal işə girişmək istəyirsinizsə, 2-ci fəsil məhz bunun üçündür.
+Növbəti mövzuya keçməzdən əvvəl hər təfərrüatı öyrənməyi üstün tutan xüsusilə
+diqqətli oxucusunuzsa, 2-ci fəsli ötürüb birbaşa digər proqramlaşdırma
+dillərindəkinə bənzəyən Rust imkanlarını əhatə edən **3-cü fəslə** keçə
+bilərsiniz; sonra öyrəndiyiniz təfərrüatları tətbiq edən layihə üzərində
+işləmək istədikdə 2-ci fəslə qayıda bilərsiniz.
 
-In **Chapter 4**, you’ll learn about Rust’s ownership system. **Chapter 5**
-discusses structs and methods. **Chapter 6** covers enums, `match` expressions,
-and the `if let` and `let...else` control flow constructs. You’ll use structs
-and enums to make custom types.
+**4-cü fəsildə** Rust-ın ownership (sahiblik) sistemi haqqında öyrənəcəksiniz.
+**5-ci fəsil** strukturları (structs) və metodları (methods) müzakirə edir.
+**6-cı fəsil** enum-ları, `match` ifadələrini (expressions), həmçinin `if let`
+və `let...else` idarəetmə axını (control flow) konstruksiyalarını əhatə edir.
+Öz tiplərinizi (types) yaratmaq üçün strukturlardan və enum-lardan istifadə
+edəcəksiniz.
 
-In **Chapter 7**, you’ll learn about Rust’s module system and about privacy
-rules for organizing your code and its public application programming interface
-(API). **Chapter 8** discusses some common collection data structures that the
-standard library provides: vectors, strings, and hash maps. **Chapter 9**
-explores Rust’s error-handling philosophy and techniques.
+**7-ci fəsildə** Rust-ın modul (module) sistemi, həmçinin kodunuzu və onun
+public (açıq) proqramlaşdırma interfeysini (application programming interface,
+API) təşkil etmək üçün məxfilik (privacy) qaydaları haqqında öyrənəcəksiniz.
+**8-ci fəsil** standart kitabxananın (standard library) təqdim etdiyi bəzi
+geniş yayılmış kolleksiya (collection) data strukturlarını (data structures)
+müzakirə edir: vektorlar (vectors), sətirlər (strings) və heş cədvəlləri (hash
+maps). **9-cu fəsil** Rust-ın xətaların (errors) emalı fəlsəfəsini və üsullarını
+araşdırır.
 
-**Chapter 10** digs into generics, traits, and lifetimes, which give you the
-power to define code that applies to multiple types. **Chapter 11** is all
-about testing, which even with Rust’s safety guarantees is necessary to ensure
-that your program’s logic is correct. In **Chapter 12**, we’ll build our own
-implementation of a subset of functionality from the `grep` command line tool
-that searches for text within files. For this, we’ll use many of the concepts
-we discussed in the previous chapters.
+**10-cu fəsil** bir neçə tipə aid ola bilən kodu təyin etmək gücü verən
+generic-lərə, trait-lərə və lifetime-lara (ömür müddəti) dərindən nəzər salır.
+**11-ci fəsil** tamamilə testlərə həsr olunub; Rust-ın təhlükəsizlik
+zəmanətlərinə baxmayaraq, proqramınızın məntiqinin düzgün olmasını təmin etmək
+üçün testlər lazımdır. **12-ci fəsildə** fayllarda mətn axtaran `grep` komanda
+sətri alətinin funksionallığının bir hissəsinin öz realizasiyamızı
+(implementation) yazacağıq. Bunun üçün əvvəlki fəsillərdə müzakirə etdiyimiz
+bir çox anlayışdan istifadə edəcəyik.
 
-**Chapter 13** explores closures and iterators: features of Rust that come from
-functional programming languages. In **Chapter 14**, we’ll examine Cargo in
-more depth and talk about best practices for sharing your libraries with
-others. **Chapter 15** discusses smart pointers that the standard library
-provides and the traits that enable their functionality.
+**13-cü fəsil** closure-ları və iteratorları, yəni Rust-ın funksional
+proqramlaşdırma (functional programming) dillərindən gələn imkanlarını
+araşdırır. **14-cü fəsildə** Cargo-ya daha ətraflı baxacaq və kitabxanalarınızı
+başqaları ilə paylaşmağın ən yaxşı təcrübələrindən danışacağıq. **15-ci fəsil**
+standart kitabxananın təqdim etdiyi ağıllı göstəriciləri (smart pointers) və
+onların funksionallığını təmin edən trait-ləri müzakirə edir.
 
-In **Chapter 16**, we’ll walk through different models of concurrent
-programming and talk about how Rust helps you program in multiple threads
-fearlessly. In **Chapter 17**, we build on that by exploring Rust’s async and
-await syntax, along with tasks, futures, and streams, and the lightweight
-concurrency model they enable.
+**16-cı fəsildə** concurrent proqramlaşdırmanın müxtəlif modellərini nəzərdən
+keçirəcək və Rust-ın bir neçə axında (threads) qorxmadan proqramlaşdırmağa necə
+kömək etdiyindən danışacağıq. **17-ci fəsildə** bunun üzərinə Rust-ın async və
+await sintaksisini (syntax), həmçinin task-ları, future-ları, stream-ləri və
+onların imkan verdiyi yüngül concurrency modelini araşdıraraq davam edirik.
 
-**Chapter 18** looks at how Rust idioms compare to object-oriented programming
-principles you might be familiar with. **Chapter 19** is a reference on
-patterns and pattern matching, which are powerful ways of expressing ideas
-throughout Rust programs. **Chapter 20** contains a smorgasbord of advanced
-topics of interest, including unsafe Rust, macros, and more about lifetimes,
-traits, types, functions, and closures.
+**18-ci fəsil** Rust idiomlarının sizə tanış ola biləcək obyektyönümlü
+proqramlaşdırma (object-oriented programming) prinsipləri ilə necə müqayisə
+olunduğuna baxır. **19-cu fəsil** Rust proqramlarında fikirləri çatdırmağın
+güclü üsulları olan şablonlar (patterns) və şablon uyğunlaşdırılması (pattern
+matching) üzrə məlumat bələdçisidir. **20-ci fəsildə** maraqlı qabaqcıl
+mövzulardan ibarət rəngarəng toplu var: unsafe Rust, makrolar (macros),
+həmçinin lifetime-lar, trait-lər, tiplər, funksiyalar (functions) və
+closure-lar haqqında əlavə məlumat.
 
-In **Chapter 21**, we’ll complete a project in which we’ll implement a
-low-level multithreaded web server!
+**21-ci fəsildə** aşağı səviyyəli çoxaxınlı (multithreaded) veb server (web
+server) realizə edəcəyimiz layihəni tamamlayacağıq!
 
-Finally, some appendixes contain useful information about the language in a
-more reference-like format. **Appendix A** covers Rust’s keywords, **Appendix
-B** covers Rust’s operators and symbols, **Appendix C** covers derivable traits
-provided by the standard library, **Appendix D** covers some useful development
-tools, and **Appendix E** explains Rust editions. In **Appendix F**, you can
-find translations of the book, and in **Appendix G** we’ll cover how Rust is
-made and what nightly Rust is.
+Nəhayət, bəzi əlavələrdə dil haqqında məlumat kitabçası formatında faydalı
+məlumatlar var. **Əlavə A** Rust-ın açar sözlərini (keywords), **Əlavə B**
+Rust-ın operatorlarını və simvollarını, **Əlavə C** standart kitabxananın
+təqdim etdiyi derive edilə bilən trait-ləri (derivable traits), **Əlavə D** bəzi
+faydalı developer alətlərini əhatə edir, **Əlavə E** isə Rust buraxılışlarını
+(editions) izah edir. **Əlavə F**-də kitabın tərcümələrini tapa bilərsiniz,
+**Əlavə G**-də isə Rust-ın necə yaradıldığını və nightly Rust-ın nə olduğunu
+izah edəcəyik.
 
-There is no wrong way to read this book: If you want to skip ahead, go for it!
-You might have to jump back to earlier chapters if you experience any
-confusion. But do whatever works for you.
+Bu kitabı oxumağın yanlış üsulu yoxdur: irəli keçmək istəyirsinizsə, buyurun!
+Çaşqınlıq yaşasanız, əvvəlki fəsillərə qayıtmalı ola bilərsiniz. Amma sizə necə
+uyğundursa, elə edin.
 
 <span id="ferris"></span>
 
-An important part of the process of learning Rust is learning how to read the
-error messages the compiler displays: These will guide you toward working code.
-As such, we’ll provide many examples that don’t compile along with the error
-message the compiler will show you in each situation. Know that if you enter
-and run a random example, it may not compile! Make sure you read the
-surrounding text to see whether the example you’re trying to run is meant to
-error. In most situations, we’ll lead you to the correct version of any code
-that doesn’t compile. Ferris will also help you distinguish code that isn’t
-meant to work:
+Rust öyrənmə prosesinin vacib hissəsi kompilyatorun göstərdiyi xəta
+mesajlarını oxumağı öyrənməkdir: bu mesajlar sizi işləyən koda doğru
+istiqamətləndirəcək. Buna görə də kompilyasiya olunmayan bir çox nümunəni, hər
+vəziyyətdə kompilyatorun sizə göstərəcəyi xəta mesajı ilə birlikdə təqdim
+edəcəyik. Bilin ki, təsadüfi bir nümunəni daxil edib işə salsanız, o,
+kompilyasiya olunmaya bilər! İşə salmağa çalışdığınız nümunənin xəta verməli
+olub-olmadığını görmək üçün ətrafdakı mətni mütləq oxuyun. Əksər hallarda sizi
+kompilyasiya olunmayan istənilən kodun düzgün versiyasına yönəldəcəyik. Ferris
+də işləməli olmayan kodu ayırd etməyə kömək edəcək:
 
-| Ferris                                                                                                           | Meaning                                          |
-| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| <img src="img/ferris/does_not_compile.svg" class="ferris-explain" alt="Ferris with a question mark"/>            | This code does not compile!                      |
-| <img src="img/ferris/panics.svg" class="ferris-explain" alt="Ferris throwing up their hands"/>                   | This code panics!                                |
-| <img src="img/ferris/not_desired_behavior.svg" class="ferris-explain" alt="Ferris with one claw up, shrugging"/> | This code does not produce the desired behavior. |
+| Ferris                                                                                                              | Mənası                                    |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| <img src="img/ferris/does_not_compile.svg" class="ferris-explain" alt="Sual işarəli Ferris"/>                       | Bu kod kompilyasiya olunmur!              |
+| <img src="img/ferris/panics.svg" class="ferris-explain" alt="Əllərini yuxarı qaldıran Ferris"/>                     | Bu kod panic edir!                        |
+| <img src="img/ferris/not_desired_behavior.svg" class="ferris-explain" alt="Bir caynağını qaldırıb çiyin çəkən Ferris"/> | Bu kod istənilən davranışı göstərmir.     |
 
-In most situations, we’ll lead you to the correct version of any code that
-doesn’t compile.
+Əksər hallarda sizi kompilyasiya olunmayan istənilən kodun düzgün versiyasına
+yönəldəcəyik.
 
-## Source Code
+## Mənbə kodu
 
-The source files from which this book is generated can be found on
-[GitHub][book].
+Bu kitabın yaradıldığı mənbə fayllarını [GitHub-da][book] tapa bilərsiniz.
 
 [book]: https://github.com/rust-lang/book/tree/main/src

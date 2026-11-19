@@ -67,6 +67,6 @@ and _src/lib.rs_, it has two crates: a binary and a library, both with the same
 name as the package. A package can have multiple binary crates by placing files
 in the _src/bin_ directory: Each file will be a separate binary crate.
 
-[basics]: ch01-02-hello-world.html#rust-program-basics
+[basics]: ch01-02-hello-world.html#rust-proqramının-əsasları
 [modules]: ch07-02-defining-modules-to-control-scope-and-privacy.html
 [rand]: ch02-00-guessing-game-tutorial.html#generating-a-random-number

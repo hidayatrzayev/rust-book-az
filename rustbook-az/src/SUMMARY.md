@@ -1,11 +1,11 @@
-# The Rust Programming Language
+# Rust Proqramlaşdırma Dili
 
-[The Rust Programming Language](title-page.md)
-[Foreword](foreword.md)
-[Introduction](ch00-00-introduction.md)
+[Rust Proqramlaşdırma Dili](title-page.md)
+[Ön söz](foreword.md)
+[Giriş](ch00-00-introduction.md)
 
-- [Getting Started](ch01-00-getting-started.md)
-  - [Installation](ch01-01-installation.md)
+- [Başlanğıc](ch01-00-getting-started.md)
+  - [Quraşdırma](ch01-01-installation.md)
   - [Hello, World!](ch01-02-hello-world.md)
   - [Hello, Cargo!](ch01-03-hello-cargo.md)
 

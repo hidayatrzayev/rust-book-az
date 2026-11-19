@@ -16,11 +16,11 @@ faylı `KÖHNƏLİB` kimi göstərir.
 | appendix-05-editions.md | başlanmayıb | 555182e7f27ffb9761e18455f4d7eb42443a2954 |
 | appendix-06-translation.md | başlanmayıb | 6818718c6b3cabc1ef6b06b2272632e12462162d |
 | appendix-07-nightly-rust.md | başlanmayıb | af415fc6c8a6823dfb4595074f27d5a3e9e2fe49 |
-| ch00-00-introduction.md | başlanmayıb | 112ceaedfa51d79327e33057c9806d0ea370004a |
-| ch01-00-getting-started.md | başlanmayıb | 3a30e4c1fbe641afc066b3af9eb01dcdf5ed8b24 |
-| ch01-01-installation.md | başlanmayıb | 694f77579a5acd597f78a697a70a5a043e15ff62 |
-| ch01-02-hello-world.md | başlanmayıb | d46785983db2d2f94ca3d571db2cfbad0f5ad3e6 |
-| ch01-03-hello-cargo.md | başlanmayıb | 369386fefd1138cbdf50ae628bae1ffc4ffce669 |
+| ch00-00-introduction.md | qaralama | 112ceaedfa51d79327e33057c9806d0ea370004a |
+| ch01-00-getting-started.md | qaralama | 3a30e4c1fbe641afc066b3af9eb01dcdf5ed8b24 |
+| ch01-01-installation.md | qaralama | 694f77579a5acd597f78a697a70a5a043e15ff62 |
+| ch01-02-hello-world.md | qaralama | d46785983db2d2f94ca3d571db2cfbad0f5ad3e6 |
+| ch01-03-hello-cargo.md | qaralama | 369386fefd1138cbdf50ae628bae1ffc4ffce669 |
 | ch02-00-guessing-game-tutorial.md | başlanmayıb | 8cc0cb138998ee0502504ca1247b51de9161197c |
 | ch03-00-common-programming-concepts.md | başlanmayıb | 9cc190796f28505c7a9a9cacea42f50d895ff3bd |
 | ch03-01-variables-and-mutability.md | başlanmayıb | 9cc190796f28505c7a9a9cacea42f50d895ff3bd |
@@ -117,5 +117,5 @@ faylı `KÖHNƏLİB` kimi göstərir.
 | ch21-01-single-threaded.md | başlanmayıb | 8aa0d003e6499d733d639de32d70f590efa48657 |
 | ch21-02-multithreaded.md | başlanmayıb | 8aa0d003e6499d733d639de32d70f590efa48657 |
 | ch21-03-graceful-shutdown-and-cleanup.md | başlanmayıb | 8aa0d003e6499d733d639de32d70f590efa48657 |
-| foreword.md | başlanmayıb | 112ceaedfa51d79327e33057c9806d0ea370004a |
+| foreword.md | qaralama | 112ceaedfa51d79327e33057c9806d0ea370004a |
 | title-page.md | başlanmayıb | 852f28bd5f7e7fbe3ce447df4ba7742ab4af1713 |
