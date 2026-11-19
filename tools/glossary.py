@@ -25,7 +25,7 @@ GLOSSARY_PATH = ROOT / "GLOSSARY.md"
 KEEP = "—saxlanılır—"
 EVERYDAY = "[gündəlik]"  # note tag: everyday word, no English in parentheses on first use
 # Files whose prose is not technical: no first-use parentheses at all (decided by the human).
-FIRST_USE_EXEMPT = {"foreword.md"}
+FIRST_USE_EXEMPT = {"foreword.md", "title-page.md"}
 APPROVED = "təsdiqlənib"
 AZ_ALPHABET = "abcçdeəfgğhxıijkqlmnoöprsştuüvyz"
 

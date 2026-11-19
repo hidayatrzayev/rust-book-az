@@ -5,9 +5,9 @@ töhfələri ilə_
 
 Mətnin bu versiyası sizin Rust 1.99.1 (2026-10-15 tarixində çıxıb) və ya daha
 yeni versiyadan istifadə etdiyinizi və bütün layihələrin *Cargo.toml* faylında
-`edition = "2024"` konfiqurasiyası (configuration) olduğunu fərz edir; bu,
-layihələrin Rust 2024 buraxılışının (edition) idiomlarından istifadə etməsini
-təmin edir. Rust-ı necə quraşdırmaq (install) və ya yeniləmək (update) barədə
+`edition = "2024"` konfiqurasiyası olduğunu fərz edir; bu,
+layihələrin Rust 2024 buraxılışının idiomlarından istifadə etməsini
+təmin edir. Rust-ı necə quraşdırmaq və ya yeniləmək barədə
 təlimatlar üçün [1-ci fəslin “Quraşdırma” bölməsinə][install]<!-- ignore -->,
 buraxılışlar haqqında məlumat üçün isə [Əlavə E-yə][appendix-e]<!-- ignore -->
 baxın.
