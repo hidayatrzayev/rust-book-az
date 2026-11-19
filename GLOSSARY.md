@@ -24,7 +24,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | parameter | parametr | Funksiya təsvirindəki ad. | təklif |
 | argument | arqument | Funksiyaya verilən real dəyər. | təklif |
 | return value | qaytarılan dəyər | | təklif |
-| statement | əmr | Qeyri-müəyyən: *əmr* sözü "command" kimi də anlaşılır. Alternativlər: *təlimat*, *deyim*. *ifadə* yalnız expression üçündür. | təklif |
+| statement | bəyanat | `let y = 6;` kimi dəyər qaytarmayan konstruksiya. *ifadə* yalnız expression üçündür. | təsdiqlənib |
 | expression | ifadə | Dəyər qaytaran konstruksiya. | təklif |
 | value | dəyər | | təklif |
 | ownership | sahiblik | Rust-ın əsas anlayışı. | təklif |

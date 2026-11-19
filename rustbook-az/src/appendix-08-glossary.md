@@ -11,6 +11,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | atribut | attribute |
 | bərpa olunan xəta | recoverable error |
 | bərpa olunmayan xəta | unrecoverable error |
+| bəyanat | statement |
 | borc alma | borrowing |
 | borc yoxlayıcısı | borrow checker |
 | budaq | branch |
@@ -25,7 +26,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | drop | drop |
 | enum *(ingiliscə qalır)* | enum |
 | əhatə dairəsi | scope |
-| əmr | statement |
 | funksiya | function |
 | generik | generic |
 | heap *(ingiliscə qalır)* | heap |
