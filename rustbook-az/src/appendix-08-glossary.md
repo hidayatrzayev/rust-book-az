@@ -59,7 +59,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | sahə | field |
 | sətir | string |
 | shadowing (kölgələmə) *(ingiliscə qalır)* | shadowing |
-| stek | stack |
+| stack *(ingiliscə qalır)* | stack |
 | struktur | struct |
 | şablon | pattern |
 | şablon uyğunlaşdırılması | pattern matching |

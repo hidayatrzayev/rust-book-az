@@ -71,8 +71,8 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | smart pointer | ağıllı göstərici | | təklif |
 | thread | —saxlanılır— | Tərcümə olunmur: *thread-lər*, *thread-in*. *axın* (stream ilə qarışır) və *iplik* işlənmədiyi üçün seçilmədi. | təsdiqlənib |
 | compiler | kompilyator | | təklif |
-| stack | stek | *heap* ilə qarışmasın (Türk tərcüməsində ikisi də *yığın* idi). Alternativ: *yığın*. | təklif |
-| heap | —saxlanılır— | *stek*-dən fərqli: *heap-də*. Alternativ: *yığın*; seçilsə *stack* üçün *stek* qalır. | təklif |
+| stack | —saxlanılır— | Tərcümə olunmur: *stack-də*, *stack-dən*. Kontekstdə bunun yaddaşa aid olduğu izah edilir (məs. "yaddaşın stack hissəsi"). *heap* ilə qarışmır (Türk tərcüməsində ikisi də *yığın* idi). | təsdiqlənib |
+| heap | —saxlanılır— | *stack*-dən fərqli: *heap-də*. Kontekstdə yaddaşa aid olduğu izah edilir. | təklif |
 | type | tip | | təklif |
 | integer | tam ədəd | | təklif |
 | floating-point number | üzən nöqtəli ədəd | Alternativ: *həqiqi ədəd*. | təklif |
