@@ -189,7 +189,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | legacy code | legacy kod | Proqramçı dili: *legacy kodu dəyişmək*. *köhnə kod* sadəcə "əvvəlki versiya" mənasında işlədilə bilər. | təsdiqlənib |
 | contribute | töhfə vermək | *contributor* → *töhfə verən*. | təklif |
 | machine learning | maşın öyrənməsi | | təklif |
-| embedded device | embedded qurğu | Alternativ: *daxili sistem qurğusu*. | təklif |
+| embedded device | daxili qurğu | *daxili qurğular*. *embedded system* → *daxili sistem*. | təsdiqlənib |
 | Internet of Things (IoT) | Əşyaların İnterneti (IoT) | Mötərizədə ingiliscə abreviatura; *IoT tətbiqləri*. | təsdiqlənib |
 | benchmark | bençmark | Fel: *bençmark etmək*; *bençmark testləri*. `#[bench]` kimi kod dəyişmir. | təsdiqlənib |
 | troubleshooting | problemlərin aradan qaldırılması | 1.1 bölməsinin başlığı; lövbər `#problemlərin-aradan-qaldırılması`. | təsdiqlənib |

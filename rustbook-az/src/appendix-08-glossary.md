@@ -35,6 +35,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | crate *(ingiliscə qalır)* | crate |
 | çıxış | output |
 | çoxaxınlı | multithreaded |
+| daxili qurğu | embedded device |
 | dangling reference (boşda qalan istinad) *(ingiliscə qalır)* | dangling reference |
 | data strukturu | data structure |
 | debug *(ingiliscə qalır)* | debug |
@@ -50,7 +51,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | drop | drop |
 | ekosistem | ecosystem |
 | elan | declaration |
-| embedded qurğu | embedded device |
 | enum *(ingiliscə qalır)* | enum |
 | ev direktoriyası | home directory |
 | əhatə dairəsi | scope |
