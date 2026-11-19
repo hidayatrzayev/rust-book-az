@@ -165,7 +165,7 @@ onların funksionallığını təmin edən trait-ləri müzakirə edir.
 **16-cı fəsildə** concurrent proqramlaşdırmanın müxtəlif modellərini nəzərdən
 keçirəcək və Rust-ın bir neçə axında (threads) qorxmadan proqramlaşdırmağa necə
 kömək etdiyindən danışacağıq. **17-ci fəsildə** bunun üzərinə Rust-ın async və
-await sintaksisini (syntax), həmçinin task-ları, future-ları, stream-ləri və
+await sintaksisini (syntax), həmçinin task-ları, future-ləri, stream-ləri və
 onların imkan verdiyi yüngül concurrency modelini araşdıraraq davam edirik.
 
 **18-ci fəsil** Rust idiomlarının sizə tanış ola biləcək obyektyönümlü
