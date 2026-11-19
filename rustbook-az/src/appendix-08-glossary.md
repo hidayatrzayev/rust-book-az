@@ -43,7 +43,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | dəyər | value |
 | dəyişən | variable |
 | dilim | slice |
-| dinamik dil | dynamic language |
+| dinamik proqramlaşdırma dili | dynamic language |
 | direktoriya | directory |
 | dokumentasiya | documentation |
 | dövr | loop |
