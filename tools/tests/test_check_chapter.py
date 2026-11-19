@@ -127,3 +127,16 @@ def test_summary_az_only_entry_allowed(tmp_path):
     (en_dir / "SUMMARY.md").write_text("- [A](a.md)\n", encoding="utf-8")
     (az_dir / "SUMMARY.md").write_text("- [A](a.md)\n- [Lüğət](appendix-08-glossary.md)\n", encoding="utf-8")
     assert check_file(az_dir / "SUMMARY.md", en_dir, az_dir) == []
+
+
+def test_shortcut_reference_may_get_translated_text():
+    en = "Several [translations] exist.\n\n[translations]: appendix-06-translation.html\n"
+    az = "Bir neçə [tərcümə][translations] var.\n\n[translations]: appendix-06-translation.html\n"
+    assert compare(az, en) == []
+    assert compare("Bir neçə tərcümə var.\n\n[translations]: appendix-06-translation.html\n", en) != []
+
+
+def test_shortcut_reference_defined_after_a_fence():
+    en = "See [translations].\n\n```text\nx\n```\n\n[translations]: a.html\n"
+    az = "Bax [tərcümələr][translations].\n\n```text\nx\n```\n\n[translations]: a.html\n"
+    assert compare(az, en) == []

@@ -32,6 +32,7 @@ INLINE_CODE_RE = re.compile(r"(?<!`)(`+)(?!`)(.+?)(?<!`)\1(?!`)", re.S)
 INLINE_LINK_RE = re.compile(r"\]\(\s*<?([^)\s>]+)>?(?:\s+\"[^\"]*\")?\s*\)")
 LINK_DEF_RE = re.compile(r"^[ \t>]*\[([^\]]+)\]:\s*(\S+)", re.M)
 LINK_REF_RE = re.compile(r"\]\[([^\]]+)\]")
+SHORTCUT_REF_RE = re.compile(r"(?<![\]\w!])\[([^\[\]\n]+)\](?![\[(:])")
 HEADING_RE = re.compile(r"^(?:[ ]{0,3}>[ ]?)*[ ]{0,3}(#{1,6})[ \t]+(.*?)[ \t]*#*[ \t]*$")
 
 
@@ -72,6 +73,8 @@ def _prose(md: str) -> str:
 def extract_protected(md: str) -> list[tuple[str, str]]:
     """Ordered (kind, text) for every protected item in `md`."""
     items: list[tuple[str, str]] = []
+    prose = "\n".join(t for is_fence, _, t in split_fences(md) if not is_fence)
+    defined = {d.group(1).lower() for d in LINK_DEF_RE.finditer(prose)}
     for is_fence, _info, text in split_fences(md):
         if is_fence:
             items.append(("fence", text))
@@ -94,6 +97,10 @@ def extract_protected(md: str) -> list[tuple[str, str]]:
             spots.append((m.start(), "link_target", m.group(2)))
         for m in LINK_REF_RE.finditer(text):
             spots.append((m.start(), "link_label", m.group(1)))
+        # shortcut references: [label] alone, when `label` is defined (its text becomes [text][label] in az)
+        for m in SHORTCUT_REF_RE.finditer(text):
+            if m.group(1).lower() in defined:
+                spots.append((m.start(), "link_label", m.group(1)))
         items.extend((k, t) for _, k, t in sorted(spots, key=lambda s: s[0]))
     return items
 
