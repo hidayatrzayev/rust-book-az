@@ -57,7 +57,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | vector | vektor | `Vec<T>`. | təklif |
 | hash map | heş cədvəli | `HashMap<K, V>`. Alternativ: ingiliscə saxlamaq. | təklif |
 | array | massiv | | təklif |
-| tuple | kortej | Azərbaycan dilindəki Python mənbələrində belə işlənir. | təklif |
+| tuple | —saxlanılır— | Tərcümə olunmur: *tuple-lar*, *tuple-ın*. | təsdiqlənib |
 | error | xəta | | təklif |
 | recoverable error | bərpa olunan xəta | `Result`. | təklif |
 | unrecoverable error | bərpa olunmayan xəta | `panic!`. | təklif |

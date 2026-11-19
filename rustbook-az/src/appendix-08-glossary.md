@@ -39,7 +39,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | komanda sətri | command line |
 | kompilyator | compiler |
 | kopyalama | copy |
-| kortej | tuple |
 | qapanma | closure |
 | qaytarılan dəyər | return value |
 | lifetime (ömür müddəti) *(ingiliscə qalır)* | lifetime |
@@ -71,6 +70,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | tip | type |
 | trait *(ingiliscə qalır)* | trait |
 | trait bound (trait məhdudiyyəti) *(ingiliscə qalır)* | trait bound |
+| tuple *(ingiliscə qalır)* | tuple |
 | üzən nöqtəli ədəd | floating-point number |
 | variant | variant |
 | vektor | vector |
