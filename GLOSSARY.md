@@ -131,7 +131,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | function body | funksiyanın gövdəsi | *gövdə*. | təklif |
 | data structure | data strukturu | Proqramçıların gündəlik dilinə yaxın forma. | təsdiqlənib |
 | collection | kolleksiya | | təklif |
-| control flow | idarəetmə axını | | təklif |
+| control flow | idarəetmə axını | | təsdiqlənib |
 | functional programming | funksional proqramlaşdırma | | təklif |
 | object-oriented programming | obyektyönümlü proqramlaşdırma | | təklif |
 | privacy | məxfilik | 7-ci fəsil: *məxfilik qaydaları*. | təklif |
