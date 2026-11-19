@@ -27,6 +27,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | concurrency (eyni vaxtlılıq) *(ingiliscə qalır)* | concurrency |
 | crate *(ingiliscə qalır)* | crate |
 | dangling reference (boşda qalan istinad) *(ingiliscə qalır)* | dangling reference |
+| data strukturu | data structure |
 | debug *(ingiliscə qalır)* | debug |
 | derive edilə bilən trait | derivable trait |
 | dəyər | value |
@@ -124,7 +125,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | üzən nöqtəli ədəd | floating-point number |
 | variant | variant |
 | vektor | vector |
-| verilənlər strukturu | data structure |
 | versiya nəzarəti sistemi | version control system |
 | yaddaş | memory |
 | yaddaş təhlükəsizliyi | memory safety |

@@ -129,7 +129,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | syntax | sintaksis | | təklif |
 | declaration | elan | "funksiyanı elan etmək". | təklif |
 | function body | funksiyanın gövdəsi | *gövdə*. | təklif |
-| data structure | verilənlər strukturu | Alternativ: *data strukturu*. | təklif |
+| data structure | data strukturu | Proqramçıların gündəlik dilinə yaxın forma. | təsdiqlənib |
 | collection | kolleksiya | | təklif |
 | control flow | idarəetmə axını | | təklif |
 | functional programming | funksional proqramlaşdırma | | təklif |
