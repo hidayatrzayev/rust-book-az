@@ -63,7 +63,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | stek | stack |
 | struktur | struct |
 | şablon | pattern |
-| şablon uyğunlaşdırması | pattern matching |
+| şablon uyğunlaşdırılması | pattern matching |
 | şərh | comment |
 | tam ədəd | integer |
 | test | test |
