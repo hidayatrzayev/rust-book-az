@@ -1,7 +1,7 @@
 # Rust Proqramlaşdırma Dili
 
 _Müəlliflər: Steve Klabnik, Carol Nichols və Chris Krycho, Rust icmasının
-iştirakı ilə_
+töhfələri ilə_
 
 Mətnin bu versiyası sizin Rust 1.99.1 (2026-10-15 tarixində çıxıb) və ya daha
 yeni versiyadan istifadə etdiyinizi və bütün layihələrin *Cargo.toml* faylında

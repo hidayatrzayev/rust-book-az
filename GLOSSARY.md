@@ -188,7 +188,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | commit hash | commit heşi | Git commit-i: *commit-in*. | təsdiqlənib |
 | dynamic language | dinamik proqramlaşdırma dili | Ruby, Python, JavaScript. Adətən tam forma; eyni cümlədə təkrar olunarsa və ya kontekst aydındırsa qısaca *dinamik dil*. | təsdiqlənib |
 | legacy code | legacy kod | Proqramçı dili: *legacy kodu dəyişmək*. *köhnə kod* sadəcə "əvvəlki versiya" mənasında işlədilə bilər. | təsdiqlənib |
-| contribute | töhfə vermək | *contributor* → *töhfə verən*. | təsdiqlənib |
+| contribute | töhfə vermək | [gündəlik] *contributor* → *töhfə verən*; *Rust icmasının töhfələri ilə*. | təsdiqlənib |
 | machine learning | maşın öyrənməsi | | təsdiqlənib |
 | embedded device | daxili qurğu | *daxili qurğular*. *embedded system* → *daxili sistem*. | təsdiqlənib |
 | Internet of Things (IoT) | Əşyaların İnterneti (IoT) | Mötərizədə ingiliscə abreviatura; *IoT tətbiqləri*. | təsdiqlənib |
