@@ -79,7 +79,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | mutable reference (dəyişə bilən istinad) *(ingiliscə qalır)* | mutable reference |
 | nightly Rust *(ingiliscə qalır)* | nightly Rust |
 | obyektyönümlü proqramlaşdırma | object-oriented programming |
-| optimallaşdırma | optimization |
+| optimizasiya | optimization |
 | ownership (sahiblik) *(ingiliscə qalır)* | ownership |
 | ötürmə | move |
 | paket | package |

@@ -100,7 +100,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | source code | mənbə kodu | *source file* → *mənbə faylı*. Alternativ: *qaynaq kodu*. | təklif |
 | release | reliz | *reliz üçün build*, *reliz profili*. "yeni buraxılmış versiya" kimi adi mənada *buraxılış/versiya*. | təklif |
 | debug | —saxlanılır— | *debug build-i*, *debug məlumatı*. Alternativ: *sazlama*. | təklif |
-| optimization | optimallaşdırma | | təklif |
+| optimization | optimizasiya | optimizasiya etmək, optimizasiya olunmuş | təsdiqlənib |
 | profile | profil | Cargo profili: *dev*, *release*. | təklif |
 | stable | stabil | *stabil versiya*. Alternativ: *sabit* (amma *sabit* = constant). | təklif |
 | edition | —saxlanılır— (nəşr) | Rust edition-ı (2015, 2018, 2021, 2024): *edition-ı*. Kitabın nəşri isə adi sözlə *nəşr* yazılır. | təklif |
