@@ -35,7 +35,7 @@ Başlıqlar tərcümə olunur. mdBook lövbərləri başlıqdan yaradıldığı 
 
 ## Kod şərhləri
 
-Kod nümunələrindəki şərhlər (`//`, `///`, `//!`, `/* */`) **tərcümə olunur** və lüğətə uyğun yazılır. Yalnız şərh mətni dəyişir: kod, sətir literalları, identifikatorlar dəyişməz qalır. Şərhlər həm fəsil faylındakı ```` ```rust ```` bloklarında, həm də `rustbook-az/listings/` qovluğundakı `.rs` fayllarında tərcümə olunur. `python tools/check_listings.py` şərhdən başqa hər fərqi tapır.
+Kod nümunələrindəki şərhlər (`//`, `///`, `//!`, `/* */`) **tərcümə olunur** və lüğətə uyğun yazılır. Yalnız şərh mətni dəyişir: kod, sətir literalları, identifikatorlar dəyişməz qalır. Şərhlər həm fəsil faylındakı ```` ```rust ```` bloklarında, həm də `rustbook-az/listings/` direktoriyasındakı `.rs` fayllarında tərcümə olunur. `python tools/check_listings.py` şərhdən başqa hər fərqi tapır.
 
 ## English summary
 

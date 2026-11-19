@@ -16,7 +16,7 @@ cargo install mdbook --version 0.5.1 --locked
 mdbook serve rustbook-az --open
 ```
 
-İngilis dilindəki orijinal `rustbook-en/` qovluğunda git submodule kimi saxlanılır; kitabın preprosessorları və kod nümunələri oradan istifadə olunur.
+İngilis dilindəki orijinal `rustbook-en/` direktoriyasında git submodule kimi saxlanılır; kitabın preprosessorları və kod nümunələri oradan istifadə olunur.
 
 ## Necə kömək etmək olar
 

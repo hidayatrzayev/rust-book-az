@@ -83,3 +83,4 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | comment | şərh | | təklif |
 | library | kitabxana | | təklif |
 | command line | komanda sətri | | təklif |
+| directory | direktoriya | Fayl sistemi direktoriyası; ingiliscə "folder" də bu sözlə tərcümə olunur (*qovluq* yox: proqramçılar *direktoriya* deyir). Kitabın bütün mətnində və README-də bu işlədilir. `cd`, `mkdir` kimi əmrlər kodda qalır. | təsdiqlənib |

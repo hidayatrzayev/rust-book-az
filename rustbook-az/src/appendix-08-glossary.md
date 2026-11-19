@@ -22,6 +22,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | dəyişkən istinad | mutable reference |
 | dəyişməz | immutable |
 | dilim | slice |
+| direktoriya | directory |
 | dövr | loop |
 | drop | drop |
 | enum *(ingiliscə qalır)* | enum |
