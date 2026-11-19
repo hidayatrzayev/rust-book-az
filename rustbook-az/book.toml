@@ -1,6 +1,6 @@
 [book]
 title = "Rust Proqramlaşdırma Dili"
-authors = ["Steve Klabnik", "Carol Nichols", "Chris Krycho", "Rust icmasının töhfələri ilə"]
+authors = ["Steve Klabnik", "Carol Nichols", "Chris Krycho", "Rust icmasının iştirakı ilə"]
 language = "az"
 
 [output.html]

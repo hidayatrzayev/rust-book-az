@@ -12,6 +12,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 - Eyni yazılışlı terminlər (iterator, variant, test) mötərizəsiz yazılır, çünki ingiliscə ilə eynidir.
 - Kod bloklarında, sətirdaxili kodda və Rust açar sözlərində heç nə dəyişdirilmir.
 - `Qeyd` sütununda qeyri-müəyyən yerlər və alternativlər göstərilir.
+- Qeyddə **`[gündəlik]`** işarəsi: gündəlik sözdür, ilk işlənmədə də ingiliscə mötərizə yazılmır (*quraşdırmaq*, *brauzer*).
 
 | English | Azərbaycanca | Qeyd | Status |
 | ------- | ------------ | ---- | ------ |

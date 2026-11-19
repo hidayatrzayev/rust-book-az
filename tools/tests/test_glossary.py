@@ -203,3 +203,22 @@ def test_term_wrapped_inside_blockquote():
 def test_quoted_section_title_is_not_first_use():
     terms = [Term("troubleshooting", "problemlərin aradan qaldırılması")]
     assert lint("Bax [“Problemlərin aradan qaldırılması”][t] hissəsi.\n\n[t]: a.html#x\n", terms) == []
+
+
+def test_everyday_term_needs_no_parentheses():
+    terms = [Term("install", "quraşdırmaq", note="[gündəlik]"), Term("compiler", "kompilyator")]
+    assert Term("install", "quraşdırmaq", note="[gündəlik] x").everyday
+    issues = lint("Rust-ı quraşdırın. Kompilyator işləyir.", terms)
+    assert [i.message.split("`")[1] for i in issues] == ["Kompilyator"]
+    # English left in prose is still flagged
+    assert [i.kind for i in lint("Rust-ı install edin.", terms)] == ["ingilis"]
+
+
+def test_first_use_rule_off_for_exempt_files(tmp_path):
+    terms = [Term("compiler", "kompilyator"), Term("trait", "", keep_english=True, gloss="xüsusiyyət")]
+    p = tmp_path / "foreword.md"
+    p.write_text("Kompilyator və trait-lər.", encoding="utf-8")
+    assert lint_files([p], terms) == []
+    q = tmp_path / "ch01-01-x.md"
+    q.write_text("Kompilyator və trait-lər.", encoding="utf-8")
+    assert len(lint_files([q], terms)) == 2

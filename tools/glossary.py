@@ -23,6 +23,9 @@ from check_chapter import DIRECTIVE_RE, split_fences  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 GLOSSARY_PATH = ROOT / "GLOSSARY.md"
 KEEP = "—saxlanılır—"
+EVERYDAY = "[gündəlik]"  # note tag: everyday word, no English in parentheses on first use
+# Files whose prose is not technical: no first-use parentheses at all (decided by the human).
+FIRST_USE_EXEMPT = {"foreword.md"}
 APPROVED = "təsdiqlənib"
 AZ_ALPHABET = "abcçdeəfgğhxıijkqlmnoöprsştuüvyz"
 
@@ -42,8 +45,10 @@ class Term:
     keep_english: bool = False
     gloss: str = ""  # for kept-English terms: Azerbaijani word given in parentheses on first use
     stems: list[str] = field(default_factory=list)
+    everyday: bool = False
 
     def __post_init__(self) -> None:
+        self.everyday = self.everyday or EVERYDAY in self.note
         if self.keep_english:
             self.az = self.en
         base = fold(self.az)
@@ -163,7 +168,7 @@ def _line_of(text: str, pos: int) -> int:
     return text.count("\n", 0, pos) + 1
 
 
-def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue]:
+def lint(md: str, terms: list[Term], seen: set[str] | None = None, first_use: bool = True) -> list[Issue]:
     """Lint one file. `seen` holds English terms already introduced earlier in the same
     chapter (updated in place), so the first-use rule is per chapter, not per file."""
     seen = set() if seen is None else seen
@@ -188,7 +193,7 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
                                     f"(`{t.en}-{m.group(1)}`)"))
             # (c') kept term with a gloss: first use gets the Azerbaijani word in parentheses
             key = fold(t.en)
-            if t.gloss and key not in seen:
+            if first_use and not t.everyday and t.gloss and key not in seen:
                 longer = [m.span() for o in terms if o.keep_english and fold(o.en) != key and key in fold(o.en)
                           for m in re.finditer(r"(?<!\w)" + _ws(fold(o.en)) + r"(?!\w)", heading_blank)]
                 first = next((m for m in re.finditer(r"(?<!\w)" + _ws(key) + r"(?:-[^\W\d_]+)?(?!\w)", heading_blank)
@@ -212,7 +217,7 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
                                 f"`{md[m.start():m.end()]}` tərcümə olunmalıdır: `{t.az}`"))
         # (c) first use of the Azerbaijani term needs the English in parentheses
         key = fold(t.en)
-        if key in seen:
+        if not first_use or t.everyday or key in seen:
             continue
         stem_re = re.compile(r"(?<!\w)(?:" + "|".join(_ws(s) for s in t.stems) + r")[^\W\d_]*")
         # a use inside a longer Azerbaijani term (xəta in "xəta mesajı") is that term's use
@@ -244,7 +249,8 @@ def lint_files(paths: list[Path], terms: list[Term]) -> list[tuple[Path, Issue]]
     seen_by_chapter: dict[str, set[str]] = defaultdict(set)
     found: list[tuple[Path, Issue]] = []
     for p in sorted(paths):
-        for issue in lint(p.read_text(encoding="utf-8"), terms, seen_by_chapter[chapter_key(p)]):
+        for issue in lint(p.read_text(encoding="utf-8"), terms, seen_by_chapter[chapter_key(p)],
+                          first_use=p.name not in FIRST_USE_EXEMPT):
             found.append((p, issue))
     return found
 
