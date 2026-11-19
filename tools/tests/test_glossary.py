@@ -136,3 +136,20 @@ def test_kept_multiword_term_with_gloss_and_nested_terms():
     # later a standalone `mutable` is its own first use
     assert k("Bu mutable reference (dəyişə bilən istinad) və mutable (dəyişə bilən) dəyişən.") == []
     assert k("Bu mutable reference (dəyişə bilən istinad) və mutable dəyişən.") == ["ilk-istifadə"]
+
+
+def test_verb_stem_matches_inflected_forms():
+    terms = [Term("install", "quraşdırmaq"), Term("compile", "kompilyasiya etmək")]
+    assert Term("install", "quraşdırmaq").stems == ["quraşdır"]
+    assert Term("compile", "kompilyasiya etmək").stems == ["kompilyasiya"]
+    issues = lint("Rust-ı quraşdırın və kodu kompilyasiya edin.", terms)
+    assert sorted(i.message.split("`")[1] for i in issues) == ["kompilyasiya", "quraşdırın"]
+    assert lint("Rust-ı quraşdırın (install) və kompilyasiya (compile) edin.", terms) == []
+
+
+def test_short_term_inside_longer_az_term_not_first_use():
+    terms = [Term("error", "xəta"), Term("error message", "xəta mesajı")]
+    md = "Xəta mesajları (error messages) faydalıdır. Sonra xəta (error) baş verir."
+    assert lint(md, terms) == []
+    issues = lint("Xəta mesajları (error messages) faydalıdır. Sonra xəta baş verir.", terms)
+    assert [(i.kind, i.message.split("`")[1]) for i in issues] == [("ilk-istifadə", "xəta")]

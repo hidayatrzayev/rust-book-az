@@ -47,7 +47,21 @@ class Term:
         if self.keep_english:
             self.az = self.en
         base = fold(self.az)
+        # Verbs: match the root so inflected forms count (quraşdırın, kompilyasiya edin).
+        for light in (" etmək", " vermək", " olmaq"):
+            if base.endswith(light) and " " not in base[: -len(light)]:
+                base = base[: -len(light)]
+                break
+        else:
+            if " " not in base and len(base) > 6 and base.endswith(("mək", "maq")):
+                base = base[:-3]
+                self.stems = [base]
+                return
         self.stems = [base]
+        # Multi-word terms inflect on the last word: xəta mesajı → xəta mesajları.
+        m = re.match(r"^(.+ \w+?)s?[ıiuü]$", base)
+        if m and len(m.group(1).split()[-1]) >= 3:
+            self.stems.append(m.group(1))
         if base.endswith("k"):
             self.stems.append(base[:-1] + "y")
         elif base.endswith("q"):
@@ -188,7 +202,13 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
         if key in seen:
             continue
         stem_re = re.compile(r"(?<!\w)(?:" + "|".join(re.escape(s) for s in t.stems) + r")[^\W\d_]*")
-        m = stem_re.search(heading_blank)
+        # a use inside a longer Azerbaijani term (xəta in "xəta mesajı") is that term's use
+        longer_az = [m.span() for o in terms if not o.keep_english and o is not t
+                     and len(fold(o.az)) > len(fold(t.az)) and any(st in fold(o.az) for st in t.stems)
+                     for m in re.finditer(r"(?<!\w)(?:" + "|".join(re.escape(st) for st in o.stems) + r")[^\W\d_]*",
+                                          heading_blank)]
+        m = next((m for m in stem_re.finditer(heading_blank)
+                  if not any(a <= m.start() and m.end() <= b for a, b in longer_az)), None)
         if not m:
             continue
         seen.add(key)
