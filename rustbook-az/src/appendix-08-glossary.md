@@ -15,6 +15,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | borrowing (borc alma) *(ingiliscə qalır)* | borrowing |
 | borrow checker (borc yoxlayıcısı) *(ingiliscə qalır)* | borrow checker |
 | budaq | branch |
+| closure *(ingiliscə qalır)* | closure |
 | crate *(ingiliscə qalır)* | crate |
 | dangling reference (boşda qalan istinad) *(ingiliscə qalır)* | dangling reference |
 | dəyər | value |
@@ -39,7 +40,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | komanda sətri | command line |
 | kompilyator | compiler |
 | kopyalama | copy |
-| qapanma | closure |
 | qaytarılan dəyər | return value |
 | lifetime (ömür müddəti) *(ingiliscə qalır)* | lifetime |
 | makro | macro |

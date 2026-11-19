@@ -66,7 +66,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | trait | —saxlanılır— | Dizayn sənədində nümunə kimi göstərilib: *trait-in*. | təklif |
 | trait bound | —saxlanılır— (trait məhdudiyyəti) | Rust-a məxsus. | təklif |
 | lifetime | —saxlanılır— (ömür müddəti) | Rust-a məxsus; `'a` kimi annotasiyalar kodda qalır. | təklif |
-| closure | qapanma | Qeyri-müəyyən. Türk tərcüməsinin əsas problemi bu termindəki dəyişkənlik idi, ona görə bir qarşılıq seçilməlidir. Alternativ: ingiliscə saxlamaq (*closure-ın*). | təklif |
+| closure | —saxlanılır— | Tərcümə olunmur: *closure-lar*, *closure-ın*. Türk tərcüməsində bu termin *kapanma/kapanış/kapama* kimi üç cür verilmişdi; ingiliscə saxlamaq bu problemi aradan qaldırır. | təsdiqlənib |
 | iterator | iterator | Yazılışı ingiliscə ilə eynidir. | təklif |
 | smart pointer | ağıllı göstərici | | təklif |
 | thread | —saxlanılır— | *axın* (stream ilə qarışır) seçilmədi, *iplik* isə praktikada işlənmir: *thread-lər*. | təklif |
