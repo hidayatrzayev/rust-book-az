@@ -21,6 +21,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | borrow checker (borc yoxlayıcısı) *(ingiliscə qalır)* | borrow checker |
 | budaq | branch |
 | build *(ingiliscə qalır)* | build |
+| buraxılış | edition |
 | closure *(ingiliscə qalır)* | closure |
 | crate *(ingiliscə qalır)* | crate |
 | dangling reference (boşda qalan istinad) *(ingiliscə qalır)* | dangling reference |
@@ -32,7 +33,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | direktoriya | directory |
 | dövr | loop |
 | drop | drop |
-| edition (nəşr) *(ingiliscə qalır)* | edition |
 | elan | declaration |
 | enum *(ingiliscə qalır)* | enum |
 | əhatə dairəsi | scope |

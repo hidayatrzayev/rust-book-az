@@ -98,12 +98,12 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | executable | icra olunan fayl | "binary executable" → *icra olunan binar fayl*. | təklif |
 | binary | binar fayl | Kontekstdə sadəcə *binar*: "binar faylı işə salmaq". Gələcəkdə *binary crate* → *binar crate*. | təklif |
 | source code | mənbə kodu | *source file* → *mənbə faylı*. Alternativ: *qaynaq kodu*. | təklif |
-| release | reliz | *reliz üçün build*, *reliz profili*. "yeni buraxılmış versiya" kimi adi mənada *buraxılış/versiya*. | təklif |
+| release | reliz | *reliz üçün build*, *reliz profili*. "yeni versiya" kimi adi mənada *versiya* (*buraxılış* edition üçündür). | təklif |
 | debug | —saxlanılır— | *debug build-i*, *debug məlumatı*. Alternativ: *sazlama*. | təklif |
 | optimization | optimizasiya | optimizasiya etmək, optimizasiya olunmuş | təsdiqlənib |
 | profile | profil | Cargo profili: *dev*, *release*. | təklif |
 | stable | stabil | *stabil versiya*. Alternativ: *sabit* (amma *sabit* = constant). | təklif |
-| edition | —saxlanılır— (nəşr) | Rust edition-ı (2015, 2018, 2021, 2024): *edition-ı*. Kitabın nəşri isə adi sözlə *nəşr* yazılır. | təklif |
+| edition | buraxılış | Rust-ın buraxılışları (2015, 2018, 2021, 2024): *Rust-ın 2015 il buraxılışı*, *2024 buraxılışı*. `edition` açarı kod kimi qalır. Kitabın nəşri isə *nəşr*. | təsdiqlənib |
 | memory | yaddaş | | təklif |
 | memory safety | yaddaş təhlükəsizliyi | | təklif |
 | systems programming | sistem proqramlaşdırması | | təklif |
