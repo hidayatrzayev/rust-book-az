@@ -169,3 +169,21 @@ def test_vowel_dropping_stem():
     assert "sətr" in Term("string", "sətir").stems
     issues = lint("Bu sətri (string) çap edin.", [Term("string", "sətir")])
     assert issues == []
+
+
+def test_terms_across_line_breaks():
+    terms = [Term("systems programming", "sistem proqramlaşdırması"), Term("pattern", "şablon"),
+             Term("pattern matching", "şablon uyğunlaşdırılması")]
+    md = "Sistem\nproqramlaşdırması (systems\nprogramming). Şablonlar (patterns) və şablon\nuyğunlaşdırılması (pattern\nmatching)."
+    assert lint(md, terms) == []
+
+
+def test_parentheses_after_light_verb():
+    terms = [Term("compile", "kompilyasiya etmək"), Term("contribute", "töhfə vermək")]
+    assert lint("Kodu kompilyasiya etməkdən (compile) və töhfə verməyinizi (contribute).", terms) == []
+
+
+def test_softened_stem_only_before_vowel():
+    terms = [Term("bug", "baq")]
+    assert lint("Bununla bağlı baqlar (bugs).", terms) == []
+    assert [i.message.split("`")[1] for i in lint("Bu bağa baxın.", terms)] == ["bağa"]

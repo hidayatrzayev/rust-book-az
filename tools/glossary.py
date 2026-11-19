@@ -66,10 +66,10 @@ class Term:
         m = re.match(r"^(\w{2,})[ıiuü]([^\Waeıioöuüə\d_])$", base)
         if m and " " not in base:
             self.stems.append(m.group(1) + m.group(2))
-        if base.endswith("k"):
-            self.stems.append(base[:-1] + "y")
-        elif base.endswith("q"):
-            self.stems.append(base[:-1] + "ğ")
+        # k/q soften before a vowel suffix: asılılıq → asılılığı (but not baq → bağlı)
+        soft = {"k": "y", "q": "ğ"}.get(base[-1:])
+        if soft:
+            self.stems += [base[:-1] + soft + v for v in "aıoueəiöü"]
 
 
 @dataclass
@@ -131,13 +131,13 @@ def mask_protected(md: str, en_terms: set[str]) -> str:
         text = re.sub(r"[\w.~-]*[/\\][\w./\\~-]*", _blank, text)  # file paths: target/release
         text = re.sub(r'(?:number|file-name)="[^"]*"', _blank, text)
         text = re.sub(r"<[^>\n]+>", _blank, text)
-        text = re.sub(r"\(([^()\n]+)\)", lambda m: _blank(m) if _is_en_term(m.group(1), en_terms) else m.group(0), text)
+        text = re.sub(r"\(([^()]+)\)", lambda m: _blank(m) if _is_en_term(m.group(1), en_terms) else m.group(0), text)
         out.append(text)
     return "\n".join(out)
 
 
 def _is_en_term(s: str, en_terms: set[str]) -> bool:
-    s = fold(s.strip())
+    s = " ".join(fold(s).split())
     return any(s == t or s in _plurals(t) for t in en_terms)
 
 
@@ -149,8 +149,13 @@ def _plurals(t: str) -> set[str]:
 
 def _en_regex(en: str) -> re.Pattern[str]:
     f = fold(en)
-    alts = [re.escape(f)] + [re.escape(p) for p in sorted(_plurals(f))]
+    alts = [_ws(f)] + [_ws(p) for p in sorted(_plurals(f))]
     return re.compile(r"(?<!\w)(?:" + "|".join(alts) + r")(?!\w)")
+
+
+def _ws(literal: str) -> str:
+    """Regex for `literal` where any space may also be a line break."""
+    return r"\s+".join(re.escape(w) for w in literal.split(" "))
 
 
 def _line_of(text: str, pos: int) -> int:
@@ -182,12 +187,12 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
             key = fold(t.en)
             if t.gloss and key not in seen:
                 longer = [m.span() for o in terms if o.keep_english and fold(o.en) != key and key in fold(o.en)
-                          for m in re.finditer(r"(?<!\w)" + re.escape(fold(o.en)) + r"(?!\w)", heading_blank)]
-                first = next((m for m in re.finditer(r"(?<!\w)" + re.escape(key) + r"(?:-[^\W\d_]+)?(?!\w)", heading_blank)
+                          for m in re.finditer(r"(?<!\w)" + _ws(fold(o.en)) + r"(?!\w)", heading_blank)]
+                first = next((m for m in re.finditer(r"(?<!\w)" + _ws(key) + r"(?:-[^\W\d_]+)?(?!\w)", heading_blank)
                               if not any(a <= m.start() and m.end() <= b for a, b in longer)), None)
                 if first:
                     seen.add(key)
-                    if not re.match(r"\s*\(\s*" + re.escape(fold(t.gloss)) + r"[^)\n]*\)", original[first.end():]):
+                    if not re.match(r"\s*\(\s*" + _ws(fold(t.gloss)) + r"[^)]*\)", original[first.end():]):
                         issues.append(Issue(_line_of(md, first.start()), "ilk-istifadə",
                                             f"`{md[first.start():first.end()]}` bu fəsildə ilk dəfə işlənir: "
                                             f"ardınca `({t.gloss})` yazılmalıdır"))
@@ -196,7 +201,7 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
             continue  # same spelling in both languages (iterator, variant, test): nothing to check
         # (a) English term left in prose
         longer_kept = [m.span() for o in terms if o.keep_english and fold(t.en) in fold(o.en) and fold(o.en) != fold(t.en)
-                       for m in re.finditer(r"(?<!\w)" + re.escape(fold(o.en)) + r"(?!\w)", folded)]
+                       for m in re.finditer(r"(?<!\w)" + _ws(fold(o.en)) + r"(?!\w)", folded)]
         for m in _en_regex(t.en).finditer(folded):
             if any(a <= m.start() and m.end() <= b for a, b in longer_kept):
                 continue  # part of a longer term kept in English (reference in "mutable reference")
@@ -206,11 +211,11 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
         key = fold(t.en)
         if key in seen:
             continue
-        stem_re = re.compile(r"(?<!\w)(?:" + "|".join(re.escape(s) for s in t.stems) + r")[^\W\d_]*")
+        stem_re = re.compile(r"(?<!\w)(?:" + "|".join(_ws(s) for s in t.stems) + r")[^\W\d_]*")
         # a use inside a longer Azerbaijani term (xəta in "xəta mesajı") is that term's use
         longer_az = [m.span() for o in terms if not o.keep_english and o is not t
                      and len(fold(o.az)) > len(fold(t.az)) and any(st in fold(o.az) for st in t.stems)
-                     for m in re.finditer(r"(?<!\w)(?:" + "|".join(re.escape(st) for st in o.stems) + r")[^\W\d_]*",
+                     for m in re.finditer(r"(?<!\w)(?:" + "|".join(_ws(st) for st in o.stems) + r")[^\W\d_]*",
                                           heading_blank)]
         m = next((m for m in stem_re.finditer(heading_blank)
                   if not any(a <= m.start() and m.end() <= b for a, b in longer_az)), None)
@@ -218,8 +223,9 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
             continue
         seen.add(key)
         after = original[m.end():]
-        en_alts = "|".join(re.escape(x) for x in [key, *sorted(_plurals(key))])
-        if not re.match(r"(?:-[^\W\d_]+)?\s*\(\s*(?:" + en_alts + r")[^)\n]*\)", after):
+        en_alts = "|".join(_ws(x) for x in [key, *sorted(_plurals(key))])
+        light = r"(?:\s+(?:et|ver|ol|edil)[^\W\d_]*)?"
+        if not re.match(r"(?:-[^\W\d_]+)?" + light + r"\s*\(\s*(?:" + en_alts + r")[^)]*\)", after):
             issues.append(Issue(_line_of(md, m.start()), "ilk-istifadə",
                                 f"`{md[m.start():m.end()]}` bu fəsildə ilk dəfə işlənir: "
                                 f"ardınca `({t.en})` yazılmalıdır"))
