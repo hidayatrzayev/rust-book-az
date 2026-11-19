@@ -7,7 +7,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | açar söz | keyword |
 | ağıllı göstərici | smart pointer |
 | arqument | argument |
-| associated function (assosiasiyalı funksiya) *(ingiliscə qalır)* | associated function |
+| associated function (əlaqəli funksiya) *(ingiliscə qalır)* | associated function |
 | atribut | attribute |
 | bərpa olunan xəta | recoverable error |
 | bərpa olunmayan xəta | unrecoverable error |

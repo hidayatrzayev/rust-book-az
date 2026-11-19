@@ -43,7 +43,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | struct | struktur | `struct` açar sözü kodda qalır. | təklif |
 | field | sahə | Struktur sahəsi. | təklif |
 | method | metod | | təklif |
-| associated function | —saxlanılır— (assosiasiyalı funksiya) | Rust-a məxsus. Alternativ gloss: *əlaqəli funksiya*. | təklif |
+| associated function | —saxlanılır— (əlaqəli funksiya) | Rust-a məxsus: *associated function (əlaqəli funksiya)*. | təsdiqlənib |
 | enum | —saxlanılır— | Azərbaycan proqramçıları ingiliscə deyir: *enum-un*, *enum-lar*. Alternativ: *sayma tipi*. | təklif |
 | variant | variant | Enum-un variantı. Yazılışı ingiliscə ilə eynidir. | təklif |
 | pattern | şablon | Alternativ: *nümunə*. | təklif |
