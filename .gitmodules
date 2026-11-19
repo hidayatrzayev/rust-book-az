@@ -1,0 +1,4 @@
+[submodule "rustbook-en"]
+	path = rustbook-en
+	url = https://github.com/rust-lang/book.git
+	branch = rust-1.99
