@@ -192,4 +192,4 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | embedded device | embedded qurğu | Alternativ: *daxili sistem qurğusu*. | təklif |
 | Internet of Things (IoT) | Əşyaların İnterneti (IoT) | Mötərizədə ingiliscə abreviatura; *IoT tətbiqləri*. | təsdiqlənib |
 | benchmark | bençmark | Fel: *bençmark etmək*; *bençmark testləri*. `#[bench]` kimi kod dəyişmir. | təsdiqlənib |
-| troubleshooting | problemlərin həlli | 1.1 bölməsinin başlığı. | təklif |
+| troubleshooting | problemlərin aradan qaldırılması | 1.1 bölməsinin başlığı; lövbər `#problemlərin-aradan-qaldırılması`. | təsdiqlənib |

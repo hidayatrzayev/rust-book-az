@@ -120,7 +120,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | paralellik | parallelism |
 | parametr | parameter |
 | private (gizli) *(ingiliscə qalır)* | private |
-| problemlərin həlli | troubleshooting |
+| problemlərin aradan qaldırılması | troubleshooting |
 | production | production |
 | profil | profile |
 | proqramlaşdırma interfeysi (API) | application programming interface (API) |
