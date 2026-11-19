@@ -13,6 +13,7 @@
 
 - Texniki terminlər **yalnız** `GLOSSARY.md`-dən götürülür. Yeni termin lazım olarsa, tərcüməçi onu özü uydurmur: lüğətə `təklif` statuslu sətir əlavə edib insandan soruşur.
 - Terminin **hər fəsildə ilk işləndiyi yerdə** ingiliscə qarşılığı mötərizədə verilir: *sahiblik (ownership)*. Eyni fəsildə sonrakı işlənmələrdə yalnız Azərbaycanca.
+- **Rust-a məxsus terminlər və varlıqlar ingiliscə qalır, Azərbaycanca qarşılığı mötərizədə verilir** (hər fəsildə ilk işlənmədə): *borrow checker (borc yoxlayıcısı)*, *mutable (dəyişə bilən)*. Ümumi proqramlaşdırma terminləri isə Azərbaycanca yazılır, ingiliscəsi mötərizədə: *funksiya (function)*. Hansı terminin hansı qrupa aid olduğunu `GLOSSARY.md` göstərir (`—saxlanılır— (söz)`).
 - Tərcümə olunmayan Rust terminləri (`—saxlanılır—`) ingiliscə qalır, Azərbaycan şəkilçiləri **defislə** yazılır: *trait-in*, *crate-ə*, *enum-lar*.
 - Terminin Azərbaycanca şəkilçi aldığı hallarda (*sahibliyin*, *dəyişənə*) lüğət formasından istifadə edilir.
 
@@ -41,7 +42,7 @@ Kod nümunələrindəki şərhlər (`//`, `///`, `//!`, `/* */`) **tərcümə ol
 
 - Address the reader as *siz*; proper Azerbaijani Latin letters (ə ı ö ü ç ş ğ).
 - Technical terms only from `GLOSSARY.md`; new term → propose a row, never invent silently.
-- English in parentheses on the first use of a term per chapter; later uses Azerbaijani only.
+- General terms: Azerbaijani first, English in parentheses on first use per chapter. Rust-specific terms (borrow checker, ownership, mutable…): English kept, Azerbaijani gloss in parentheses on first use; later uses English only.
 - Terms kept in English take hyphenated suffixes (*trait-in*, *crate-ə*).
 - Never touch code, inline code, directives, `<Listing>` attributes (only `caption` text is translated), link targets (only `#anchor` follows translated headings), `<!-- ignore -->`, ANCHOR lines, `output.txt`.
 - Compiler output stays English; the prose around it is translated. Comments in code listings are translated.

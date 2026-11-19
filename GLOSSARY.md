@@ -7,6 +7,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 - **Status**: `təklif` – Claude-un təklifi, hələ yoxlanılmayıb; `təsdiqlənib` – insan tərəfindən təsdiqlənib.
 - **`—saxlanılır—`** – termin ingiliscə qalır və Azərbaycan şəkilçiləri defislə yazılır (*trait-in*, *crate-ə*).
 - Terminin ilk işləndiyi yerdə (hər fəsildə) ingiliscə qarşılığı mötərizədə verilir: *sahiblik (ownership)*.
+- **Rust-a məxsus terminlər və varlıqlar** ingiliscə qalır, Azərbaycanca qarşılığı mötərizədə verilir (*borrow checker (borc yoxlayıcısı)*). Ümumi proqramlaşdırma terminləri (funksiya, massiv, kompilyator…) Azərbaycanca yazılır.
 - `—saxlanılır— (söz)` – termin ingiliscə qalır, ilk işlənmədə Azərbaycanca qarşılığı mötərizədə verilir: *mutable (dəyişə bilən)*.
 - Eyni yazılışlı terminlər (iterator, variant, test) mötərizəsiz yazılır, çünki ingiliscə ilə eynidir.
 - Kod bloklarında, sətirdaxili kodda və Rust açar sözlərində heç nə dəyişdirilmir.
@@ -17,9 +18,9 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | variable | dəyişən | Hamının işlətdiyi termin. | təklif |
 | mutable | —saxlanılır— (dəyişə bilən) | `mut`. İngiliscə qalır, ilk işlənmədə Azərbaycanca qarşılığı mötərizədə verilir: *mutable (dəyişə bilən)*. | təsdiqlənib |
 | immutable | —saxlanılır— (dəyişə bilməyən) | İngiliscə qalır: *immutable (dəyişə bilməyən)*. Rust-da dəyişənlər defolt olaraq belədir. | təsdiqlənib |
-| mutability | dəyişkənlik | 3-cü fəsil başlığı: "Dəyişənlər və Dəyişkənlik". | təklif |
+| mutability | —saxlanılır— (dəyişə bilmə) | İngiliscə qalır, çünki *mutable*/*immutable* də belədir. 3-cü fəsil başlığı: "Mutability (dəyişə bilmə)". | təklif |
 | constant | sabit | `const`. | təklif |
-| shadowing | kölgələmə | Eyni adlı yeni dəyişənin köhnəsini "kölgədə qoyması". | təklif |
+| shadowing | —saxlanılır— (kölgələmə) | Rust-a məxsus: eyni adlı yeni dəyişənin köhnəsini "kölgədə qoyması". | təklif |
 | function | funksiya | | təklif |
 | parameter | parametr | Funksiya təsvirindəki ad. | təklif |
 | argument | arqument | Funksiyaya verilən real dəyər. | təklif |
@@ -27,22 +28,22 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | statement | bəyanat | `let y = 6;` kimi dəyər qaytarmayan konstruksiya. *ifadə* yalnız expression üçündür. | təsdiqlənib |
 | expression | ifadə | Dəyər qaytaran konstruksiya. | təklif |
 | value | dəyər | | təklif |
-| ownership | sahiblik | Rust-ın əsas anlayışı. | təklif |
+| ownership | —saxlanılır— (sahiblik) | Rust-a məxsus anlayış: *ownership (sahiblik)*. | təklif |
 | move | ötürmə | *Köçürmə* seçilmədi, çünki Azərbaycan IT dilində "copy" mənasında da işlənir. Alternativ: *daşıma*. | təklif |
 | clone | klonlama | `clone` metodu. | təklif |
 | copy | kopyalama | `Copy` trait-i; *klonlama*-dan fərqli anlayışdır. | təklif |
 | drop | drop | `Drop` trait-i və `drop` funksiyası adlarıdır; anlayış kimi də ingiliscə işlədilir. Alternativ: *təmizləmə*. | təklif |
-| borrowing | borc alma | Qeyri-müəyyən. Alternativ: *borc götürmə*. | təklif |
-| borrow checker | borc yoxlayıcısı | Alternativ: ingiliscə saxlamaq (*borrow checker-in*). | təklif |
+| borrowing | —saxlanılır— (borc alma) | Rust-a məxsus anlayış. Alternativ gloss: *borc götürmə*. | təklif |
+| borrow checker | —saxlanılır— (borc yoxlayıcısı) | Rust-a məxsus: *borrow checker (borc yoxlayıcısı)*. | təsdiqlənib |
 | reference | istinad | Alternativ: *referans*. Göstərici (pointer) ilə qarışdırılmamalıdır. | təklif |
-| mutable reference | dəyişkən istinad | | təklif |
-| dangling reference | sallanan istinad | Boşalmış yaddaşa işarə edən istinad. Alternativ: *etibarsız istinad*. | təklif |
+| mutable reference | —saxlanılır— (dəyişə bilən istinad) | Rust-a məxsus; *mutable (dəyişə bilən)* ilə uyğundur. | təklif |
+| dangling reference | —saxlanılır— (sallanan istinad) | Boşalmış yaddaşa işarə edən istinad. Alternativ gloss: *etibarsız istinad*. | təklif |
 | slice | dilim | Python-un Azərbaycanca sənədlərindəki "dilimləmə" ilə üst-üstə düşür. | təklif |
 | string | sətir | `String` və `&str` tipləri kodda olduğu kimi qalır. | təklif |
 | struct | struktur | `struct` açar sözü kodda qalır. | təklif |
 | field | sahə | Struktur sahəsi. | təklif |
 | method | metod | | təklif |
-| associated function | assosiasiyalı funksiya | Qeyri-müəyyən. Alternativ: *əlaqəli funksiya*. | təklif |
+| associated function | —saxlanılır— (assosiasiyalı funksiya) | Rust-a məxsus. Alternativ gloss: *əlaqəli funksiya*. | təklif |
 | enum | —saxlanılır— | Azərbaycan proqramçıları ingiliscə deyir: *enum-un*, *enum-lar*. Alternativ: *sayma tipi*. | təklif |
 | variant | variant | Enum-un variantı. Yazılışı ingiliscə ilə eynidir. | təklif |
 | pattern | şablon | Alternativ: *nümunə*. | təklif |
@@ -63,8 +64,8 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | panic | panika | | təklif |
 | generic | generik | Alternativ: *ümumiləşdirilmiş*. | təklif |
 | trait | —saxlanılır— | Dizayn sənədində nümunə kimi göstərilib: *trait-in*. | təklif |
-| trait bound | trait məhdudiyyəti | | təklif |
-| lifetime | ömür müddəti | Alternativ: ingiliscə saxlamaq. | təklif |
+| trait bound | —saxlanılır— (trait məhdudiyyəti) | Rust-a məxsus. | təklif |
+| lifetime | —saxlanılır— (ömür müddəti) | Rust-a məxsus; `'a` kimi annotasiyalar kodda qalır. | təklif |
 | closure | qapanma | Qeyri-müəyyən. Türk tərcüməsinin əsas problemi bu termindəki dəyişkənlik idi, ona görə bir qarşılıq seçilməlidir. Alternativ: ingiliscə saxlamaq (*closure-ın*). | təklif |
 | iterator | iterator | Yazılışı ingiliscə ilə eynidir. | təklif |
 | smart pointer | ağıllı göstərici | | təklif |

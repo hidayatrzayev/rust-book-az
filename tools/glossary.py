@@ -143,7 +143,7 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
     chapter (updated in place), so the first-use rule is per chapter, not per file."""
     seen = set() if seen is None else seen
     issues: list[Issue] = []
-    en_terms = {fold(t.en) for t in terms}
+    en_terms = {fold(t.en) for t in terms} | {fold(t.gloss) for t in terms if t.gloss}
     masked = mask_protected(md, en_terms)
     folded = fold(masked)
     original = fold(md)
@@ -162,7 +162,10 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
             # (c') kept term with a gloss: first use gets the Azerbaijani word in parentheses
             key = fold(t.en)
             if t.gloss and key not in seen:
-                first = re.search(r"(?<!\w)" + re.escape(key) + r"(?:-[^\W\d_]+)?(?!\w)", heading_blank)
+                longer = [m.span() for o in terms if o.keep_english and fold(o.en) != key and key in fold(o.en)
+                          for m in re.finditer(r"(?<!\w)" + re.escape(fold(o.en)) + r"(?!\w)", heading_blank)]
+                first = next((m for m in re.finditer(r"(?<!\w)" + re.escape(key) + r"(?:-[^\W\d_]+)?(?!\w)", heading_blank)
+                              if not any(a <= m.start() and m.end() <= b for a, b in longer)), None)
                 if first:
                     seen.add(key)
                     if not re.match(r"\s*\(\s*" + re.escape(fold(t.gloss)) + r"[^)\n]*\)", original[first.end():]):
@@ -173,7 +176,11 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
         if fold(t.az) == fold(t.en):
             continue  # same spelling in both languages (iterator, variant, test): nothing to check
         # (a) English term left in prose
+        longer_kept = [m.span() for o in terms if o.keep_english and fold(t.en) in fold(o.en) and fold(o.en) != fold(t.en)
+                       for m in re.finditer(r"(?<!\w)" + re.escape(fold(o.en)) + r"(?!\w)", folded)]
         for m in _en_regex(t.en).finditer(folded):
+            if any(a <= m.start() and m.end() <= b for a, b in longer_kept):
+                continue  # part of a longer term kept in English (reference in "mutable reference")
             issues.append(Issue(_line_of(md, m.start()), "ingilis",
                                 f"`{md[m.start():m.end()]}` tərcümə olunmalıdır: `{t.az}`"))
         # (c) first use of the Azerbaijani term needs the English in parentheses

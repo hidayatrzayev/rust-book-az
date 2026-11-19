@@ -120,3 +120,19 @@ def test_kept_term_with_gloss_first_use():
 def test_parse_gloss():
     t = parse_glossary("| mutable | —saxlanılır— (dəyişkən) | n | təklif |\n")[0]
     assert (t.keep_english, t.gloss, t.az) == (True, "dəyişkən", "mutable")
+
+
+def test_kept_multiword_term_with_gloss_and_nested_terms():
+    terms = [
+        Term("mutable", "", keep_english=True, gloss="dəyişə bilən"),
+        Term("mutable reference", "", keep_english=True, gloss="dəyişə bilən istinad"),
+        Term("reference", "istinad"),
+    ]
+    k = lambda md: [i.kind for i in lint(md, terms)]
+    # the nested word "mutable" inside the longer term is not a separate first use,
+    # and the gloss text "istinad" is not a use of `reference`
+    assert k("Bu mutable reference (dəyişə bilən istinad) deməkdir.") == []
+    assert k("Bu mutable reference deməkdir.") == ["ilk-istifadə"]
+    # later a standalone `mutable` is its own first use
+    assert k("Bu mutable reference (dəyişə bilən istinad) və mutable (dəyişə bilən) dəyişən.") == []
+    assert k("Bu mutable reference (dəyişə bilən istinad) və mutable dəyişən.") == ["ilk-istifadə"]

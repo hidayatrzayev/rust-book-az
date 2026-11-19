@@ -26,8 +26,10 @@ edit it). Target: `rustbook-az/src/<file>.md` (same file name; it starts as a co
 4. **Terms**: every technical term comes from `GLOSSARY.md`, one rendering only. If you need a term that
    is not there, **stop and propose a new row** (status `təklif`) to the human; never invent a rendering
    silently, and do not translate the passage until it is decided.
-5. **First use per chapter**: write the English in parentheses, *sahiblik (ownership)*; later uses in the
-   same chapter are Azerbaijani only. Terms marked `—saxlanılır—` stay English with a hyphenated suffix: *trait-in*, *crate-ə*.
+5. **First use per chapter**: general terms are Azerbaijani with the English in parentheses, *funksiya (function)*;
+   later uses Azerbaijani only. Rust-specific terms (glossary notation `—saxlanılır— (söz)`) are the reverse:
+   English stays and the Azerbaijani gloss goes in parentheses on first use, *borrow checker (borc yoxlayıcısı)*;
+   later uses English only. Terms marked `—saxlanılır—` stay English with a hyphenated suffix: *trait-in*, *crate-ə*.
 6. **Headings and anchors**: headings are translated, so mdBook anchors change. Update every `#anchor`
    link to a translated heading (in this file and in others) to the new anchor.
 7. **Listing comments**: translate `//`, `///`, `//!`, `/* */` comments in the chapter's listings in

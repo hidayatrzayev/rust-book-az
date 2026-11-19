@@ -7,19 +7,18 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | açar söz | keyword |
 | ağıllı göstərici | smart pointer |
 | arqument | argument |
-| assosiasiyalı funksiya | associated function |
+| associated function (assosiasiyalı funksiya) *(ingiliscə qalır)* | associated function |
 | atribut | attribute |
 | bərpa olunan xəta | recoverable error |
 | bərpa olunmayan xəta | unrecoverable error |
 | bəyanat | statement |
-| borc alma | borrowing |
-| borc yoxlayıcısı | borrow checker |
+| borrowing (borc alma) *(ingiliscə qalır)* | borrowing |
+| borrow checker (borc yoxlayıcısı) *(ingiliscə qalır)* | borrow checker |
 | budaq | branch |
 | crate *(ingiliscə qalır)* | crate |
+| dangling reference (sallanan istinad) *(ingiliscə qalır)* | dangling reference |
 | dəyər | value |
 | dəyişən | variable |
-| dəyişkənlik | mutability |
-| dəyişkən istinad | mutable reference |
 | dilim | slice |
 | direktoriya | directory |
 | dövr | loop |
@@ -41,25 +40,26 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | kompilyator | compiler |
 | kopyalama | copy |
 | kortej | tuple |
-| kölgələmə | shadowing |
 | qapanma | closure |
 | qaytarılan dəyər | return value |
+| lifetime (ömür müddəti) *(ingiliscə qalır)* | lifetime |
 | makro | macro |
 | massiv | array |
 | match *(ingiliscə qalır)* | match |
 | metod | method |
 | modul | module |
+| mutability (dəyişə bilmə) *(ingiliscə qalır)* | mutability |
 | mutable (dəyişə bilən) *(ingiliscə qalır)* | mutable |
-| ömür müddəti | lifetime |
+| mutable reference (dəyişə bilən istinad) *(ingiliscə qalır)* | mutable reference |
+| ownership (sahiblik) *(ingiliscə qalır)* | ownership |
 | ötürmə | move |
 | paket | package |
 | panika | panic |
 | parametr | parameter |
 | sabit | constant |
 | sahə | field |
-| sahiblik | ownership |
-| sallanan istinad | dangling reference |
 | sətir | string |
+| shadowing (kölgələmə) *(ingiliscə qalır)* | shadowing |
 | stek | stack |
 | struktur | struct |
 | şablon | pattern |
@@ -70,7 +70,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | thread *(ingiliscə qalır)* | thread |
 | tip | type |
 | trait *(ingiliscə qalır)* | trait |
-| trait məhdudiyyəti | trait bound |
+| trait bound (trait məhdudiyyəti) *(ingiliscə qalır)* | trait bound |
 | üzən nöqtəli ədəd | floating-point number |
 | variant | variant |
 | vektor | vector |
