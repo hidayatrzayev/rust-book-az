@@ -47,7 +47,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | enum | —saxlanılır— | Azərbaycan proqramçıları ingiliscə deyir: *enum-un*, *enum-lar*. Alternativ: *sayma tipi*. | təklif |
 | variant | variant | Enum-un variantı. Yazılışı ingiliscə ilə eynidir. | təklif |
 | pattern | şablon | Alternativ: *nümunə*. | təklif |
-| pattern matching | şablonla uyğunlaşdırma | | təklif |
+| pattern matching | şablon uyğunlaşdırması | *şablon* (pattern) sözü ilə uyğundur. | təsdiqlənib |
 | match | —saxlanılır— | `match` açar sözü: *match ifadəsi*. | təklif |
 | crate | —saxlanılır— | Dizayn sənədində nümunə kimi göstərilib: *crate-ə*. | təklif |
 | package | paket | Cargo paketi. | təklif |
