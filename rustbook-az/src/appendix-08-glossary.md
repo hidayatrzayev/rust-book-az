@@ -26,7 +26,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | enum *(ingiliscə qalır)* | enum |
 | əhatə dairəsi | scope |
 | funksiya | function |
-| generik | generic |
+| generic *(ingiliscə qalır)* | generic |
 | heap *(ingiliscə qalır)* | heap |
 | heş cədvəli | hash map |
 | xəta | error |
