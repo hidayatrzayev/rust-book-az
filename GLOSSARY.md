@@ -116,7 +116,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | integrated development environment (IDE) | inteqrasiya olunmuş inkişaf mühiti (IDE) | İlk dəfədən sonra sadəcə *IDE*. | təklif |
 | shell | —saxlanılır— | *shell-də*. Kitab *terminal* və *shell* sözlərini yanaşı işlədir; *terminal* yazılışı eynidir. | təklif |
 | linker | —saxlanılır— | Alternativ: *əlaqələndirici* (akademik səslənir). | təklif |
-| flag | —saxlanılır— | `--offline` flag-i. Alternativ: *bayraq*. | təklif |
+| flag | —saxlanılır— (bayraq) | Komanda sətri flag-i: `--vcs` flag-i, `--release` flag-i ilə. | təsdiqlənib |
 | Rustacean | —saxlanılır— | Rust icmasının özünə verdiyi zarafatyana ad: *Rustacean-lar*. | təklif |
 | version control system | versiya nəzarəti sistemi | | təklif |
 | repository | repozitoriya | README-də artıq işlədilib. | təklif |

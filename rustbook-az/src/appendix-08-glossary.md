@@ -38,7 +38,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | enum *(ingiliscə qalır)* | enum |
 | əhatə dairəsi | scope |
 | əvvəlcədən kompilyasiya olunan | ahead-of-time compiled |
-| flag *(ingiliscə qalır)* | flag |
+| flag (bayraq) *(ingiliscə qalır)* | flag |
 | funksional proqramlaşdırma | functional programming |
 | funksiya | function |
 | funksiyanın gövdəsi | function body |
