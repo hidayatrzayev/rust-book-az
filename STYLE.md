@@ -8,6 +8,7 @@
 - Müasir Azərbaycan latın əlifbası: ə, ı, ö, ü, ç, ş, ğ hərfləri həmişə düzgün yazılır (`e`, `i`, `o`, `u`, `c`, `s`, `g` ilə əvəz edilmir).
 - Cümlələr Azərbaycan dilinin sözsırasına uyğun qurulur (xəbər sonda), ingilis cümlə quruluşu hərfi köçürülmür.
 - Eyni mənalı ifadə bütün fəsillərdə eyni cür tərcümə olunur.
+- Kitabın adı mətndə *Rust Proqramlaşdırma Dili* yazılır. İngiliscə *The Rust Programming Language* yalnız çap olunmuş ingiliscə nəşrdən (No Starch Press) danışılanda saxlanılır.
 - **Proqramçıların gündəlik dilinə üstünlük verilir**, formal ədəbi dilə yox: *data strukturu* (*verilənlər strukturu* yox), *direktoriya* (*qovluq* yox), *optimizasiya* (*optimallaşdırma* yox). Yeni termin təklif edərkən developerlərin real danışıqda işlətdiyi forma seçilir.
 
 ## Terminlər
@@ -48,6 +49,7 @@ Kod nümunələrindəki şərhlər (`//`, `///`, `//!`, `/* */`) **tərcümə ol
 ## English summary
 
 - Address the reader as *siz*; proper Azerbaijani Latin letters (ə ı ö ü ç ş ğ).
+- The book's title in prose is *Rust Proqramlaşdırma Dili*; the English title only when the printed English edition (No Starch Press) is meant.
 - Prefer developers' everyday Azerbaijani over formal literary language (*data strukturu*, *direktoriya*, *optimizasiya*).
 - Technical terms only from `GLOSSARY.md`; new term → propose a row, never invent silently.
 - General terms: Azerbaijani first, English in parentheses on first use per chapter. Rust-specific terms (borrow checker, ownership, mutable…): English kept, Azerbaijani gloss in parentheses on first use; later uses English only.
