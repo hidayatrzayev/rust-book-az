@@ -145,3 +145,51 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | derivable trait | derive edilə bilən trait | `#[derive]` atributu ilə. | təsdiqlənib |
 | ahead-of-time compiled | əvvəlcədən kompilyasiya olunan | | təsdiqlənib |
 | cache | keş | | təsdiqlənib |
+
+## Yeni təkliflər 2: 1-ci fəsil üçün əlavə terminlər (Task 9)
+
+| English | Azərbaycanca | Qeyd | Status |
+| ------- | ------------ | ---- | ------ |
+| install | quraşdırmaq | *quraşdırma* (installation). *installer* → *quraşdırıcı*. | təklif |
+| uninstall | silmək | "Rust-ı silmək". | təklif |
+| update | yeniləmək | *yeniləmə*. | təklif |
+| download | yükləmək | | təklif |
+| operating system | əməliyyat sistemi | | təklif |
+| documentation | dokumentasiya | Proqramçı dili. Alternativ: *sənədlər*. | təklif |
+| script | skript | | təklif |
+| text editor | mətn redaktoru | | təklif |
+| configuration | konfiqurasiya | *konfiqurasiya faylı*. | təklif |
+| output | çıxış | Proqramın/komandanın çıxışı. STYLE.md-də artıq işlədilib. | təklif |
+| prompt | —saxlanılır— | Komanda sətri prompt-u (`$`). Alternativ: *dəvət*. | təklif |
+| file extension | genişlənmə | *.rs genişlənməsi*. Alternativ: *uzantı*. | təklif |
+| home directory | ev direktoriyası | | təklif |
+| top-level directory | kök direktoriya | Layihənin kök direktoriyası. | təklif |
+| underscore | alt xətt | `_`. | təklif |
+| semicolon | nöqtəli vergül | `;`. | təklif |
+| curly brackets | fiqurlu mötərizələr | `{}`. | təklif |
+| parentheses | mötərizələr | `()`; dəqiqlik lazımdırsa *dairəvi mötərizələr*. | təklif |
+| ecosystem | ekosistem | | təklif |
+| tool | alət | *tooling* → *alətlər*. *build tool* → *build aləti*. | təklif |
+| formatter | formatlama aləti | *format* (fel) → *formatlamaq*. | təklif |
+| code completion | kodun avtomatik tamamlanması | | təklif |
+| developer | developer | Proqramçılar özləri belə deyir: *developer-lər*. *programmer* → *proqramçı*. Alternativ: hər ikisi *proqramçı*. | təklif |
+| software | proqram təminatı | | təklif |
+| production | production | "production-da işlətmək". Alternativ: *real istifadə mühiti*. | təklif |
+| web server | veb server | | təklif |
+| web service | veb servis | | təklif |
+| browser | brauzer | | təklif |
+| multithreaded | çox thread-li | *thread* ilə uyğundur. *single-threaded* → *tək thread-li*. | təklif |
+| async / await | —saxlanılır— | `async`/`await` açar sözləri; anlayış kimi də ingiliscə. *asynchronous programming* → *asinxron proqramlaşdırma*. | təklif |
+| idiom | idiom | Rust idiomları. | təklif |
+| operator | operator | Yazılışı eynidir. | təklif |
+| network | şəbəkə | | təklif |
+| system variable | sistem dəyişəni | `%PATH%`. *environment variable* → *mühit dəyişəni* (12-ci fəsil). | təklif |
+| commit hash | commit heşi | Git commit-i: *commit-in*. | təklif |
+| dynamic language | dinamik dil | Ruby, Python, JavaScript. | təklif |
+| legacy code | köhnə kod | Alternativ: *legacy kod*. | təklif |
+| contribute | töhfə vermək | *contributor* → *töhfə verən*. | təklif |
+| machine learning | maşın öyrənməsi | | təklif |
+| embedded device | embedded qurğu | Alternativ: *daxili sistem qurğusu*. | təklif |
+| Internet of Things | Əşyaların İnterneti | | təklif |
+| benchmark | —saxlanılır— | *benchmark etmək*. Alternativ: *performans ölçümü*. | təklif |
+| troubleshooting | problemlərin həlli | 1.1 bölməsinin başlığı. | təklif |
