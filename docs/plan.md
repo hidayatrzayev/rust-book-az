@@ -130,7 +130,7 @@
 
 > Run Tasks 8–9 on Opus (`claude --model opus`). Tasks 1–7 are fine on Sonnet.
 
-- [ ] Send `GLOSSARY.md` to the user; apply every correction; flip reviewed rows to `təsdiqlənib`. **No chapter is drafted before this.** Commit `docs: glossary reviewed`.
+- [x] Send `GLOSSARY.md` to the user; apply every correction; flip reviewed rows to `təsdiqlənib`. **No chapter is drafted before this.** Commit `docs: glossary reviewed`.
 
 ### Task 9: First sample translation
 
