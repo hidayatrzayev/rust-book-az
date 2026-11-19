@@ -55,7 +55,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | ev direktoriyası | home directory |
 | əhatə dairəsi | scope |
 | əməliyyat sistemi | operating system |
-| Əşyaların İnterneti | Internet of Things |
+| Əşyaların İnterneti (IoT) | Internet of Things (IoT) |
 | əvvəlcədən kompilyasiya olunan | ahead-of-time compiled |
 | fayl genişlənməsi | file extension |
 | fiqurlu mötərizələr | curly brackets |

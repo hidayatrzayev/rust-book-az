@@ -190,6 +190,6 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | contribute | töhfə vermək | *contributor* → *töhfə verən*. | təklif |
 | machine learning | maşın öyrənməsi | | təklif |
 | embedded device | embedded qurğu | Alternativ: *daxili sistem qurğusu*. | təklif |
-| Internet of Things | Əşyaların İnterneti | | təklif |
+| Internet of Things (IoT) | Əşyaların İnterneti (IoT) | Mötərizədə ingiliscə abreviatura; *IoT tətbiqləri*. | təsdiqlənib |
 | benchmark | —saxlanılır— | *benchmark etmək*. Alternativ: *performans ölçümü*. | təklif |
 | troubleshooting | problemlərin həlli | 1.1 bölməsinin başlığı. | təklif |
