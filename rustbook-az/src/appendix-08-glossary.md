@@ -88,10 +88,10 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | kompilyator | compiler |
 | konfiqurasiya | configuration |
 | kopyalama | copy |
-| köhnə kod | legacy code |
 | kök direktoriya | top-level directory |
 | qaytarılan dəyər | return value |
 | quraşdırmaq | install |
+| legacy kod | legacy code |
 | lifetime (ömür müddəti) *(ingiliscə qalır)* | lifetime |
 | linker *(ingiliscə qalır)* | linker |
 | makro | macro |

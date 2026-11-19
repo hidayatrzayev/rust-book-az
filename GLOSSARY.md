@@ -186,7 +186,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | system variable | sistem dəyişəni | `%PATH%`. *environment variable* → *mühit dəyişəni* (12-ci fəsil). | təklif |
 | commit hash | commit heşi | Git commit-i: *commit-in*. | təklif |
 | dynamic language | dinamik proqramlaşdırma dili | Ruby, Python, JavaScript. Adətən tam forma; eyni cümlədə təkrar olunarsa və ya kontekst aydındırsa qısaca *dinamik dil*. | təsdiqlənib |
-| legacy code | köhnə kod | Alternativ: *legacy kod*. | təklif |
+| legacy code | legacy kod | Proqramçı dili: *legacy kodu dəyişmək*. *köhnə kod* sadəcə "əvvəlki versiya" mənasında işlədilə bilər. | təsdiqlənib |
 | contribute | töhfə vermək | *contributor* → *töhfə verən*. | təklif |
 | machine learning | maşın öyrənməsi | | təklif |
 | embedded device | embedded qurğu | Alternativ: *daxili sistem qurğusu*. | təklif |
