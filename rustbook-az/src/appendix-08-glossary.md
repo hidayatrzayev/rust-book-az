@@ -53,7 +53,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | ownership (sahiblik) *(ingiliscə qalır)* | ownership |
 | ötürmə | move |
 | paket | package |
-| panika | panic |
+| panic *(ingiliscə qalır)* | panic |
 | parametr | parameter |
 | sabit | constant |
 | sahə | field |

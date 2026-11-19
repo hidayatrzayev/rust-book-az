@@ -61,7 +61,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | error | xəta | | təklif |
 | recoverable error | bərpa olunan xəta | `Result`. | təklif |
 | unrecoverable error | bərpa olunmayan xəta | `panic!`. | təklif |
-| panic | panika | | təklif |
+| panic | —saxlanılır— | Termin kimi ingiliscə qalır (*panic-lər*, `panic!` makrosu). Mətndə anlayışı izah edərkən adi dildə *panika* sözündən istifadə etmək olar (məs. "proqram panikaya düşür"), amma termin özü *panic* yazılır. | təsdiqlənib |
 | generic | generik | Alternativ: *ümumiləşdirilmiş*. | təklif |
 | trait | —saxlanılır— | Dizayn sənədində nümunə kimi göstərilib: *trait-in*. | təklif |
 | trait bound | —saxlanılır— (trait məhdudiyyəti) | Rust-a məxsus. | təklif |
