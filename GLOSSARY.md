@@ -76,7 +76,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | type | tip | | təklif |
 | integer | tam ədəd | | təklif |
 | floating-point number | üzən nöqtəli ədəd | Alternativ: *həqiqi ədəd*. | təklif |
-| macro | makro | | təklif |
+| macro | makros | `println!`, `vec!` kimi makroların adları kodda qalır. | təsdiqlənib |
 | attribute | atribut | `#[derive(...)]` və s. | təklif |
 | test | test | Yazılışı ingiliscə ilə eynidir. | təklif |
 | keyword | açar söz | | təklif |
