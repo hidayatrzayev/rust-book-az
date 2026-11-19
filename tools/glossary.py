@@ -40,6 +40,7 @@ class Term:
     note: str = ""
     approved: bool = False
     keep_english: bool = False
+    gloss: str = ""  # for kept-English terms: Azerbaijani word given in parentheses on first use
     stems: list[str] = field(default_factory=list)
 
     def __post_init__(self) -> None:
@@ -77,7 +78,9 @@ def parse_glossary(text: str) -> list[Term]:
         if len(cells) < 4 or set("".join(cells)) <= set("-: ") or cells[0].lower() == "english":
             continue
         en, az, note, status = cells[:4]
-        terms.append(Term(en=en, az=az, note=note, approved=status == APPROVED, keep_english=az == KEEP))
+        keep = az.startswith(KEEP)
+        gloss = re.sub(r"^" + re.escape(KEEP) + r"\s*\(?|\)\s*$", "", az).strip() if keep else ""
+        terms.append(Term(en=en, az=az, note=note, approved=status == APPROVED, keep_english=keep, gloss=gloss))
     return terms
 
 
@@ -156,6 +159,16 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
                 issues.append(Issue(_line_of(md, m.start()), "suffiks",
                                     f"`{md[m.start():m.end()]}`: ingilis terminə şəkilçi defislə yazılır "
                                     f"(`{t.en}-{m.group(1)}`)"))
+            # (c') kept term with a gloss: first use gets the Azerbaijani word in parentheses
+            key = fold(t.en)
+            if t.gloss and key not in seen:
+                first = re.search(r"(?<!\w)" + re.escape(key) + r"(?:-[^\W\d_]+)?(?!\w)", heading_blank)
+                if first:
+                    seen.add(key)
+                    if not re.match(r"\s*\(\s*" + re.escape(fold(t.gloss)) + r"[^)\n]*\)", original[first.end():]):
+                        issues.append(Issue(_line_of(md, first.start()), "ilk-istifadə",
+                                            f"`{md[first.start():first.end()]}` bu fəsildə ilk dəfə işlənir: "
+                                            f"ardınca `({t.gloss})` yazılmalıdır"))
             continue
         if fold(t.az) == fold(t.en):
             continue  # same spelling in both languages (iterator, variant, test): nothing to check
@@ -228,7 +241,7 @@ def appendix(terms: list[Term]) -> str:
         "| ------------ | ------- |",
     ]
     for t in rows:
-        az = t.az + (" *(ingiliscə qalır)*" if t.keep_english else "")
+        az = (f"{t.en} ({t.gloss})" if t.gloss else t.az) + (" *(ingiliscə qalır)*" if t.keep_english else "")
         out.append(f"| {az} | {t.en} |")
     return "\n".join(out) + "\n"
 

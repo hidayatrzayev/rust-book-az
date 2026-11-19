@@ -103,3 +103,20 @@ def test_check_flags_collapsed_concepts():
 
 def test_same_spelling_term_not_flagged():
     assert [i.kind for i in lint("Bu iterator işləyir.", [Term("iterator", "iterator")])] == []
+
+
+MUT = [Term("mutable", "", keep_english=True, gloss="dəyişkən"), Term("immutable", "", keep_english=True, gloss="dəyişməz")]
+
+
+def test_kept_term_with_gloss_first_use():
+    k = lambda md: [i.kind for i in lint(md, MUT)]
+    assert k("Dəyişən mutable ola bilər.") == ["ilk-istifadə"]
+    assert k("Dəyişən mutable (dəyişkən) ola bilər. Yenə mutable. Və immutable (dəyişməz) olanlar.") == []
+    assert k("Bu mutable-dır (dəyişkən).") == []
+    assert k("Bu immutable (dəyişməz) və mutable (dəyişkən). Sonra mutable.") == []
+    assert k("Bu mutableın") == ["suffiks"]
+
+
+def test_parse_gloss():
+    t = parse_glossary("| mutable | —saxlanılır— (dəyişkən) | n | təklif |\n")[0]
+    assert (t.keep_english, t.gloss, t.az) == (True, "dəyişkən", "mutable")

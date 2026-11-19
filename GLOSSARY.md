@@ -7,6 +7,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 - **Status**: `təklif` – Claude-un təklifi, hələ yoxlanılmayıb; `təsdiqlənib` – insan tərəfindən təsdiqlənib.
 - **`—saxlanılır—`** – termin ingiliscə qalır və Azərbaycan şəkilçiləri defislə yazılır (*trait-in*, *crate-ə*).
 - Terminin ilk işləndiyi yerdə (hər fəsildə) ingiliscə qarşılığı mötərizədə verilir: *sahiblik (ownership)*.
+- `—saxlanılır— (söz)` – termin ingiliscə qalır, ilk işlənmədə Azərbaycanca qarşılığı mötərizədə verilir: *mutable (dəyişkən)*.
 - Eyni yazılışlı terminlər (iterator, variant, test) mötərizəsiz yazılır, çünki ingiliscə ilə eynidir.
 - Kod bloklarında, sətirdaxili kodda və Rust açar sözlərində heç nə dəyişdirilmir.
 - `Qeyd` sütununda qeyri-müəyyən yerlər və alternativlər göstərilir.
@@ -14,8 +15,8 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | English | Azərbaycanca | Qeyd | Status |
 | ------- | ------------ | ---- | ------ |
 | variable | dəyişən | Hamının işlətdiyi termin. | təklif |
-| mutable | dəyişkən | `mut`. *Dəyişən* ilə çox oxşardır, qarışıqlıq ola bilər. Alternativ: *dəyişdirilə bilən*. | təklif |
-| immutable | dəyişməz | Rust-da dəyişənlər defolt olaraq belədir. | təklif |
+| mutable | —saxlanılır— (dəyişkən) | `mut`. İngiliscə qalır, ilk işlənmədə Azərbaycanca qarşılığı mötərizədə verilir: *mutable (dəyişkən)*. | təsdiqlənib |
+| immutable | —saxlanılır— (dəyişməz) | İngiliscə qalır: *immutable (dəyişməz)*. Rust-da dəyişənlər defolt olaraq belədir. | təsdiqlənib |
 | mutability | dəyişkənlik | 3-cü fəsil başlığı: "Dəyişənlər və Dəyişkənlik". | təklif |
 | constant | sabit | `const`. | təklif |
 | shadowing | kölgələmə | Eyni adlı yeni dəyişənin köhnəsini "kölgədə qoyması". | təklif |
