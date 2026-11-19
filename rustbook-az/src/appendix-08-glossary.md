@@ -32,7 +32,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | heş cədvəli | hash map |
 | xəta | error |
 | ifadə | expression |
-| immutable (dəyişməz) *(ingiliscə qalır)* | immutable |
+| immutable (dəyişə bilməyən) *(ingiliscə qalır)* | immutable |
 | istinad | reference |
 | iterator | iterator |
 | kitabxana | library |
@@ -49,7 +49,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | match *(ingiliscə qalır)* | match |
 | metod | method |
 | modul | module |
-| mutable (dəyişkən) *(ingiliscə qalır)* | mutable |
+| mutable (dəyişə bilən) *(ingiliscə qalır)* | mutable |
 | ömür müddəti | lifetime |
 | ötürmə | move |
 | paket | package |
