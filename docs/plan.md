@@ -107,7 +107,7 @@
 **Interfaces:**
 - `TRANSLATION_STATUS.md` table: `| Fayl | Status | İngiliscə commit |`, Status ∈ `başlanmayıb` / `qaralama` / `yoxlanılıb` (not started / draft / reviewed); one row per `src/*.md`.
 - Produces: CLI `python tools/status.py` prints counts per status and lists `KÖHNƏLİB` (outdated) files whose recorded commit ≠ latest commit touching that English file in the submodule (`git -C rustbook-en log -1 --format=%H -- src/<file>`); `python tools/status.py set <file> <status>` updates the row and stamps the current commit.
-- [ ] **Steps:** tests `test_outdated_detected`, `test_set_stamps_commit` (temp git repo fixture) → FAIL → implement → PASS → generate initial file (all `başlanmayıb`) → commit `feat: translation status tracking`.
+- [x] **Steps:** tests `test_outdated_detected`, `test_set_stamps_commit` (temp git repo fixture) → FAIL → implement → PASS → generate initial file (all `başlanmayıb`) → commit `feat: translation status tracking`.
 
 ### Task 6: Claude Code setup and style guide
 
