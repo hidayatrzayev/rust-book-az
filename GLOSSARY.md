@@ -37,7 +37,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | borrow checker | —saxlanılır— (borc yoxlayıcısı) | Rust-a məxsus: *borrow checker (borc yoxlayıcısı)*. | təsdiqlənib |
 | reference | istinad | Alternativ: *referans*. Göstərici (pointer) ilə qarışdırılmamalıdır. | təklif |
 | mutable reference | —saxlanılır— (dəyişə bilən istinad) | Rust-a məxsus; *mutable (dəyişə bilən)* ilə uyğundur. | təklif |
-| dangling reference | —saxlanılır— (sallanan istinad) | Boşalmış yaddaşa işarə edən istinad. Alternativ gloss: *etibarsız istinad*. | təklif |
+| dangling reference | —saxlanılır— (boşda qalan istinad) | Rust-a məxsus: *dangling reference (boşda qalan istinad)*. Boşalmış yaddaşa işarə edən istinad. | təsdiqlənib |
 | slice | dilim | Python-un Azərbaycanca sənədlərindəki "dilimləmə" ilə üst-üstə düşür. | təklif |
 | string | sətir | `String` və `&str` tipləri kodda olduğu kimi qalır. | təklif |
 | struct | struktur | `struct` açar sözü kodda qalır. | təklif |

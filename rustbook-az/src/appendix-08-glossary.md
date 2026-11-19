@@ -16,7 +16,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | borrow checker (borc yoxlayıcısı) *(ingiliscə qalır)* | borrow checker |
 | budaq | branch |
 | crate *(ingiliscə qalır)* | crate |
-| dangling reference (sallanan istinad) *(ingiliscə qalır)* | dangling reference |
+| dangling reference (boşda qalan istinad) *(ingiliscə qalır)* | dangling reference |
 | dəyər | value |
 | dəyişən | variable |
 | dilim | slice |
