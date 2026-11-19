@@ -28,7 +28,7 @@ indi Rust Foundation tərəfindən güclü şəkildə dəstəklənir; fond həm�
 təhlükəsiz, stabil və davamlı olmasını təmin edən əsas təşəbbüslərə
 investisiya qoyur.
 
-*The Rust Programming Language* kitabının bu nəşri dilin illər ərzindəki
+*Rust Proqramlaşdırma Dili* kitabının bu nəşri dilin illər ərzindəki
 inkişafını əks etdirən və faydalı yeni məlumatlar verən, əsaslı şəkildə yenidən
 işlənmiş versiyadır. Lakin bu, sadəcə sintaksis və kitabxanalar üzrə bələdçi deyil, həm də keyfiyyətə, performansa və düşünülmüş
 dizayna önəm verən icmaya qoşulmaq üçün dəvətdir. İstər Rust-ı ilk dəfə kəşf

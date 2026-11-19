@@ -7,7 +7,7 @@
 [nsprust]: https://nostarch.com/rust-programming-language-3rd-edition
 [nsp]: https://nostarch.com/
 
-Rust haqqında giriş kitabı olan _The Rust Programming Language_ kitabına xoş
+Rust haqqında giriş kitabı olan _Rust Proqramlaşdırma Dili_ kitabına xoş
 gəlmisiniz. Rust proqramlaşdırma dili daha sürətli və daha etibarlı proqram
 təminatı (software) yazmağınıza kömək edir. Proqramlaşdırma dillərinin
 dizaynında yüksək səviyyəli erqonomika ilə aşağı səviyyəli (low-level)
