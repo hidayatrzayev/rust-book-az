@@ -153,3 +153,19 @@ def test_short_term_inside_longer_az_term_not_first_use():
     assert lint(md, terms) == []
     issues = lint("Xəta mesajları (error messages) faydalıdır. Sonra xəta baş verir.", terms)
     assert [(i.kind, i.message.split("`")[1]) for i in issues] == [("ilk-istifadə", "xəta")]
+
+
+def test_plural_english_and_hyphen_suffix_in_first_use():
+    terms = [Term("library", "kitabxana"), Term("derivable trait", "derive edilə bilən trait")]
+    assert lint("Kitabxanalar (libraries) var.", terms) == []
+    assert lint("derive edilə bilən trait-lər (derivable traits) var.", terms) == []
+
+
+def test_paths_in_prose_not_flagged_as_english():
+    assert lint("Fayl _target/release_ direktoriyasındadır.", [Term("release", "reliz")]) == []
+
+
+def test_vowel_dropping_stem():
+    assert "sətr" in Term("string", "sətir").stems
+    issues = lint("Bu sətri (string) çap edin.", [Term("string", "sətir")])
+    assert issues == []

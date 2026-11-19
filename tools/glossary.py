@@ -62,6 +62,10 @@ class Term:
         m = re.match(r"^(.+ \w+?)s?[ıiuü]$", base)
         if m and len(m.group(1).split()[-1]) >= 3:
             self.stems.append(m.group(1))
+        # Vowel drop before a vowel suffix: sətir → sətri, fikir → fikri.
+        m = re.match(r"^(\w{2,})[ıiuü]([^\Waeıioöuüə\d_])$", base)
+        if m and " " not in base:
+            self.stems.append(m.group(1) + m.group(2))
         if base.endswith("k"):
             self.stems.append(base[:-1] + "y")
         elif base.endswith("q"):
@@ -124,6 +128,7 @@ def mask_protected(md: str, en_terms: set[str]) -> str:
         text = re.sub(r"\]\([^)]*\)", lambda m: "]" + " " * (len(m.group(0)) - 1), text)
         text = re.sub(r"^([ \t>]*\[[^\]]+\]:).*$", lambda m: m.group(1) + " " * (len(m.group(0)) - len(m.group(1))), text, flags=re.M)
         text = re.sub(r"https?://\S+", _blank, text)
+        text = re.sub(r"[\w.~-]*[/\\][\w./\\~-]*", _blank, text)  # file paths: target/release
         text = re.sub(r'(?:number|file-name)="[^"]*"', _blank, text)
         text = re.sub(r"<[^>\n]+>", _blank, text)
         text = re.sub(r"\(([^()\n]+)\)", lambda m: _blank(m) if _is_en_term(m.group(1), en_terms) else m.group(0), text)
@@ -213,7 +218,8 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None) -> list[Issue
             continue
         seen.add(key)
         after = original[m.end():]
-        if not re.match(r"\s*\(\s*" + re.escape(key) + r"[^)\n]*\)", after):
+        en_alts = "|".join(re.escape(x) for x in [key, *sorted(_plurals(key))])
+        if not re.match(r"(?:-[^\W\d_]+)?\s*\(\s*(?:" + en_alts + r")[^)\n]*\)", after):
             issues.append(Issue(_line_of(md, m.start()), "ilk-istifadə",
                                 f"`{md[m.start():m.end()]}` bu fəsildə ilk dəfə işlənir: "
                                 f"ardınca `({t.en})` yazılmalıdır"))
