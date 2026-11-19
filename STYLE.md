@@ -18,7 +18,7 @@
 - **Gündəlik sözlər** (`GLOSSARY.md`-də Qeyd sütununda `[gündəlik]` işarəsi olanlar: quraşdırmaq, brauzer, mötərizələr…) mötərizəsiz yazılır, ilk işlənmədə də. Mötərizə yalnız oxucuya həqiqətən faydalı olduqda, yəni texniki terminlər üçün yazılır.
 - **Titul səhifəsi və ön söz** (`title-page.md`, `foreword.md`) texniki mətn deyil: orada heç bir terminə mötərizə yazılmır.
 - **Rust-a məxsus terminlər və varlıqlar ingiliscə qalır, Azərbaycanca qarşılığı mötərizədə verilir** (hər fəsildə ilk işlənmədə): *borrow checker (borc yoxlayıcısı)*, *mutable (dəyişə bilən)*. Ümumi proqramlaşdırma terminləri isə Azərbaycanca yazılır, ingiliscəsi mötərizədə: *funksiya (function)*. Hansı terminin hansı qrupa aid olduğunu `GLOSSARY.md` göstərir (`—saxlanılır— (söz)`).
-- Tərcümə olunmayan Rust terminləri (`—saxlanılır—`) ingiliscə qalır, Azərbaycan şəkilçiləri **defislə** yazılır: *trait-in*, *crate-ə*, *enum-lar*.
+- Tərcümə olunmayan Rust terminləri (`—saxlanılır—`) ingiliscə qalır, Azərbaycan şəkilçiləri **defislə** yazılır: *trait-in*, *crate-ə*, *enum-lar*. Şəkilçi sözün **ingiliscə tələffüzünə** görə seçilir: *code review-su* ("rivyu"), *closure-ı* ("kloujer"), *crate-i* ("kreyt").
 - Terminin Azərbaycanca şəkilçi aldığı hallarda (*sahibliyin*, *dəyişənə*) lüğət formasından istifadə edilir.
 
 ## Toxunulmaz hissələr
@@ -54,7 +54,7 @@ Kod nümunələrindəki şərhlər (`//`, `///`, `//!`, `/* */`) **tərcümə ol
 - Technical terms only from `GLOSSARY.md`; new term → propose a row, never invent silently.
 - General terms: Azerbaijani first, English in parentheses on first use per chapter. Rust-specific terms (borrow checker, ownership, mutable…): English kept, Azerbaijani gloss in parentheses on first use; later uses English only.
 - Everyday words (tagged `[gündəlik]` in the glossary's note column) never get English in parentheses; the title page and foreword get no parentheses at all.
-- Terms kept in English take hyphenated suffixes (*trait-in*, *crate-ə*).
+- Terms kept in English take hyphenated suffixes (*trait-in*, *crate-ə*), chosen by the English pronunciation (*code review-su*, *crate-i*).
 - Never touch code, inline code, directives, `<Listing>` attributes (only `caption` text is translated), link targets (only `#anchor` follows translated headings), `<!-- ignore -->`, ANCHOR lines, `output.txt`.
 - Notes: `> Note: ` becomes exactly `> Qeyd: ` (rendered as a note box by `tools/az_note.py`).
 - Compiler output stays English; the prose around it is translated. Comments in code listings are translated.

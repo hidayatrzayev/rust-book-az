@@ -28,7 +28,7 @@ Rust sistem proqramlaşdırması (systems programming) üzrə bilikləri müxtə
 səviyyədə olan böyük developer komandalarının birgə işi üçün məhsuldar alət
 (tool) olduğunu sübut edir. Aşağı səviyyəli kodda müxtəlif incə baqlar (bugs)
 yaranmağa meyllidir; əksər digər dillərdə onları yalnız geniş testlər və
-təcrübəli developerlərin diqqətli code review-u ilə tutmaq olar. Rust-da
+təcrübəli developerlərin diqqətli code review-su ilə tutmaq olar. Rust-da
 kompilyator (compiler) bu çətin tutulan baqları, o cümlədən concurrency (eyni
 vaxtlılıq) ilə bağlı baqları ehtiva edən kodu kompilyasiya etməkdən (compile)
 imtina edərək qapıçı rolunu oynayır. Kompilyatorla birlikdə işləyərək komanda

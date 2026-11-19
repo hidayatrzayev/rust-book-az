@@ -124,7 +124,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | bug | baq | Proqramçı dilində *baq*; *xəta* (error) ilə fərqləndirilir. Alternativ: *səhv*. | təsdiqlənib |
 | error message | xəta mesajı | *warning* → *xəbərdarlıq*. | təsdiqlənib |
 | refactoring | refaktorinq | | təsdiqlənib |
-| code review | —saxlanılır— | *code review-da*, *code review zamanı*. | təsdiqlənib |
+| code review | —saxlanılır— | *code review-su*, *code review-da*, *code review zamanı*. | təsdiqlənib |
 | open source | açıq mənbə | *açıq mənbəli layihələr*. | təsdiqlənib |
 | implementation | realizasiya | Fel: *realizə etmək*. Vacibdir: 5-ci və 10-cu fəsillərdə *implement a trait* → *trait-i realizə etmək*. Alternativ: *implementasiya*. | təsdiqlənib |
 | syntax | sintaksis | | təsdiqlənib |
