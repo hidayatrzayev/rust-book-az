@@ -1,6 +1,6 @@
 # Rust Book Azerbaijani Translation: Getting-Started Implementation Plan
 
-> **For the agent:** work through the tasks in order yourself, in this session (no subagents). Tick each `- [ ]` box as you finish it and commit at the end of each task.
+> **For the agent:** work through the tasks in order yourself, in this session (no subagents). Tick each `- [x]` box as you finish it and commit at the end of each task.
 
 **Goal:** A `hidayatrzayev/rust-book-az` repo that builds the Azerbaijani Rust book with mdBook, enforces glossary/code-safety rules with check scripts, is set up for Claude Code, and contains the reviewed glossary plus a translated foreword, introduction and chapter 1.
 
@@ -39,10 +39,10 @@
 **Interfaces:**
 - Produces: `rustbook-az/` buildable with `mdbook build rustbook-az`; all later tasks diff `rustbook-az/X` against `rustbook-en/X`.
 
-- [ ] **Step 1:** `git init`, add submodule pinned to the commit above, copy `src/`, `listings/`, `ferris.*`, `theme/` from it.
-- [ ] **Step 2:** Write `book.toml` from upstream's, with the constraint values, `git-repository-url = "https://github.com/hidayatrzayev/rust-book-az"`, and preprocessor commands pointing at `../rustbook-en/packages/mdbook-trpl/Cargo.toml`. Drop the `[output.html.redirect]` table.
-- [ ] **Step 3: Verify:** `mdbook build rustbook-az` exits 0; `grep -c "Listing 2-1" rustbook-az/book/ch02-00-guessing-game-tutorial.html` ≥ 1 (listings resolve).
-- [ ] **Step 4: Commit** `chore: skeleton with pinned English source`.
+- [x] **Step 1:** `git init`, add submodule pinned to the commit above, copy `src/`, `listings/`, `ferris.*`, `theme/` from it.
+- [x] **Step 2:** Write `book.toml` from upstream's, with the constraint values, `git-repository-url = "https://github.com/hidayatrzayev/rust-book-az"`, and preprocessor commands pointing at `../rustbook-en/packages/mdbook-trpl/Cargo.toml`. Drop the `[output.html.redirect]` table.
+- [x] **Step 3: Verify:** `mdbook build rustbook-az` exits 0; `grep -c "Listing 2-1" rustbook-az/book/ch02-00-guessing-game-tutorial.html` ≥ 1 (listings resolve).
+- [x] **Step 4: Commit** `chore: skeleton with pinned English source`.
 
 ### Task 2: `tools/check_listings.py`
 
@@ -51,17 +51,17 @@
 **Interfaces:**
 - Produces: `strip_comments(source: str) -> str` (removes `//`, `///`, `//!` comment text and `/* */` blocks but keeps lines starting `// ANCHOR` / `// ANCHOR_END` verbatim; respects string and char literals, raw strings `r#"..."#`); CLI `python tools/check_listings.py [paths...]` (default: all `rustbook-az/listings/**/*.rs`) exits 1 and prints `path:line` on any mismatch between `strip_comments(az)` and `strip_comments(en)`; also byte-compares every non-`.rs` file (incl. `output.txt`, `Cargo.toml`).
 
-- [ ] **Step 1: Failing tests:**
+- [x] **Step 1: Failing tests:**
   - `test_comment_only_change_passes`: en `let x = 5; // five`, az `let x = 5; // beş` → equal after strip.
   - `test_code_change_fails`: `let x = 5;` vs `let x = 6;` → differ.
   - `test_anchor_change_fails`: `// ANCHOR: here` vs `// ANCHOR: burada` → differ.
   - `test_url_in_string_not_comment`: `let u = "http://a"; // c` → strip result contains `"http://a"`.
   - `test_block_and_doc_comments`: `/* a\nb */`, `/// doc`, `//! inner` all stripped.
   - `test_non_rs_file_byte_compare`: differing `output.txt` → reported.
-- [ ] **Step 2:** `pytest tools/tests/test_check_listings.py` → FAIL (module missing).
-- [ ] **Step 3:** Implement with a small char-level scanner (states: code, string, raw string, char, line comment, block comment with nesting).
-- [ ] **Step 4:** Tests PASS; `python tools/check_listings.py` on the untouched copy exits 0.
-- [ ] **Step 5: Commit** `feat: listing comment-only checker`.
+- [x] **Step 2:** `pytest tools/tests/test_check_listings.py` → FAIL (module missing).
+- [x] **Step 3:** Implement with a small char-level scanner (states: code, string, raw string, char, line comment, block comment with nesting).
+- [x] **Step 4:** Tests PASS; `python tools/check_listings.py` on the untouched copy exits 0.
+- [x] **Step 5: Commit** `feat: listing comment-only checker`.
 
 ### Task 3: `tools/check_chapter.py`
 
@@ -72,7 +72,7 @@
 - Produces: `extract_protected(md: str) -> list[tuple[str, str]]` returning ordered `(kind, text)` for kinds `fence` (whole fenced block incl. fence line), `inline_code`, `directive` (`{{#...}}`), `listing_tag` (`<Listing ...>` opening tag), `link_target` (URL/ref part of `[x](y)` and `[x]: y` definitions), `ignore_marker`; `heading_anchors(md: str) -> set[str]` using mdBook's slug rule (lowercase, strip punctuation except `-`/`_`, spaces→`-`, Unicode letters kept); CLI `python tools/check_chapter.py <az.md>...` compares against `rustbook-en/src/<same name>`, exits 1 listing each differing item; also reports `#anchor` links (same file or `other.md#anchor`) whose anchor isn't in that az file's `heading_anchors`.
 - Inline code must match the English file as a multiset (order may change with Azerbaijani word order; count and content may not).
 
-- [ ] **Step 1: Failing tests:**
+- [x] **Step 1: Failing tests:**
   - `test_translated_prose_passes`: only prose and headings changed → no errors.
   - `test_fence_change_fails`: code inside ```` ```rust ```` changed → error.
   - `test_rust_fence_comment_translation_passes`: ```` ```rust ```` block `let x = 5; // five` → `// beş` → no error; same in a ```` ```text ```` block → error.
@@ -80,10 +80,10 @@
   - `test_directive_change_fails`: `{{#rustdoc_include ../listings/a.rs}}` path changed → error.
   - `test_broken_anchor_reported`: az heading `## Sahiblik Nədir?` with link `#what-is-ownership` → error naming the anchor; with `#sahiblik-nədir` → OK.
   - `test_slug_keeps_azerbaijani_letters`: `heading_anchors("## Dəyişənlər və Dəyişkənlik")` == `{"dəyişənlər-və-dəyişkənlik"}`.
-- [ ] **Step 2:** Run → FAIL.
-- [ ] **Step 3:** Implement (line-based fence detection, regex for the rest).
-- [ ] **Step 4:** Tests PASS; `python tools/check_chapter.py rustbook-az/src/*.md` on the untouched copy exits 0.
-- [ ] **Step 5: Commit** `feat: chapter structure checker`.
+- [x] **Step 2:** Run → FAIL.
+- [x] **Step 3:** Implement (line-based fence detection, regex for the rest).
+- [x] **Step 4:** Tests PASS; `python tools/check_chapter.py rustbook-az/src/*.md` on the untouched copy exits 0.
+- [x] **Step 5: Commit** `feat: chapter structure checker`.
 
 ### Task 4: Glossary, lint and generated appendix
 
