@@ -2,7 +2,7 @@ import subprocess
 
 import pytest
 
-from status import STATUSES, init_rows, latest_commit, load_rows, outdated, set_status, write_rows
+from status import STATUSES, init_rows, latest_commit, load_rows, outdated, set_status, translated_rows, write_rows
 
 
 def git(repo, *args):
@@ -86,3 +86,9 @@ def test_init_keeps_existing_rows(en_repo, tmp_path):
     first[0].status = "qaralama"
     again = init_rows(az_src, en_repo, {r.file: r for r in first})
     assert again[0].status == "qaralama"
+
+
+def test_translated_rows_excludes_not_started():
+    rows = [type("R", (), {"file": f, "status": s})() for f, s in
+            (("a.md", "başlanmayıb"), ("b.md", "qaralama"), ("c.md", "yoxlanılıb"))]
+    assert [r.file for r in translated_rows(rows)] == ["b.md", "c.md"]

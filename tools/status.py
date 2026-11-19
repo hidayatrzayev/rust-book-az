@@ -3,6 +3,7 @@
 
     python tools/status.py                      # counts per status + outdated files
     python tools/status.py set <file> <status>  # status: başlanmayıb | qaralama | yoxlanılıb
+    python tools/status.py translated           # paths of files that are not başlanmayıb (used by CI)
     python tools/status.py init                 # add rows for new src/*.md files (keeps existing rows)
 """
 from __future__ import annotations
@@ -76,6 +77,10 @@ def outdated(rows: list, en_repo: Path) -> list:
     return [r for r in rows if r.status != NOT_STARTED and r.commit != latest_commit(en_repo, r.file)]
 
 
+def translated_rows(rows: list) -> list:
+    return [r for r in rows if r.status != NOT_STARTED]
+
+
 def set_status(path: Path, name: str, status: str, en_repo: Path = EN_REPO) -> None:
     if status not in STATUSES:
         raise ValueError(f"status {' | '.join(STATUSES)} olmalıdır, `{status}` yox")
@@ -93,6 +98,9 @@ def main(argv: list[str]) -> int:
         if argv[:1] == ["init"]:
             existing = {r.file: r for r in load_rows(STATUS_PATH)} if STATUS_PATH.exists() else {}
             write_rows(STATUS_PATH, init_rows(AZ_SRC, EN_REPO, existing))
+            return 0
+        if argv[:1] == ["translated"]:
+            print("\n".join(str(AZ_SRC / r.file) for r in translated_rows(load_rows(STATUS_PATH))))
             return 0
         if argv[:1] == ["set"] and len(argv) == 3:
             set_status(STATUS_PATH, argv[1], argv[2])

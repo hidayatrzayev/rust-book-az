@@ -124,7 +124,7 @@
 **Files:** Create `.github/workflows/ci.yml`
 
 - On push/PR: checkout with submodules, install mdBook 0.5.1 (same curl as upstream), `pytest tools`, `check_listings`, `check_chapter` on all az src, `glossary.py lint` on files with status ≠ `başlanmayıb`, `mdbook build rustbook-az`. On push to `main`: deploy `rustbook-az/book` with `actions/upload-pages-artifact` + `actions/deploy-pages`.
-- [ ] **Verify:** `act` not required; validate YAML with `python -c "import yaml,sys;yaml.safe_load(open(sys.argv[1]))" .github/workflows/ci.yml`. **Commit** `ci: build, checks and Pages deploy`.
+- [x] **Verify:** `act` not required; validate YAML with `python -c "import yaml,sys;yaml.safe_load(open(sys.argv[1]))" .github/workflows/ci.yml`. **Commit** `ci: build, checks and Pages deploy`.
 
 ### Task 8: Glossary review gate (human)
 
