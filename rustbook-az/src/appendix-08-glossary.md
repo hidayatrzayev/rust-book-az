@@ -29,7 +29,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | build *(ingiliscə qalır)* | build |
 | buraxılış | edition |
 | closure *(ingiliscə qalır)* | closure |
-| code review *(ingiliscə qalır)* | code review |
 | commit heşi | commit hash |
 | concurrency (eyni vaxtlılıq) *(ingiliscə qalır)* | concurrency |
 | crate *(ingiliscə qalır)* | crate |
@@ -82,6 +81,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | kitabxana | library |
 | klonlama | clone |
 | kodun avtomatik tamamlanması | code completion |
+| kod revyu | code review |
 | kolleksiya | collection |
 | komanda sətri | command line |
 | kompilyasiya etmək | compile |
