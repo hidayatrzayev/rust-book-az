@@ -151,44 +151,44 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | English | Azərbaycanca | Qeyd | Status |
 | ------- | ------------ | ---- | ------ |
 | install | quraşdırmaq | *quraşdırma* (installation), *quraşdırılıb* (installed), *installer* → *quraşdırıcı*. *yükləmək* yalnız download üçündür; ikisi eyni cümlədə ayrı addımlardır. | təsdiqlənib |
-| uninstall | silmək | "Rust-ı silmək". | təklif |
-| update | yeniləmək | *yeniləmə*. | təklif |
+| uninstall | silmək | "Rust-ı silmək". | təsdiqlənib |
+| update | yeniləmək | *yeniləmə*. | təsdiqlənib |
 | download | yükləmək | İnternetdən götürmək: *yükləmə*, *yüklənmiş*. Install mənasında işlədilmir (bax *quraşdırmaq*). | təsdiqlənib |
-| operating system | əməliyyat sistemi | | təklif |
-| documentation | dokumentasiya | Proqramçı dili. Alternativ: *sənədlər*. | təklif |
-| script | skript | | təklif |
-| text editor | mətn redaktoru | | təklif |
-| configuration | konfiqurasiya | *konfiqurasiya faylı*. | təklif |
-| output | çıxış | Proqramın/komandanın çıxışı. STYLE.md-də artıq işlədilib. | təklif |
-| prompt | —saxlanılır— | Komanda sətri prompt-u (`$`). Alternativ: *dəvət*. | təklif |
+| operating system | əməliyyat sistemi | | təsdiqlənib |
+| documentation | dokumentasiya | Proqramçı dili. Alternativ: *sənədlər*. | təsdiqlənib |
+| script | skript | | təsdiqlənib |
+| text editor | mətn redaktoru | | təsdiqlənib |
+| configuration | konfiqurasiya | *konfiqurasiya faylı*. | təsdiqlənib |
+| output | çıxış | Proqramın/komandanın çıxışı. STYLE.md-də artıq işlədilib. | təsdiqlənib |
+| prompt | —saxlanılır— | Komanda sətri prompt-u (`$`). Alternativ: *dəvət*. | təsdiqlənib |
 | file extension | fayl genişlənməsi | Konkret genişlənmədən danışarkən: *.rs genişlənməsi*, *.rs genişlənməli fayl*. | təsdiqlənib |
-| home directory | ev direktoriyası | | təklif |
-| top-level directory | kök direktoriya | Layihənin kök direktoriyası. | təklif |
-| underscore | alt xətt | `_`. | təklif |
-| semicolon | nöqtəli vergül | `;`. | təklif |
-| curly brackets | fiqurlu mötərizələr | `{}`. | təklif |
-| parentheses | mötərizələr | `()`; dəqiqlik lazımdırsa *dairəvi mötərizələr*. | təklif |
-| ecosystem | ekosistem | | təklif |
-| tool | alət | *tooling* → *alətlər*. *build tool* → *build aləti*. | təklif |
-| formatter | formatlama aləti | *format* (fel) → *formatlamaq*. | təklif |
-| code completion | kodun avtomatik tamamlanması | | təklif |
-| developer | developer | Proqramçılar özləri belə deyir: *developer-lər*. *programmer* → *proqramçı*. Alternativ: hər ikisi *proqramçı*. | təklif |
-| software | proqram təminatı | | təklif |
-| production | production | "production-da işlətmək". Alternativ: *real istifadə mühiti*. | təklif |
-| web server | veb server | | təklif |
-| web service | veb servis | | təklif |
-| browser | brauzer | | təklif |
+| home directory | ev direktoriyası | | təsdiqlənib |
+| top-level directory | kök direktoriya | Layihənin kök direktoriyası. | təsdiqlənib |
+| underscore | alt xətt | `_`. | təsdiqlənib |
+| semicolon | nöqtəli vergül | `;`. | təsdiqlənib |
+| curly brackets | fiqurlu mötərizələr | `{}`. | təsdiqlənib |
+| parentheses | mötərizələr | `()`; dəqiqlik lazımdırsa *dairəvi mötərizələr*. | təsdiqlənib |
+| ecosystem | ekosistem | | təsdiqlənib |
+| tool | alət | *tooling* → *alətlər*. *build tool* → *build aləti*. | təsdiqlənib |
+| formatter | formatlama aləti | *format* (fel) → *formatlamaq*. | təsdiqlənib |
+| code completion | kodun avtomatik tamamlanması | | təsdiqlənib |
+| developer | developer | Proqramçılar özləri belə deyir: *developer-lər*. *programmer* → *proqramçı*. Alternativ: hər ikisi *proqramçı*. | təsdiqlənib |
+| software | proqram təminatı | | təsdiqlənib |
+| production | production | "production-da işlətmək". Alternativ: *real istifadə mühiti*. | təsdiqlənib |
+| web server | veb server | | təsdiqlənib |
+| web service | veb servis | | təsdiqlənib |
+| browser | brauzer | | təsdiqlənib |
 | multithreaded | çoxaxınlı | *single-threaded* → *təkaxınlı*. *axın* (thread) ilə uyğundur. | təsdiqlənib |
-| async / await | —saxlanılır— | `async`/`await` açar sözləri; anlayış kimi də ingiliscə. *asynchronous programming* → *asinxron proqramlaşdırma*. | təklif |
-| idiom | idiom | Rust idiomları. | təklif |
-| operator | operator | Yazılışı eynidir. | təklif |
-| network | şəbəkə | | təklif |
-| system variable | sistem dəyişəni | `%PATH%`. *environment variable* → *mühit dəyişəni* (12-ci fəsil). | təklif |
-| commit hash | commit heşi | Git commit-i: *commit-in*. | təklif |
+| async / await | —saxlanılır— | `async`/`await` açar sözləri; anlayış kimi də ingiliscə. *asynchronous programming* → *asinxron proqramlaşdırma*. | təsdiqlənib |
+| idiom | idiom | Rust idiomları. | təsdiqlənib |
+| operator | operator | Yazılışı eynidir. | təsdiqlənib |
+| network | şəbəkə | | təsdiqlənib |
+| system variable | sistem dəyişəni | `%PATH%`. *environment variable* → *mühit dəyişəni* (12-ci fəsil). | təsdiqlənib |
+| commit hash | commit heşi | Git commit-i: *commit-in*. | təsdiqlənib |
 | dynamic language | dinamik proqramlaşdırma dili | Ruby, Python, JavaScript. Adətən tam forma; eyni cümlədə təkrar olunarsa və ya kontekst aydındırsa qısaca *dinamik dil*. | təsdiqlənib |
 | legacy code | legacy kod | Proqramçı dili: *legacy kodu dəyişmək*. *köhnə kod* sadəcə "əvvəlki versiya" mənasında işlədilə bilər. | təsdiqlənib |
-| contribute | töhfə vermək | *contributor* → *töhfə verən*. | təklif |
-| machine learning | maşın öyrənməsi | | təklif |
+| contribute | töhfə vermək | *contributor* → *töhfə verən*. | təsdiqlənib |
+| machine learning | maşın öyrənməsi | | təsdiqlənib |
 | embedded device | daxili qurğu | *daxili qurğular*. *embedded system* → *daxili sistem*. | təsdiqlənib |
 | Internet of Things (IoT) | Əşyaların İnterneti (IoT) | Mötərizədə ingiliscə abreviatura; *IoT tətbiqləri*. | təsdiqlənib |
 | benchmark | bençmark | Fel: *bençmark etmək*; *bençmark testləri*. `#[bench]` kimi kod dəyişmir. | təsdiqlənib |
