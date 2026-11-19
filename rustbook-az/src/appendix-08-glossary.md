@@ -23,6 +23,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | build *(ingiliscə qalır)* | build |
 | buraxılış | edition |
 | closure *(ingiliscə qalır)* | closure |
+| concurrency (eyni vaxtlılıq) *(ingiliscə qalır)* | concurrency |
 | crate *(ingiliscə qalır)* | crate |
 | dangling reference (boşda qalan istinad) *(ingiliscə qalır)* | dangling reference |
 | debug *(ingiliscə qalır)* | debug |
@@ -62,7 +63,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | komanda sətri | command line |
 | kompilyasiya etmək | compile |
 | kompilyator | compiler |
-| konkurentlik | concurrency |
 | kopyalama | copy |
 | qaytarılan dəyər | return value |
 | lifetime (ömür müddəti) *(ingiliscə qalır)* | lifetime |

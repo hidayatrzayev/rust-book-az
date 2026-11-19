@@ -109,7 +109,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | systems programming | sistem proqramlaşdırması | | təklif |
 | low-level | aşağı səviyyəli | *high-level* → *yüksək səviyyəli*. | təklif |
 | zero-cost abstraction | sıfır xərcli abstraksiya | | təklif |
-| concurrency | konkurentlik | Qeyri-müəyyən. 16-cı fəsildə *parallelism* ilə fərqləndirilir. Alternativ: *eyni vaxtlılıq* və ya ingiliscə saxlamaq. | təklif |
+| concurrency | —saxlanılır— (eyni vaxtlılıq) | Proqramçılara tanış termindir; lazım olduqda kontekstdə izah edilir: *concurrency-ni*, *concurrent proqramlaşdırma*. 16-cı fəsildə *paralellik* (parallelism) ilə fərqləndirilir. | təsdiqlənib |
 | parallelism | paralellik | *concurrency*-dən fərqli anlayışdır. | təklif |
 | standard library | standart kitabxana | | təklif |
 | application programming interface (API) | proqramlaşdırma interfeysi (API) | İlk dəfədən sonra sadəcə *API*. | təklif |
