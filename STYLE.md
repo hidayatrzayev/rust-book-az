@@ -1,0 +1,47 @@
+# Tərcümə üslubu / Style guide
+
+*English summary at the bottom.*
+
+## Dil və ünsiyyət tərzi
+
+- Oxucuya **siz** (nəzakətli/cəm forma) ilə müraciət olunur; kitabın səmimi, lakin öyrədici tonu saxlanılır.
+- Müasir Azərbaycan latın əlifbası: ə, ı, ö, ü, ç, ş, ğ hərfləri həmişə düzgün yazılır (`e`, `i`, `o`, `u`, `c`, `s`, `g` ilə əvəz edilmir).
+- Cümlələr Azərbaycan dilinin sözsırasına uyğun qurulur (xəbər sonda), ingilis cümlə quruluşu hərfi köçürülmür.
+- Eyni mənalı ifadə bütün fəsillərdə eyni cür tərcümə olunur.
+
+## Terminlər
+
+- Texniki terminlər **yalnız** `GLOSSARY.md`-dən götürülür. Yeni termin lazım olarsa, tərcüməçi onu özü uydurmur: lüğətə `təklif` statuslu sətir əlavə edib insandan soruşur.
+- Terminin **hər fəsildə ilk işləndiyi yerdə** ingiliscə qarşılığı mötərizədə verilir: *sahiblik (ownership)*. Eyni fəsildə sonrakı işlənmələrdə yalnız Azərbaycanca.
+- Tərcümə olunmayan Rust terminləri (`—saxlanılır—`) ingiliscə qalır, Azərbaycan şəkilçiləri **defislə** yazılır: *trait-in*, *crate-ə*, *enum-lar*.
+- Terminin Azərbaycanca şəkilçi aldığı hallarda (*sahibliyin*, *dəyişənə*) lüğət formasından istifadə edilir.
+
+## Toxunulmaz hissələr
+
+Heç vaxt dəyişdirilmir:
+
+- Kod bloklarının məzmunu, sətirdaxili kod (`` `...` ``), Rust açar sözləri;
+- `{{#include ...}}` və `{{#rustdoc_include ...}}` göstərişləri;
+- `<Listing ...>` teqinin atributları (`number`, `file-name`). **Yalnız `caption` mətni tərcümə olunur**, çünki oxucuya göstərilir;
+- keçid hədəfləri (yalnız `#anchor` hissəsi tərcümə olunmuş başlığa uyğun yenilənir);
+- `<!-- ignore -->` işarələri və `<a id="..."></a>` köhnə başlıq lövbərləri;
+- `// ANCHOR:` / `// ANCHOR_END:` sətirləri və `output.txt` faylları.
+
+Kompilyatorun çıxışı və xəta mesajları kod bloklarında **ingiliscə** qalır (oxucu öz ekranında məhz bunu görəcək); onları izah edən mətn tərcümə olunur.
+
+## Başlıqlar
+
+Başlıqlar tərcümə olunur. mdBook lövbərləri başlıqdan yaradıldığı üçün həmin fəsildəki və digər fəsillərdəki `#lövbər` keçidləri yeni lövbərə uyğun yenilənir. `python tools/check_chapter.py` mövcud olmayan lövbərləri tapır. Başlıqda ingiliscə mötərizə yazılmır (ilk işlənmə qaydası mətn hissəsinə aiddir).
+
+## Kod şərhləri
+
+Kod nümunələrindəki şərhlər (`//`, `///`, `//!`, `/* */`) **tərcümə olunur** və lüğətə uyğun yazılır. Yalnız şərh mətni dəyişir: kod, sətir literalları, identifikatorlar dəyişməz qalır. Şərhlər həm fəsil faylındakı ```` ```rust ```` bloklarında, həm də `rustbook-az/listings/` qovluğundakı `.rs` fayllarında tərcümə olunur. `python tools/check_listings.py` şərhdən başqa hər fərqi tapır.
+
+## English summary
+
+- Address the reader as *siz*; proper Azerbaijani Latin letters (ə ı ö ü ç ş ğ).
+- Technical terms only from `GLOSSARY.md`; new term → propose a row, never invent silently.
+- English in parentheses on the first use of a term per chapter; later uses Azerbaijani only.
+- Terms kept in English take hyphenated suffixes (*trait-in*, *crate-ə*).
+- Never touch code, inline code, directives, `<Listing>` attributes (only `caption` text is translated), link targets (only `#anchor` follows translated headings), `<!-- ignore -->`, ANCHOR lines, `output.txt`.
+- Compiler output stays English; the prose around it is translated. Comments in code listings are translated.

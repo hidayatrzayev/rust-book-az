@@ -117,7 +117,7 @@
 - `SKILL.md` frontmatter: `name: rust-book-az`, `model: opus`, description "Use when translating or reviewing any chapter or listing of the Rust book into Azerbaijani in this repo." Before writing it, check the exact frontmatter format for `model` in the Claude Code skills docs (https://code.claude.com/docs/en/skills.md) and follow it. Body, in order: read `GLOSSARY.md` + `STYLE.md`; translate one file at a time; never touch protected items (list); new term → stop and propose a glossary row (status `təklif`) instead of inventing; translate comments in that chapter's listings; run `check_chapter`, `check_listings`, `glossary lint`, `mdbook build`; set status to `qaralama`; only the human sets `yoxlanılıb`; when the human corrects a term, update `GLOSSARY.md` in the same commit.
 - `CLAUDE.md`: purpose, structure tree, commands (build, serve, tests, checks, status, submodule bump procedure), pointer to the skill.
 - `CLAUDE.md` also states the model split: setup and tooling work runs on Sonnet; glossary work and translation run on Opus (the skill enforces this for translation).
-- [ ] **Verify:** a fresh Claude Code session in the repo lists `rust-book-az` among skills; starting a session with `claude --model sonnet` and invoking the skill switches it to Opus for that work; `pytest tools` passes. **Commit** `docs: Claude Code setup and style guide`.
+- [x] **Verify:** a fresh Claude Code session in the repo lists `rust-book-az` among skills; starting a session with `claude --model sonnet` and invoking the skill switches it to Opus for that work; `pytest tools` passes. **Commit** `docs: Claude Code setup and style guide`.
 
 ### Task 7: CI and GitHub Pages
 
