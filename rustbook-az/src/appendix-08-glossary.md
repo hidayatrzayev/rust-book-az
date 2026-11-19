@@ -42,7 +42,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | kopyalama | copy |
 | qaytarılan dəyər | return value |
 | lifetime (ömür müddəti) *(ingiliscə qalır)* | lifetime |
-| makros | macro |
+| makro | macro |
 | massiv | array |
 | match *(ingiliscə qalır)* | match |
 | metod | method |
