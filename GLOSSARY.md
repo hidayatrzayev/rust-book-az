@@ -69,7 +69,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | closure | —saxlanılır— | Tərcümə olunmur: *closure-lar*, *closure-ın*. Türk tərcüməsində bu termin *kapanma/kapanış/kapama* kimi üç cür verilmişdi; ingiliscə saxlamaq bu problemi aradan qaldırır. | təsdiqlənib |
 | iterator | iterator | Yazılışı ingiliscə ilə eynidir. | təklif |
 | smart pointer | ağıllı göstərici | | təklif |
-| thread | —saxlanılır— | *axın* (stream ilə qarışır) seçilmədi, *iplik* isə praktikada işlənmir: *thread-lər*. | təklif |
+| thread | —saxlanılır— | Tərcümə olunmur: *thread-lər*, *thread-in*. *axın* (stream ilə qarışır) və *iplik* işlənmədiyi üçün seçilmədi. | təsdiqlənib |
 | compiler | kompilyator | | təklif |
 | stack | stek | *heap* ilə qarışmasın (Türk tərcüməsində ikisi də *yığın* idi). Alternativ: *yığın*. | təklif |
 | heap | —saxlanılır— | *stek*-dən fərqli: *heap-də*. Alternativ: *yığın*; seçilsə *stack* üçün *stek* qalır. | təklif |
