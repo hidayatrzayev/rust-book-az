@@ -86,3 +86,62 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | library | kitabxana | | təsdiqlənib |
 | command line | komanda sətri | | təsdiqlənib |
 | directory | direktoriya | Fayl sistemi direktoriyası; ingiliscə "folder" də bu sözlə tərcümə olunur (*qovluq* yox: proqramçılar *direktoriya* deyir). Kitabın bütün mətnində və README-də bu işlədilir. `cd`, `mkdir` kimi əmrlər kodda qalır. | təsdiqlənib |
+
+## Yeni təkliflər: ön söz, giriş və 1-ci fəsil (Task 9)
+
+| English | Azərbaycanca | Qeyd | Status |
+| ------- | ------------ | ---- | ------ |
+| build | —saxlanılır— | Proqramçılar belə deyir: *build etmək*, *debug build-i*, *build sistemi*, *build aləti*. Alternativ: *yığmaq / yığım*. | təklif |
+| compile | kompilyasiya etmək | İsim: *kompilyasiya*. `compiler` → *kompilyator* ilə uyğundur. | təklif |
+| package manager | paket meneceri | Cargo: "Rust-ın paket meneceri və build sistemi". | təklif |
+| dependency | asılılıq | *asılılıqlar*; "kodunuzun asılı olduğu kitabxanalar". | təklif |
+| executable | icra olunan fayl | "binary executable" → *icra olunan binar fayl*. | təklif |
+| binary | binar fayl | Kontekstdə sadəcə *binar*: "binar faylı işə salmaq". Gələcəkdə *binary crate* → *binar crate*. | təklif |
+| source code | mənbə kodu | *source file* → *mənbə faylı*. Alternativ: *qaynaq kodu*. | təklif |
+| release | reliz | *reliz üçün build*, *reliz profili*. "yeni buraxılmış versiya" kimi adi mənada *buraxılış/versiya*. | təklif |
+| debug | —saxlanılır— | *debug build-i*, *debug məlumatı*. Alternativ: *sazlama*. | təklif |
+| optimization | optimallaşdırma | | təklif |
+| profile | profil | Cargo profili: *dev*, *release*. | təklif |
+| stable | stabil | *stabil versiya*. Alternativ: *sabit* (amma *sabit* = constant). | təklif |
+| edition | —saxlanılır— (nəşr) | Rust edition-ı (2015, 2018, 2021, 2024): *edition-ı*. Kitabın nəşri isə adi sözlə *nəşr* yazılır. | təklif |
+| memory | yaddaş | | təklif |
+| memory safety | yaddaş təhlükəsizliyi | | təklif |
+| systems programming | sistem proqramlaşdırması | | təklif |
+| low-level | aşağı səviyyəli | *high-level* → *yüksək səviyyəli*. | təklif |
+| zero-cost abstraction | sıfır xərcli abstraksiya | | təklif |
+| concurrency | konkurentlik | Qeyri-müəyyən. 16-cı fəsildə *parallelism* ilə fərqləndirilir. Alternativ: *eyni vaxtlılıq* və ya ingiliscə saxlamaq. | təklif |
+| parallelism | paralellik | *concurrency*-dən fərqli anlayışdır. | təklif |
+| standard library | standart kitabxana | | təklif |
+| application programming interface (API) | proqramlaşdırma interfeysi (API) | İlk dəfədən sonra sadəcə *API*. | təklif |
+| integrated development environment (IDE) | inteqrasiya olunmuş inkişaf mühiti (IDE) | İlk dəfədən sonra sadəcə *IDE*. | təklif |
+| shell | —saxlanılır— | *shell-də*. Kitab *terminal* və *shell* sözlərini yanaşı işlədir; *terminal* yazılışı eynidir. | təklif |
+| linker | —saxlanılır— | Alternativ: *əlaqələndirici* (akademik səslənir). | təklif |
+| flag | —saxlanılır— | `--offline` flag-i. Alternativ: *bayraq*. | təklif |
+| Rustacean | —saxlanılır— | Rust icmasının özünə verdiyi zarafatyana ad: *Rustacean-lar*. | təklif |
+| version control system | versiya nəzarəti sistemi | | təklif |
+| repository | repozitoriya | README-də artıq işlədilib. | təklif |
+| bug | baq | Proqramçı dilində *baq*; *xəta* (error) ilə fərqləndirilir. Alternativ: *səhv*. | təklif |
+| error message | xəta mesajı | *warning* → *xəbərdarlıq*. | təklif |
+| refactoring | refaktorinq | | təklif |
+| code review | kod icmalı | Alternativ: ingiliscə saxlamaq (*code review*). | təklif |
+| open source | açıq mənbə | *açıq mənbəli layihələr*. | təklif |
+| implementation | realizasiya | Fel: *realizə etmək*. Vacibdir: 5-ci və 10-cu fəsillərdə *implement a trait* → *trait-i realizə etmək*. Alternativ: *implementasiya*. | təklif |
+| syntax | sintaksis | | təklif |
+| declaration | elan | "funksiyanı elan etmək". | təklif |
+| function body | funksiyanın gövdəsi | *gövdə*. | təklif |
+| data structure | verilənlər strukturu | Alternativ: *data strukturu*. | təklif |
+| collection | kolleksiya | | təklif |
+| control flow | idarəetmə axını | | təklif |
+| functional programming | funksional proqramlaşdırma | | təklif |
+| object-oriented programming | obyektyönümlü proqramlaşdırma | | təklif |
+| privacy | məxfilik | 7-ci fəsil: *məxfilik qaydaları*. | təklif |
+| public | —saxlanılır— (açıq) | `pub`. *public API* → *public (açıq) API*. | təklif |
+| private | —saxlanılır— (gizli) | | təklif |
+| future | —saxlanılır— | 17-ci fəsil (`Future` trait-i). Girişdə yalnız adı çəkilir. | təklif |
+| stream | —saxlanılır— | 17-ci fəsil. | təklif |
+| task | —saxlanılır— | 17-ci fəsildə async task. Adi mənada *tapşırıq*. | təklif |
+| unsafe Rust | —saxlanılır— | | təklif |
+| nightly Rust | —saxlanılır— | | təklif |
+| derivable trait | derive edilə bilən trait | `#[derive]` atributu ilə. | təklif |
+| ahead-of-time compiled | əvvəlcədən kompilyasiya olunan | | təklif |
+| cache | keş | | təklif |
