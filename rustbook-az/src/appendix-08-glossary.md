@@ -7,6 +7,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | açar söz | keyword |
 | açıq mənbə | open source |
 | ağıllı göstərici | smart pointer |
+| axın | thread |
 | alət | tool |
 | alt xətt | underscore |
 | arqument | argument |
@@ -33,7 +34,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | concurrency (eyni vaxtlılıq) *(ingiliscə qalır)* | concurrency |
 | crate *(ingiliscə qalır)* | crate |
 | çıxış | output |
-| çox thread-li | multithreaded |
+| çoxaxınlı | multithreaded |
 | dangling reference (boşda qalan istinad) *(ingiliscə qalır)* | dangling reference |
 | data strukturu | data structure |
 | debug *(ingiliscə qalır)* | debug |
@@ -154,7 +155,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | tam ədəd | integer |
 | task *(ingiliscə qalır)* | task |
 | test | test |
-| thread *(ingiliscə qalır)* | thread |
 | tip | type |
 | töhfə vermək | contribute |
 | trait *(ingiliscə qalır)* | trait |

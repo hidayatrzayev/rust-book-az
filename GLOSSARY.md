@@ -69,7 +69,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | closure | —saxlanılır— | Tərcümə olunmur: *closure-lar*, *closure-ın*. Türk tərcüməsində bu termin *kapanma/kapanış/kapama* kimi üç cür verilmişdi; ingiliscə saxlamaq bu problemi aradan qaldırır. | təsdiqlənib |
 | iterator | iterator | Yazılışı ingiliscə ilə eynidir. | təsdiqlənib |
 | smart pointer | ağıllı göstərici | | təsdiqlənib |
-| thread | —saxlanılır— | Tərcümə olunmur: *thread-lər*, *thread-in*. *axın* (stream ilə qarışır) və *iplik* işlənmədiyi üçün seçilmədi. | təsdiqlənib |
+| thread | axın | Ümumi anlayışdır: ilk işlənmədə *axın (thread)*. *main thread* → *əsas axın*, *spawn a thread* → *axın yaratmaq*, *thread pool* → *axın hovuzu*. `thread::spawn` kimi kod dəyişmir. *stream* ingiliscə qaldığı üçün qarışmır; *idarəetmə axını* (control flow) başqa anlayışdır. | təsdiqlənib |
 | compiler | kompilyator | | təsdiqlənib |
 | stack | —saxlanılır— | Tərcümə olunmur: *stack-də*, *stack-dən*. Kontekstdə bunun yaddaşa aid olduğu izah edilir (məs. "yaddaşın stack hissəsi"). *heap* ilə qarışmır (Türk tərcüməsində ikisi də *yığın* idi). | təsdiqlənib |
 | heap | —saxlanılır— | *stack*-dən fərqli: *heap-də*. Kontekstdə yaddaşa aid olduğu izah edilir. | təsdiqlənib |
@@ -138,7 +138,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | public | —saxlanılır— (açıq) | `pub`. *public API* → *public (açıq) API*. | təsdiqlənib |
 | private | —saxlanılır— (gizli) | | təsdiqlənib |
 | future | —saxlanılır— | 17-ci fəsil (`Future` trait-i). Girişdə yalnız adı çəkilir. | təsdiqlənib |
-| stream | —saxlanılır— | 17-ci fəsil. | təsdiqlənib |
+| stream | —saxlanılır— | 17-ci fəsil. *axın* thread üçündür, ona görə stream ingiliscə qalır. | təsdiqlənib |
 | task | —saxlanılır— | 17-ci fəsildə async task. Adi mənada *tapşırıq*. | təsdiqlənib |
 | unsafe Rust | —saxlanılır— | | təsdiqlənib |
 | nightly Rust | —saxlanılır— | | təsdiqlənib |
@@ -178,7 +178,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | web server | veb server | | təklif |
 | web service | veb servis | | təklif |
 | browser | brauzer | | təklif |
-| multithreaded | çox thread-li | *thread* ilə uyğundur. *single-threaded* → *tək thread-li*. | təklif |
+| multithreaded | çoxaxınlı | *single-threaded* → *təkaxınlı*. *axın* (thread) ilə uyğundur. | təsdiqlənib |
 | async / await | —saxlanılır— | `async`/`await` açar sözləri; anlayış kimi də ingiliscə. *asynchronous programming* → *asinxron proqramlaşdırma*. | təklif |
 | idiom | idiom | Rust idiomları. | təklif |
 | operator | operator | Yazılışı eynidir. | təklif |
