@@ -17,7 +17,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | aşağı səviyyəli | low-level |
 | atribut | attribute |
 | baq | bug |
-| benchmark *(ingiliscə qalır)* | benchmark |
+| bençmark | benchmark |
 | bərpa olunan xəta | recoverable error |
 | bərpa olunmayan xəta | unrecoverable error |
 | bəyanat | statement |

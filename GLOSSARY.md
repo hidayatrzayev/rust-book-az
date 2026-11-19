@@ -191,5 +191,5 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | machine learning | maşın öyrənməsi | | təklif |
 | embedded device | embedded qurğu | Alternativ: *daxili sistem qurğusu*. | təklif |
 | Internet of Things (IoT) | Əşyaların İnterneti (IoT) | Mötərizədə ingiliscə abreviatura; *IoT tətbiqləri*. | təsdiqlənib |
-| benchmark | —saxlanılır— | *benchmark etmək*. Alternativ: *performans ölçümü*. | təklif |
+| benchmark | bençmark | Fel: *bençmark etmək*; *bençmark testləri*. `#[bench]` kimi kod dəyişmir. | təsdiqlənib |
 | troubleshooting | problemlərin həlli | 1.1 bölməsinin başlığı. | təklif |
