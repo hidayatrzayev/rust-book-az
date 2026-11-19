@@ -161,7 +161,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | configuration | konfiqurasiya | *konfiqurasiya faylı*. | təklif |
 | output | çıxış | Proqramın/komandanın çıxışı. STYLE.md-də artıq işlədilib. | təklif |
 | prompt | —saxlanılır— | Komanda sətri prompt-u (`$`). Alternativ: *dəvət*. | təklif |
-| file extension | genişlənmə | *.rs genişlənməsi*. Alternativ: *uzantı*. | təklif |
+| file extension | fayl genişlənməsi | Konkret genişlənmədən danışarkən: *.rs genişlənməsi*, *.rs genişlənməli fayl*. | təsdiqlənib |
 | home directory | ev direktoriyası | | təklif |
 | top-level directory | kök direktoriya | Layihənin kök direktoriyası. | təklif |
 | underscore | alt xətt | `_`. | təklif |

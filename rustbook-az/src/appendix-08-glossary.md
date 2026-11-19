@@ -56,6 +56,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | əməliyyat sistemi | operating system |
 | Əşyaların İnterneti | Internet of Things |
 | əvvəlcədən kompilyasiya olunan | ahead-of-time compiled |
+| fayl genişlənməsi | file extension |
 | fiqurlu mötərizələr | curly brackets |
 | flag (bayraq) *(ingiliscə qalır)* | flag |
 | formatlama aləti | formatter |
@@ -64,7 +65,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | funksiyanın gövdəsi | function body |
 | future *(ingiliscə qalır)* | future |
 | generic *(ingiliscə qalır)* | generic |
-| genişlənmə | file extension |
 | heap *(ingiliscə qalır)* | heap |
 | heş cədvəli | hash map |
 | xəta | error |
