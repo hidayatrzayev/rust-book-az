@@ -121,11 +121,10 @@ Cargo-dan necə istifadə etməyi izah edir. **2-ci fəsil** Rust-da proqram
 yazmağa praktiki girişdir: burada ədəd tapma oyunu yazacaqsınız. Burada
 anlayışları ümumi şəkildə əhatə edirik, sonrakı fəsillər isə əlavə təfərrüatlar
 verəcək. Dərhal işə girişmək istəyirsinizsə, 2-ci fəsil məhz bunun üçündür.
-Növbəti mövzuya keçməzdən əvvəl hər təfərrüatı öyrənməyi üstün tutan xüsusilə
-diqqətli oxucusunuzsa, 2-ci fəsli ötürüb, birbaşa digər proqramlaşdırma
-dillərindəkinə bənzəyən Rust imkanlarını əhatə edən **3-cü fəslə** keçə
-bilərsiniz; sonra öyrəndiyiniz təfərrüatları tətbiq edən layihə üzərində
-işləmək istədikdə 2-ci fəslə qayıda bilərsiniz.
+Hər şeyi incəliklərinə qədər öyrənməyi sevirsinizsə, 2-ci fəsli hələlik ötürüb,
+**3-cü fəslə** keçə bilərsiniz: orada Rust-ın digər proqramlaşdırma dillərinə
+bənzəyən imkanları ilə tanış olacaqsınız. Öyrəndiklərinizi layihədə sınamaq
+istədikdə 2-ci fəslə qayıda bilərsiniz.
 
 **4-cü fəsildə** Rust-ın ownership (sahiblik) sistemi haqqında öyrənəcəksiniz.
 **5-ci fəsil** strukturları (structs) və metodları müzakirə edir.
