@@ -52,7 +52,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | match | —saxlanılır— | `match` açar sözü: *match ifadəsi*. | təsdiqlənib |
 | crate | —saxlanılır— | Dizayn sənədində nümunə kimi göstərilib: *crate-ə*. | təsdiqlənib |
 | package | paket | Cargo paketi. | təsdiqlənib |
-| module | modul | | təsdiqlənib |
+| module | modul | [gündəlik] | təsdiqlənib |
 | path | yol | Modul yolu. Fayl yolu da *yol*-dur; kontekstdən aydın olur. | təsdiqlənib |
 | scope | əhatə dairəsi | Alternativ: *görünmə sahəsi*. *sahə* (field) ilə qarışmasın deyə seçilməyib. | təsdiqlənib |
 | vector | vektor | [gündəlik] `Vec<T>`. | təsdiqlənib |

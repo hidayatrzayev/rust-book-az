@@ -134,7 +134,7 @@ və `let...else` idarəetmə axını (control flow) konstruksiyalarını əhatə
 Öz tiplərinizi yaratmaq üçün strukturlardan və enum-lardan istifadə
 edəcəksiniz.
 
-**7-ci fəsildə** Rust-ın modul (module) sistemi, həmçinin kodunuzu və onun
+**7-ci fəsildə** Rust-ın modul sistemi, həmçinin kodunuzu və onun
 public (açıq) proqramlaşdırma interfeysini (application programming interface,
 API) təşkil etmək üçün məxfilik (privacy) qaydaları haqqında öyrənəcəksiniz.
 **8-ci fəsil** standart kitabxananın təqdim etdiyi bəzi
