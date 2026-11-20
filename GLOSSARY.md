@@ -136,7 +136,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | functional programming | funksional proqramlaşdırma | | təsdiqlənib |
 | object-oriented programming | obyektyönümlü proqramlaşdırma | | təsdiqlənib |
 | privacy | məxfilik | 7-ci fəsil: *məxfilik qaydaları*. | təsdiqlənib |
-| public | —saxlanılır— (açıq) | `pub`. *public API* → *public (açıq) API*. | təsdiqlənib |
+| public | —saxlanılır— (açıq) | `pub`. Anlayış kimi: *public (açıq)*. "public API" kimi birləşmələrdə Azərbaycanca əvvəl gəlir: *açıq (public) proqramlaşdırma interfeysi*. | təsdiqlənib |
 | private | —saxlanılır— (gizli) | | təsdiqlənib |
 | future | —saxlanılır— | 17-ci fəsil (`Future` trait-i). Girişdə yalnız adı çəkilir. | təsdiqlənib |
 | stream | —saxlanılır— | 17-ci fəsil. *axın* thread üçündür, ona görə stream ingiliscə qalır. | təsdiqlənib |
