@@ -42,9 +42,9 @@ gətirir:
   etməyi bütün Rust ekosistemində problemsiz və eyni cür edir.
 - `rustfmt` formatlama aləti developerlər arasında vahid kod
   üslubunu təmin edir.
-- Rust Language Server kodun avtomatik tamamlanması və
-  redaktorda kodun yanında göstərilən xəta mesajları üçün inteqrasiya olunmuş inkişaf
-  mühiti (Integrated Development Environment, IDE) inteqrasiyasını təmin edir.
+- Rust Language Server inteqrasiya olunmuş inkişaf mühitlərində (Integrated
+  Development Environment, IDE) kodun avtomatik tamamlanmasını və redaktorda
+  kodun yanında göstərilən xəta mesajlarını təmin edir.
 
 Rust ekosistemindəki bu və digər alətlərdən istifadə edərək developerlər sistem
 səviyyəli kod yazarkən də məhsuldar ola bilərlər.
