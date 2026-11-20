@@ -68,8 +68,8 @@ hissələri.
 
 ### Açıq mənbə developerləri
 
-Rust, Rust proqramlaşdırma dilini, icmasını, developer alətlərini və
-kitabxanalarını inkişaf etdirmək istəyən insanlar üçündür. Rust
+Rust həm də dilin özünü, icmasını, developer alətlərini və kitabxanalarını
+inkişaf etdirmək istəyən insanlar üçündür. Rust
 dilinə töhfə verməyinizi çox istərdik.
 
 ### Sürətə və stabilliyə dəyər verən insanlar
