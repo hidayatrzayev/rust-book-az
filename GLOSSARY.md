@@ -67,7 +67,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | trait | —saxlanılır— | Dizayn sənədində nümunə kimi göstərilib: *trait-in*. | təsdiqlənib |
 | trait bound | —saxlanılır— (trait məhdudiyyəti) | Rust-a məxsus. | təsdiqlənib |
 | lifetime | —saxlanılır— (ömür müddəti) | Rust-a məxsus; `'a` kimi annotasiyalar kodda qalır. | təsdiqlənib |
-| closure | —saxlanılır— | Tərcümə olunmur: *closure-lar*, *closure-ın*. Türk tərcüməsində bu termin *kapanma/kapanış/kapama* kimi üç cür verilmişdi; ingiliscə saxlamaq bu problemi aradan qaldırır. | təsdiqlənib |
+| closure | —saxlanılır— | Tərcümə olunmur: *closure-lar*, *closure-ları*, *closure-ın* (qalın sait şəkilçisi, insan tərəfindən təsdiqlənib). Türk tərcüməsində bu termin *kapanma/kapanış/kapama* kimi üç cür verilmişdi; ingiliscə saxlamaq bu problemi aradan qaldırır. | təsdiqlənib |
 | iterator | iterator | Yazılışı ingiliscə ilə eynidir. | təsdiqlənib |
 | smart pointer | ağıllı göstərici | | təsdiqlənib |
 | thread | axın | Ümumi anlayışdır: ilk işlənmədə *axın (thread)*. *main thread* → *əsas axın*, *spawn a thread* → *axın yaratmaq*, *thread pool* → *axın hovuzu*. `thread::spawn` kimi kod dəyişmir. *stream* ingiliscə qaldığı üçün qarışmır; *idarəetmə axını* (control flow) başqa anlayışdır. | təsdiqlənib |
