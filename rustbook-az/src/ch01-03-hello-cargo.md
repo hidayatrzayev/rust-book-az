@@ -12,8 +12,8 @@ kodunuzu *build* edən hissəsindən istifadə edərdi. Daha mürəkkəb Rust pr
 yazdıqca asılılıqlar əlavə edəcəksiniz və layihəyə Cargo ilə başlasanız,
 asılılıq əlavə etmək xeyli asan olacaq.
 
-Rust layihələrinin böyük əksəriyyəti Cargo-dan istifadə etdiyi üçün kitabın
-qalan hissəsi sizin də Cargo-dan istifadə etdiyinizi güman edir.
+Rust layihələrinin böyük əksəriyyəti Cargo ilə işlədiyi üçün kitabın qalan
+hissəsi sizin də ondan istifadə etdiyinizi güman edir.
 [“Quraşdırma”][installation]<!-- ignore --> bölməsində müzakirə olunan rəsmi
 quraşdırıcılardan istifadə etmisinizsə, Cargo Rust ilə birlikdə quraşdırılıb.
 Rust-ı başqa üsulla quraşdırmısınızsa, terminalınıza aşağıdakını daxil edərək
@@ -75,8 +75,8 @@ edition = "2024"
 Bu fayl Cargo-nun konfiqurasiya formatı olan
 [_TOML_][toml]<!-- ignore --> (_Tom’s Obvious, Minimal Language_) formatındadır.
 
-Birinci sətir, `[package]`, sonrakı bəyanatların (statements) paketi
-konfiqurasiya etdiyini göstərən bölmə başlığıdır. Bu fayla daha çox məlumat
+Birinci sətir, `[package]`, bölmə başlığıdır: o, sonrakı bəyanatların
+(statements) paketi konfiqurasiya etdiyini göstərir. Bu fayla daha çox məlumat
 əlavə etdikcə başqa bölmələr də əlavə edəcəyik.
 
 Sonrakı üç sətir Cargo-nun proqramınızı kompilyasiya etmək üçün ehtiyac duyduğu
@@ -84,8 +84,8 @@ konfiqurasiya məlumatını təyin edir: ad, versiya və istifadə olunacaq Rust
 buraxılışı. `edition` açarından [Əlavə E-də][appendix-e]<!-- ignore -->
 danışacağıq.
 
-Son sətir, `[dependencies]`, layihənizin bütün asılılıqlarını sadalamağınız
-üçün bölmənin başlanğıcıdır. Rust-da kod paketləri _crate_ adlanır. Bu layihə
+Son sətir, `[dependencies]`, layihənizin asılılıqlarını sadalayacağınız
+bölmənin başlanğıcıdır. Rust-da kod paketləri _crate_ adlanır. Bu layihə
 üçün başqa *crate*-lərə ehtiyacımız olmayacaq, amma 2-ci fəsildəki ilk layihədə
 olacaq, ona görə də asılılıqlar bölməsindən o zaman istifadə edəcəyik.
 
@@ -147,9 +147,8 @@ demək olar ki, boşdur. Bu faylı heç vaxt əl ilə dəyişməli olmayacaqsın
 onun məzmununu sizin üçün idarə edir.
 
 Layihəni indicə `cargo build` ilə *build* edib, `./target/debug/hello_cargo` ilə
-işə saldıq, lakin kodu kompilyasiya edib alınan icra olunan faylı işə salmaq
-üçün bunların hamısını bir komandada edən `cargo run`-dan da istifadə edə
-bilərik:
+işə saldıq. Lakin `cargo run` ilə kodu kompilyasiya edib, alınan icra olunan
+faylı bir komanda ilə işə sala bilərik:
 
 ```console
 $ cargo run
@@ -189,9 +188,8 @@ $ cargo check
 
 Niyə icra olunan fayl istəməyəsiniz? Çox vaxt `cargo check` `cargo build`-dən
 xeyli sürətlidir, çünki icra olunan faylın yaradılması addımını ötürür. Kod
-yazarkən işinizi daima yoxlayırsınızsa, `cargo check` istifadə etmək
-layihənizin hələ də kompilyasiya olunub-olunmadığını öyrənmə prosesini
-sürətləndirəcək! Buna görə də bir çox *Rustacean* proqramını yazarkən onun
+yazarkən işinizi tez-tez yoxlayırsınızsa, `cargo check` layihənin hələ də
+kompilyasiya olunub-olunmadığını daha tez öyrənməyə imkan verəcək! Buna görə də bir çox *Rustacean* proqramını yazarkən onun
 kompilyasiya olunduğuna əmin olmaq üçün vaxtaşırı `cargo check` işə salır.
 Sonra icra olunan fayldan istifadə etməyə hazır olduqda `cargo build` işə
 salırlar.
@@ -216,10 +214,11 @@ Layihəniz nəhayət reliz üçün hazır olduqda, onu optimizasiyalarla kompily
 --release` istifadə edə bilərsiniz. Bu komanda icra olunan faylı _target/debug_
 əvəzinə _target/release_ direktoriyasında yaradacaq. Optimizasiyalar Rust
 kodunuzun daha sürətli işləməsini təmin edir, lakin onları aktivləşdirmək
-proqramınızın kompilyasiya müddətini uzadır. Buna görə iki fərqli profil var: biri tez-tez və sürətlə yenidən *build* etmək istədiyiniz inkişaf
-mərhələsi üçün, digəri isə istifadəçiyə verəcəyiniz, təkrar-təkrar yenidən
-*build* edilməyəcək və mümkün qədər sürətli işləyəcək son proqramı *build* etmək
-üçün. Kodunuzun icra müddətini bençmark edirsinizsə, mütləq
+proqramınızın kompilyasiya müddətini uzadır. Buna görə iki
+fərqli profil var. Biri inkişaf mərhələsi üçündür: burada kodu tez-tez və
+sürətlə yenidən *build* etmək istəyirsiniz. Digəri isə istifadəçiyə verəcəyiniz
+son proqram üçündür: o, təkrar-təkrar *build* edilməyəcək və mümkün qədər
+sürətli işləməlidir. Kodunuzun icra müddətini bençmark edirsinizsə, mütləq
 `cargo build --release` işə salın və _target/release_ içindəki icra olunan
 fayl ilə bençmark edin.
 
@@ -229,7 +228,7 @@ fayl ilə bençmark edin.
 ### Cargo konvensiyalarından istifadə
 
 Sadə layihələrdə Cargo sadəcə `rustc` istifadə etməklə müqayisədə çox da
-fayda vermir, lakin proqramlarınız mürəkkəbləşdikcə öz faydasını göstərəcək.
+üstünlük vermir, lakin proqramlarınız mürəkkəbləşdikcə öz faydasını göstərəcək.
 Proqramlar bir neçə fayldan ibarət olduqda və ya asılılığa ehtiyac duyduqda
 *build* prosesini Cargo-ya həvalə etmək xeyli asandır.
 

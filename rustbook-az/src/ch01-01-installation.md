@@ -9,9 +9,8 @@ lazımdır.
 > baxın.
 
 Aşağıdakı addımlar Rust kompilyatorunun ən son stabil
-versiyasını quraşdırır. Rust-ın stabillik zəmanətləri kitabdakı kompilyasiya
-olunan bütün nümunələrin Rust-ın daha yeni versiyalarında da
-kompilyasiya olunmağa davam edəcəyini təmin edir. Çıxış versiyadan
+versiyasını quraşdırır. Rust-ın stabillik zəmanətləri sayəsində kitabdakı kompilyasiya olunan bütün
+nümunələr Rust-ın daha yeni versiyalarında da kompilyasiya olunacaq. Çıxış versiyadan
 versiyaya bir qədər fərqlənə bilər, çünki Rust xəta mesajlarını
 və xəbərdarlıqları tez-tez təkmilləşdirir. Başqa sözlə, bu addımlarla
 quraşdırdığınız Rust-ın istənilən daha yeni, stabil versiyası bu kitabın
@@ -83,7 +82,7 @@ bunu daxil edin:
 $ rustc --version
 ```
 
-Buraxılmış ən son stabil versiyanın versiya nömrəsini, commit heşini və commit tarixini aşağıdakı formatda görməlisiniz:
+Çıxmış ən son stabil versiyanın versiya nömrəsini, commit heşini və commit tarixini aşağıdakı formatda görməlisiniz:
 
 ```text
 rustc x.y.z (abcabcabc yyyy-mm-dd)
@@ -141,10 +140,10 @@ Rust quraşdırılarkən dokumentasiyanın lokal surəti də quraşdırılır ki
 oflayn oxuya biləsiniz. Lokal dokumentasiyanı brauzerinizdə açmaq
 üçün `rustup doc` komandasını işə salın.
 
-Standart kitabxananın təqdim etdiyi hər hansı tipin
-və ya funksiyanın nə etdiyinə və ya ondan necə istifadə edəcəyinizə
-əmin olmadığınız hər an bunu öyrənmək üçün proqramlaşdırma interfeysinin
-(Application Programming Interface, API) dokumentasiyasından istifadə edin!
+Standart kitabxanadakı hər hansı tipin və ya funksiyanın nə etdiyinə, yaxud
+ondan necə istifadə edəcəyinizə əmin deyilsinizsə, cavabı proqramlaşdırma
+interfeysinin (Application Programming Interface, API) dokumentasiyasında tapa
+bilərsiniz!
 
 <!-- Old headings. Do not remove or links may break. -->
 <a id="text-editors-and-integrated-development-environments"></a>

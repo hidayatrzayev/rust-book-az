@@ -23,9 +23,9 @@ harada yerləşməsi Rust üçün fərq etmir, amma bu kitabdakı tapşırıqlar
 layihələr üçün ev direktoriyanızda _projects_ direktoriyası
 yaradıb bütün layihələrinizi orada saxlamağı təklif edirik.
 
-Terminal açın və _projects_ direktoriyasını, həmçinin _projects_
-direktoriyasının içində “Hello, world!” layihəsi üçün direktoriya yaratmaq
-üçün aşağıdakı komandaları daxil edin.
+Terminal açın və aşağıdakı komandaları daxil edin: onlar _projects_
+direktoriyasını və onun içində “Hello, world!” layihəsi üçün direktoriya
+yaradır.
 
 Linux, macOS və Windows-dakı PowerShell üçün bunu daxil edin:
 
@@ -178,8 +178,8 @@ $ ls
 main  main.rs
 ```
 
-Linux və macOS-da iki fayl görəcəksiniz. Windows-da PowerShell ilə CMD-də
-görəcəyiniz həmin üç faylı görəcəksiniz. Windows-da CMD ilə isə bunu daxil
+Linux və macOS-da iki fayl görəcəksiniz. Windows-da PowerShell-də isə
+CMD-dəki kimi üç fayl görünəcək. Windows-da CMD ilə isə bunu daxil
 edərdiniz:
 
 ```cmd
@@ -203,8 +203,8 @@ _main.rs_ faylınız “Hello, world!” proqramınızdırsa, bu komanda termina
 world!` çap edir.
 
 Ruby, Python və ya JavaScript kimi dinamik proqramlaşdırma dili ilə daha çox tanışsınızsa, proqramı ayrı addımlarla kompilyasiya edib
-işə salmağa öyrəşməmiş ola bilərsiniz. Rust _əvvəlcədən kompilyasiya olunan
-(ahead-of-time compiled)_ dildir; yəni proqramı kompilyasiya edib, icra olunan
+işə salmağa öyrəşməmiş ola bilərsiniz. Rust _əvvəlcədən kompilyasiya olunan_
+(ahead-of-time compiled) dildir; yəni proqramı kompilyasiya edib, icra olunan
 faylı başqasına verə bilərsiniz və o, Rust quraşdırılmamış olsa belə, onu işə
 sala bilər. Kiməsə _.rb_, _.py_ və ya _.js_ faylı versəniz, onda müvafiq olaraq
 Ruby, Python və ya JavaScript realizasiyası quraşdırılmış

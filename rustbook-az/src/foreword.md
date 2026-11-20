@@ -1,16 +1,16 @@
 # Ön söz
 
-Rust proqramlaşdırma dili qısa bir neçə ildə böyük inkişaf keçib: kiçik və
-yenicə formalaşan həvəskarlar icmasının onu yaradıb inkişaf etdirdiyi vaxtdan
-dünyanın ən sevilən və ən çox tələb olunan proqramlaşdırma dillərindən birinə
-çevrilənədək.
-Geriyə baxanda Rust-ın gücünün və vəd etdiyi imkanların diqqət çəkəcəyi və sistem
-proqramlaşdırmasında möhkəm yer tutacağı qaçılmaz idi.
-Qaçılmaz olmayan isə açıq mənbə icmalarına yayılan və müxtəlif
-sənayelərdə geniş tətbiqə təkan verən qlobal maraq və yeniliklər dalğası idi.
+Rust proqramlaşdırma dili cəmi bir neçə ildə böyük yol qət edib. O, kiçik və
+yenicə formalaşan həvəskarlar icmasının layihəsi kimi başlayıb, bu gün isə
+dünyanın ən sevilən və ən çox tələb olunan proqramlaşdırma dillərindən biridir.
+Geriyə baxanda aydın olur ki, Rust-ın gücü və vəd etdiyi imkanlar diqqət çəkməli
+və sistem proqramlaşdırmasında möhkəm yer tutmalı idi. Amma bunun bu qədər böyük
+qlobal maraq və yeniliklər dalğasına çevriləcəyi qaçılmaz deyildi: bu dalğa açıq
+mənbə icmalarına yayıldı və müxtəlif sənayelərdə Rust-ın geniş tətbiqinə təkan
+verdi.
 
-Bu gün maraq və tətbiqdəki bu partlayışı izah etmək üçün Rust-ın təklif etdiyi
-gözəl xüsusiyyətləri göstərmək asandır. Kim istəməz ki, bir çox digər gözəl
+Bu gün maraqdakı və istifadədəki bu sıçrayışı Rust-ın gözəl
+xüsusiyyətləri ilə izah etmək asandır. Kim istəməz ki, bir çox digər gözəl
 xüsusiyyətlə yanaşı yaddaş təhlükəsizliyi, *həm də* yüksək
 sürət, *həm də* mehriban kompilyator, *həm də* əla alətlər
 olsun? Bu gün gördüyünüz Rust dili sistem proqramlaşdırması üzrə illərlə
@@ -19,25 +19,26 @@ Bu dil məqsədyönlü şəkildə layihələndirilib və diqqətlə hazırlanıb
 *developer*-lərə təhlükəsiz, sürətli və etibarlı kod yazmağı asanlaşdıran alət
 təqdim edir.
 
-Lakin Rust-ı həqiqətən xüsusi edən onun kökündə sizi, yəni istifadəçini,
-məqsədlərinizə çatmaq üçün gücləndirmək ideyasının dayanmasıdır. Bu, uğur
-qazanmağınızı istəyən bir dildir və gücləndirmə prinsipi bu dili yaradan,
-dəstəkləyən və təbliğ edən icmanın təməlindən keçir. Bu mötəbər kitabın əvvəlki
+Lakin Rust-ı həqiqətən xüsusi edən başqa şeydir: onun təməlində sizə, yəni
+istifadəçiyə, məqsədlərinizə çatmaqda kömək etmək ideyası dayanır. Bu dil sizin
+uğur qazanmağınızı istəyir. Bu prinsip dili yaradan, dəstəkləyən və təbliğ edən
+icmanın da əsasını təşkil edir. Bu mötəbər kitabın əvvəlki
 nəşrindən bəri Rust həqiqətən qlobal və etibarlı dilə çevrilib. Rust Project
-indi Rust Foundation tərəfindən güclü şəkildə dəstəklənir; fond həmçinin Rust-ın
+indi Rust Foundation-dan möhkəm dəstək alır; fond həmçinin Rust-ın
 təhlükəsiz, stabil və davamlı olmasını təmin edən əsas təşəbbüslərə
 investisiya qoyur.
 
-*Rust Proqramlaşdırma Dili* kitabının bu nəşri dilin illər ərzindəki
-inkişafını əks etdirən və faydalı yeni məlumatlar verən, əsaslı şəkildə yenidən
-işlənmiş versiyadır. Lakin bu, sadəcə sintaksis və kitabxanalar üzrə bələdçi deyil, həm də keyfiyyətə, performansa və düşünülmüş
-dizayna önəm verən icmaya qoşulmaq üçün dəvətdir. İstər Rust-ı ilk dəfə kəşf
-etmək istəyən təcrübəli *developer*, istərsə də bacarıqlarını cilalamaq istəyən
-təcrübəli *Rustacean* olun, bu nəşrdə hər kəs üçün nəsə var.
+*Rust Proqramlaşdırma Dili* kitabının bu nəşri əsaslı şəkildə yenidən işlənib:
+o, dilin illər ərzindəki inkişafını əks etdirir və faydalı yeni məlumatlar
+verir. Lakin bu, sadəcə sintaksis və kitabxanalar üzrə bələdçi deyil, həm də
+keyfiyyətə, performansa və düşünülmüş dizayna önəm verən icmaya qoşulmaq üçün
+dəvətdir. İstər Rust-ı ilk dəfə kəşf edən təcrübəli *developer*, istərsə də
+bacarıqlarını təkmilləşdirmək istəyən *Rustacean* olun, bu nəşrdə hər kəs özü
+üçün nəsə tapacaq.
 
-Rust səyahəti əməkdaşlıq, öyrənmə və təkmilləşdirmə səyahəti olub. Dilin və
-onun ekosisteminin böyüməsi onun arxasında dayanan canlı və rəngarəng
-icmanın birbaşa əksidir. Dilin əsas dizaynerlərindən tutmuş arabir kömək
+Rust əməkdaşlıq, öyrənmə və davamlı təkmilləşdirmə sayəsində bu günə gəlib.
+Dilin və ekosisteminin böyüməsi onun arxasındakı canlı və rəngarəng icmanın
+birbaşa əksidir. Dilin əsas dizaynerlərindən tutmuş arabir kömək
 edənlərədək minlərlə *developer*-in əməyi Rust-ı bu qədər unikal və güclü alət edir.
 Bu kitabı əlinizə almaqla, siz sadəcə yeni proqramlaşdırma dili öyrənmirsiniz,
 həm də proqram təminatını daha yaxşı, daha təhlükəsiz və onunla

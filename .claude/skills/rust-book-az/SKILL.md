@@ -17,6 +17,8 @@ edit it). Target: `rustbook-az/src/<file>.md` (same file name; it starts as a co
 
 1. **Read first**: `GLOSSARY.md` and `STYLE.md` in full, and `rustbook-az/TRANSLATION_STATUS.md` for the file's status.
 2. **Translate prose and headings** into Azerbaijani following `STYLE.md` (address the reader as *siz*).
+   Apply its “Redaktə dərsləri” section while drafting, not after: short sentences instead of participle
+   chains, natural rather than literal wording, plain words, no tautology, Azerbaijani punctuation.
 3. **Protected items: never change** (the checks fail if you do):
    - fenced code blocks and inline code (`` `...` ``), including Rust keywords; compiler output stays English;
    - `{{#include}}` / `{{#rustdoc_include}}` directives;

@@ -54,6 +54,34 @@ Rəsmi normativ mənbə (AMEA-nın *Azərbaycan dilinin orfoqrafiya qaydaları*,
 - **Tire**: əlavə izah üçün hər iki tərəfdən boşluqla ( — ).
 - Durğu işarələri yeni sətrə keçirilmir.
 
+## Redaktə dərsləri (Girişin yoxlanmasından)
+
+İnsan yoxlamasında edilən düzəlişlərdən çıxan qaydalar. Hər yeni fəsildə tətbiq olunur.
+
+**Cümlə quruluşu**
+- Uzun feli sifət / feli bağlama zəncirləri (*…edən …olan …yaradan X*) qısa cümlələrə bölünür; hər cümlədə bir fikir. İngiliscə tire arasındakı izah (*Cargo, the … tool, makes …*) Azərbaycanca ayrıca cümlə olur:
+  - ✗ *Cargo — Rust ilə birlikdə gələn build aləti və asılılıqları idarə edən alət — asılılıqları … eyni cür edir.*
+  - ✓ *Cargo Rust ilə birlikdə gələn build aləti və asılılıq (dependency) meneceridir. Onun sayəsində asılılıqları … idarə etmək asandır və bütün Rust ekosistemində eyni cür işləyir.*
+- Əvvəl məqsəd, sonra vasitə: ✓ *Rust təhlükəsiz kodun eyni zamanda sürətli olmasına çalışır. Bunun üçün o, sıfır xərcli abstraksiyalardan (zero-cost abstractions) istifadə edir: …*
+- Vurğulanan üzv xəbərdən əvvəl: ✓ *Rust-da isə nəzarətçi rolunu kompilyator oynayır: …*
+- Miqdar sözü sifətlərdən əvvəl: ✓ *Yüzlərlə böyük və kiçik şirkət* (✗ *Böyük və kiçik yüzlərlə şirkət*).
+- Eyni söz mübtəda və tamamlıq kimi yan-yana gəlmir (✗ *Rust, Rust proqramlaşdırma dilini…*); geri istinad olunur: ✓ *Rust həm də dilin özünü, icmasını … inkişaf etdirmək istəyən insanlar üçündür.* Adi isim mübtədadan sonra vergül qoyulmur.
+
+**Söz seçimi**
+- Hərfi tərcümə yox, mənanın təbii ifadəsi: *stakeholders* → ✗ *maraqlı tərəflər*, ✓ *burada onlardan yalnız ən əsaslarını qeyd etdik*; *hopes to support* → ✓ *faydalı olmağa ümid edir*.
+- Kitab dili sözləri yox, sadə sözlər: *ehtiva etmək* → *tərkibində … olmaq*; *gatekeeper* → *nəzarətçi* (✗ *qapıçı*); *assume* → *güman etmək* (✗ *fərz etmək*); *makes no assumptions* → *heç bir fərziyyə irəli sürmür* (✗ *fərziyyə etmir*); *such* → *bu kimi* (✗ *belə*); *build our own implementation of* → *özümüz realizə edəcəyik*.
+- Tavtologiya yoxdur: ✗ *inteqrasiya olunmuş inkişaf mühiti … inteqrasiyasını*; ✗ *fərz edir … fərziyyə etmir*; ✗ *səyahəti … səyahəti*.
+- Felin idarəsi düzgün: *ümid etmək* + yönlük hal (*olmağa ümid edir*).
+- *buraxılış* yalnız *edition* deməkdir; "released" → *çıxmış / çıxıb*.
+- Kitabın adı mətndə *Rust Proqramlaşdırma Dili*.
+
+**İngiliscə qarşılıqlar**
+- Mötərizə yalnız texniki terminlərə; gündəlik sözlərə (`[gündəlik]`) yox; titul səhifəsi və ön sözdə heç yox.
+- Birləşmədə Azərbaycanca əvvəl, ingiliscə terminin içində: *açıq (public) proqramlaşdırma interfeysi*, *daxili (embedded) qurğular*, *asılılıq (dependency) meneceri*.
+- Açılmış ingilis abreviaturaları böyük hərflə: *(Integrated Development Environment, IDE)*, *(Application Programming Interface, API)*.
+- Mətndəki ingilis terminləri kursivlə, yalnız söz: *trait*-lər; şəkilçi tələffüzə görə (*future*-lər, *closure*-lar — sonuncu insan qərarı).
+- Vurğu kursivi Azərbaycan cümləsinin məntiqi vurğusuna düşür: *proqramlaşdırmanın _nə_ olduğu*.
+
 ## Başlıqlar
 
 Başlıqlar tərcümə olunur. mdBook lövbərləri başlıqdan yaradıldığı üçün həmin fəsildəki və digər fəsillərdəki `#lövbər` keçidləri yeni lövbərə uyğun yenilənir. `python tools/check_chapter.py` mövcud olmayan lövbərləri tapır. Başlıqda ingiliscə mötərizə yazılmır (ilk işlənmə qaydası mətn hissəsinə aiddir).
@@ -76,4 +104,5 @@ Kod nümunələrindəki şərhlər (`//`, `///`, `//!`, `/* */`) **tərcümə ol
 - Never touch code, inline code, directives, `<Listing>` attributes (only `caption` text is translated), link targets (only `#anchor` follows translated headings), `<!-- ignore -->`, ANCHOR lines, `output.txt`.
 - Notes: `> Note: ` becomes exactly `> Qeyd: ` (rendered as a note box by `tools/az_note.py`).
 - Punctuation: see “Durğu işarələri” (comma before amma/lakin/çünki/yəni, after ki and -sa clauses, after detached converb phrases; “ ” quotes with suffixes outside; hyphen after numbers/abbreviations).
+- Lessons from the introduction review (split long participle chains, no literal or bookish wording, no tautology, quantifier before adjectives, Title Case for spelled-out abbreviations, Azerbaijani first in phrases like *açıq (public) …*): see “Redaktə dərsləri”.
 - Compiler output stays English; the prose around it is translated. Comments in code listings are translated.
