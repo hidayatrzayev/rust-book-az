@@ -85,8 +85,8 @@ qorxurlar. Rust təhlükəsiz kodun eyni zamanda sürətli olmasına çalışır
 bunlar yüksək səviyyəli imkanlardır, amma aşağı səviyyəli koda kompilyasiya
 olunur və əl ilə yazılmış kod qədər sürətli işləyir.
 
-Rust dili bir çox başqa istifadəçiləri də dəstəkləməyə ümid edir; burada adı
-çəkilənlər ən böyük maraqlı tərəflərdən sadəcə bəziləridir. Ümumilikdə Rust-ın
+Rust bir çox başqa istifadəçiyə də faydalı olmağa ümid edir; burada onlardan
+yalnız ən əsaslarını qeyd etdik. Ümumilikdə Rust-ın
 ən böyük ambisiyası təhlükəsizlik _və_ məhsuldarlıq, sürət _və_ erqonomika təmin
 edərək, proqramçıların onilliklərdir razılaşdığı kompromisləri aradan
 qaldırmaqdır. Rust-ı sınayın və onun seçimlərinin sizə uyğun olub-olmadığını
