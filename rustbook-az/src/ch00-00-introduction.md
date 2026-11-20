@@ -135,7 +135,7 @@ və `let...else` idarəetmə axını (control flow) konstruksiyalarını əhatə
 edəcəksiniz.
 
 **7-ci fəsildə** Rust-ın modul sistemi, həmçinin kodunuzu və onun
-açıq (public) proqramlaşdırma interfeysini (application programming interface,
+açıq (public) proqramlaşdırma interfeysini (Application Programming Interface,
 API) təşkil etmək üçün məxfilik (privacy) qaydaları haqqında öyrənəcəksiniz.
 **8-ci fəsil** standart kitabxananın təqdim etdiyi bəzi
 geniş yayılmış kolleksiya data strukturlarını

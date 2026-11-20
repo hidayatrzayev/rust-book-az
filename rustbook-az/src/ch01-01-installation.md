@@ -144,7 +144,7 @@ oflayn oxuya biləsiniz. Lokal dokumentasiyanı brauzerinizdə açmaq
 Standart kitabxananın təqdim etdiyi hər hansı tipin
 və ya funksiyanın nə etdiyinə və ya ondan necə istifadə edəcəyinizə
 əmin olmadığınız hər an bunu öyrənmək üçün proqramlaşdırma interfeysinin
-(application programming interface, API) dokumentasiyasından istifadə edin!
+(Application Programming Interface, API) dokumentasiyasından istifadə edin!
 
 <!-- Old headings. Do not remove or links may break. -->
 <a id="text-editors-and-integrated-development-environments"></a>
