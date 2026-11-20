@@ -28,7 +28,7 @@ Rust sistem proqramlaşdırması üzrə bilikləri müxtəlif
 səviyyədə olan böyük developer komandalarının birgə işi üçün məhsuldar alət olduğunu sübut edir. Aşağı səviyyəli kodda müxtəlif incə baqlar
 yaranmağa meyllidir; əksər digər dillərdə onları yalnız geniş testlər və
 təcrübəli developerlərin diqqətli kod revyusu ilə tutmaq olar. Rust-da isə
-nəzarətçi rolunu kompilyator oynayır: tərkibində belə çətin tutulan
+nəzarətçi rolunu kompilyator oynayır: tərkibində bu kimi çətin tutulan
 baqlar, o cümlədən concurrency (eyni vaxtlılıq) ilə bağlı baqlar olan kodu
 kompilyasiya etməkdən imtina edir. Kompilyatorla birlikdə işləyərək, komanda
 vaxtını baqların arxasınca qaçmağa deyil, proqramın məntiqinə fokuslanmağa sərf
