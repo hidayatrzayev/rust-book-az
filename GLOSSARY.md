@@ -187,7 +187,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | system variable | sistem dəyişəni | `%PATH%`. *environment variable* → *mühit dəyişəni* (12-ci fəsil). | təsdiqlənib |
 | commit hash | commit heşi | [gündəlik] Git commit-i: *commit-in*. | təsdiqlənib |
 | dynamic language | dinamik proqramlaşdırma dili | [gündəlik] Ruby, Python, JavaScript. Adətən tam forma; eyni cümlədə təkrar olunarsa və ya kontekst aydındırsa qısaca *dinamik dil*. | təsdiqlənib |
-| legacy code | legacy kod | Proqramçı dili: *legacy kodu dəyişmək*. *köhnə kod* sadəcə "əvvəlki versiya" mənasında işlədilə bilər. | təsdiqlənib |
+| legacy code | legacy kod | [gündəlik] Proqramçı dili: *legacy kodu dəyişmək*. *köhnə kod* sadəcə "əvvəlki versiya" mənasında işlədilə bilər. | təsdiqlənib |
 | contribute | töhfə vermək | [gündəlik] *contributor* → *töhfə verən*; *Rust icmasının töhfələri ilə*. | təsdiqlənib |
 | machine learning | maşın öyrənməsi | | təsdiqlənib |
 | embedded device | daxili (embedded) qurğu | İlk işlənmədə ingiliscə söz terminin içində: *daxili (embedded) qurğular*; sonra *daxili qurğu*. *embedded system* → *daxili sistem*. | təsdiqlənib |

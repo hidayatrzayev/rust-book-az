@@ -79,7 +79,7 @@ həm Rust kodunun nə qədər tez işləyə bildiyini, həm də Rust-ın proqram
 qədər tez yazmağa imkan verdiyini nəzərdə tuturuq. Rust kompilyatorunun
 yoxlamaları yeni imkanlar əlavə edildikdə və refaktorinq zamanı
 stabilliyi təmin edir. Bu, belə yoxlamaları olmayan dillərdəki kövrək legacy
-koddan (legacy code) fərqlidir; developerlər çox vaxt belə kodu dəyişməkdən
+koddan fərqlidir; developerlər çox vaxt belə kodu dəyişməkdən
 qorxurlar. Sıfır xərcli abstraksiyalara (zero-cost abstractions), yəni əl ilə
 yazılmış kod qədər sürətli aşağı səviyyəli koda kompilyasiya olunan yüksək
 səviyyəli imkanlara can ataraq Rust təhlükəsiz kodun həm də sürətli kod olmasına
