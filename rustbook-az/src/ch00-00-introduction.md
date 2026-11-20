@@ -97,7 +97,7 @@ görün.
 Bu kitab sizin artıq başqa bir proqramlaşdırma dilində kod yazdığınızı güman
 edir, amma hansı dil olduğu barədə heç bir fərziyyə irəli sürmür. Materialı müxtəlif
 proqramlaşdırma təcrübəsi olan insanlar üçün geniş şəkildə əlçatan etməyə
-çalışmışıq. Proqramlaşdırmanın nə _olduğu_ və ya bu barədə necə düşünmək
+çalışmışıq. Proqramlaşdırmanın _nə_ olduğu və ya bu barədə necə düşünmək
 lazım olduğu haqqında çox danışmırıq. Proqramlaşdırmada tamamilə yenisinizsə,
 xüsusi olaraq proqramlaşdırmaya giriş təqdim edən kitab oxumağınız daha
 faydalı olar.
