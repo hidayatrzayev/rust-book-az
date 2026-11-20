@@ -80,10 +80,10 @@ qədər tez yazmağa imkan verdiyini nəzərdə tuturuq. Rust kompilyatorunun
 yoxlamaları yeni imkanlar əlavə edildikdə və refaktorinq zamanı
 stabilliyi təmin edir. Bu, belə yoxlamaları olmayan dillərdəki kövrək legacy
 koddan fərqlidir; developerlər çox vaxt belə kodu dəyişməkdən
-qorxurlar. Sıfır xərcli abstraksiyalara (zero-cost abstractions), yəni əl ilə
-yazılmış kod qədər sürətli aşağı səviyyəli koda kompilyasiya olunan yüksək
-səviyyəli imkanlara can ataraq Rust təhlükəsiz kodun həm də sürətli kod olmasına
-çalışır.
+qorxurlar. Rust təhlükəsiz kodun eyni zamanda sürətli olmasına çalışır. Bunun
+üçün o, sıfır xərcli abstraksiyalardan (zero-cost abstractions) istifadə edir:
+bunlar yüksək səviyyəli imkanlardır, amma aşağı səviyyəli koda kompilyasiya
+olunur və əl ilə yazılmış kod qədər sürətli işləyir.
 
 Rust dili bir çox başqa istifadəçiləri də dəstəkləməyə ümid edir; burada adı
 çəkilənlər ən böyük maraqlı tərəflərdən sadəcə bəziləridir. Ümumilikdə Rust-ın
