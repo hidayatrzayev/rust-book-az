@@ -34,7 +34,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | crate *(ingiliscə qalır)* | crate |
 | çıxış | output |
 | çoxaxınlı | multithreaded |
-| daxili qurğu | embedded device |
+| daxili (embedded) qurğu | embedded device |
 | dangling reference (boşda qalan istinad) *(ingiliscə qalır)* | dangling reference |
 | data strukturu | data structure |
 | debug *(ingiliscə qalır)* | debug |

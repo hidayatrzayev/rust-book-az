@@ -46,12 +46,14 @@ class Term:
     gloss: str = ""  # for kept-English terms: Azerbaijani word given in parentheses on first use
     stems: list[str] = field(default_factory=list)
     everyday: bool = False
+    inline: bool = False  # English given inside the term: "daxili (embedded) qurğu"
 
     def __post_init__(self) -> None:
         self.everyday = self.everyday or EVERYDAY in self.note
         if self.keep_english:
             self.az = self.en
-        base = fold(self.az)
+        self.inline = bool(re.search(r"\([^)]*\)\s+\S", self.az))
+        base = fold(re.sub(r"\s*\([^)]*\)(?=\s+\S)", "", self.az))
         # Verbs: match the root so inflected forms count (quraşdırın, kompilyasiya edin).
         for light in (" etmək", " vermək", " olmaq"):
             if base.endswith(light) and " " not in base[: -len(light)]:
@@ -161,7 +163,8 @@ def _en_regex(en: str) -> re.Pattern[str]:
 
 def _ws(literal: str) -> str:
     """Regex for `literal` where any space may also be a line break."""
-    return r"\s+(?:>\s*)*".join(re.escape(w) for w in literal.split(" "))
+    sep = r"\s+(?:>\s*)*(?:\([^)\n]*\)\s+(?:>\s*)*)?"  # a line break, or an inline (gloss)
+    return sep.join(re.escape(w) for w in literal.split(" "))
 
 
 def _line_of(text: str, pos: int) -> int:
@@ -230,6 +233,11 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None, first_use: bo
         if not m:
             continue
         seen.add(key)
+        if t.inline:
+            if "(" not in m.group(0):
+                issues.append(Issue(_line_of(md, m.start()), "ilk-istifadə",
+                                    f"`{md[m.start():m.end()]}` bu fəsildə ilk dəfə işlənir: `{t.az}` kimi yazılmalıdır"))
+            continue
         after = original[m.end():]
         en_alts = "|".join(_ws(x) for x in [key, *sorted(_plurals(key))])
         light = r"(?:\s+(?:et|ver|ol|edil)[^\W\d_]*)?"

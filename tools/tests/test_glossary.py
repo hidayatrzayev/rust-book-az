@@ -222,3 +222,11 @@ def test_first_use_rule_off_for_exempt_files(tmp_path):
     q = tmp_path / "ch01-01-x.md"
     q.write_text("Kompilyator və trait-lər.", encoding="utf-8")
     assert len(lint_files([q], terms)) == 2
+
+
+def test_inline_gloss_inside_term():
+    t = Term("embedded device", "daxili (embedded) qurğu")
+    assert t.inline and "daxili qurğu" in t.stems
+    assert lint("Rust daxili (embedded) qurğularda işləyir. Daxili qurğular kiçikdir.", [t]) == []
+    issues = lint("Rust daxili qurğularda işləyir.", [t])
+    assert [i.kind for i in issues] == ["ilk-istifadə"] and "daxili (embedded) qurğu" in issues[0].message

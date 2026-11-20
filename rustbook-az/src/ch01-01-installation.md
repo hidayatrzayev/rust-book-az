@@ -1,7 +1,6 @@
 ## Quraşdırma
 
-İlk addım Rust-ı quraşdırmaqdır. Rust-ı `rustup` vasitəsilə yükləyəcəyik
-(download); bu, Rust versiyalarını və əlaqəli alətləri (tools) idarə etmək üçün
+İlk addım Rust-ı quraşdırmaqdır. Rust-ı `rustup` vasitəsilə yükləyəcəyik; bu, Rust versiyalarını və əlaqəli alətləri idarə etmək üçün
 komanda sətri (command line) alətidir. Yükləmə üçün internet bağlantısı
 lazımdır.
 
@@ -9,11 +8,11 @@ lazımdır.
 > seçimlər üçün [Rust-ın digər quraşdırma üsulları səhifəsinə][otherinstall]
 > baxın.
 
-Aşağıdakı addımlar Rust kompilyatorunun (compiler) ən son stabil (stable)
+Aşağıdakı addımlar Rust kompilyatorunun ən son stabil (stable)
 versiyasını quraşdırır. Rust-ın stabillik zəmanətləri kitabdakı kompilyasiya
-olunan (compile) bütün nümunələrin Rust-ın daha yeni versiyalarında da
-kompilyasiya olunmağa davam edəcəyini təmin edir. Çıxış (output) versiyadan
-versiyaya bir qədər fərqlənə bilər, çünki Rust xəta mesajlarını (error messages)
+olunan bütün nümunələrin Rust-ın daha yeni versiyalarında da
+kompilyasiya olunmağa davam edəcəyini təmin edir. Çıxış versiyadan
+versiyaya bir qədər fərqlənə bilər, çünki Rust xəta mesajlarını
 və xəbərdarlıqları tez-tez təkmilləşdirir. Başqa sözlə, bu addımlarla
 quraşdırdığınız Rust-ın istənilən daha yeni, stabil versiyası bu kitabın
 məzmunu ilə gözlənildiyi kimi işləməlidir.
@@ -36,7 +35,7 @@ daxil edin:
 $ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 ```
 
-Komanda skript (script) yükləyir və `rustup` alətinin quraşdırılmasına başlayır;
+Komanda skript yükləyir və `rustup` alətinin quraşdırılmasına başlayır;
 bu alət Rust-ın ən son stabil versiyasını quraşdırır. Sizdən parolunuz istənə
 bilər. Quraşdırma uğurlu olarsa, aşağıdakı mesaj görünəcək:
 
@@ -46,7 +45,7 @@ Rust is installed now. Great!
 
 Sizə həmçinin _linker_ lazım olacaq — bu, Rust-ın kompilyasiya nəticələrini bir
 faylda birləşdirmək üçün istifadə etdiyi proqramdır. Çox güman ki, o, sizdə
-artıq var. Linker xətaları (errors) alırsınızsa, C kompilyatoru
+artıq var. Linker xətaları alırsınızsa, C kompilyatoru
 quraşdırmalısınız; onun tərkibində adətən linker də olur. C kompilyatoru həm də ona
 görə faydalıdır ki, bəzi geniş yayılmış Rust paketləri (packages) C kodundan
 asılıdır və C kompilyatoru tələb edir.
@@ -57,8 +56,7 @@ macOS-da C kompilyatorunu bu komandanı işə salmaqla əldə edə bilərsiniz:
 $ xcode-select --install
 ```
 
-Linux istifadəçiləri adətən öz distributivlərinin dokumentasiyasına
-(documentation) uyğun olaraq GCC və ya Clang quraşdırmalıdırlar. Məsələn,
+Linux istifadəçiləri adətən öz distributivlərinin dokumentasiyasına uyğun olaraq GCC və ya Clang quraşdırmalıdırlar. Məsələn,
 Ubuntu istifadə edirsinizsə, `build-essential` paketini quraşdıra bilərsiniz.
 
 ### Windows-da `rustup`-ın quraşdırılması
@@ -67,7 +65,7 @@ Windows-da [https://www.rust-lang.org/tools/install][install]<!-- ignore
 --> ünvanına keçin və Rust-ın quraşdırılması üçün təlimatlara əməl edin.
 Quraşdırmanın müəyyən mərhələsində sizdən Visual Studio quraşdırmaq istəniləcək.
 O, proqramları kompilyasiya etmək üçün lazım olan linker-i və yerli
-kitabxanaları (libraries) təmin edir. Bu addımla bağlı əlavə köməyə ehtiyacınız
+kitabxanaları təmin edir. Bu addımla bağlı əlavə köməyə ehtiyacınız
 varsa,
 [https://rust-lang.github.io/rustup/installation/windows-msvc.html][msvc]<!--
 ignore --> səhifəsinə baxın.
@@ -85,8 +83,7 @@ bunu daxil edin:
 $ rustc --version
 ```
 
-Buraxılmış ən son stabil versiyanın versiya nömrəsini, commit heşini (commit
-hash) və commit tarixini aşağıdakı formatda görməlisiniz:
+Buraxılmış ən son stabil versiyanın versiya nömrəsini, commit heşini və commit tarixini aşağıdakı formatda görməlisiniz:
 
 ```text
 rustc x.y.z (abcabcabc yyyy-mm-dd)
@@ -121,14 +118,14 @@ yerlər var. Digər Rustacean-larla (özümüzə verdiyimiz zarafatyana ləqəb)
 ### Yeniləmə və silmə
 
 Rust `rustup` vasitəsilə quraşdırıldıqdan sonra onu yeni çıxmış versiyaya
-yeniləmək (update) asandır. Shell-inizdə aşağıdakı yeniləmə skriptini işə
+yeniləmək asandır. Shell-inizdə aşağıdakı yeniləmə skriptini işə
 salın:
 
 ```console
 $ rustup update
 ```
 
-Rust-ı və `rustup`-ı silmək (uninstall) üçün shell-inizdə aşağıdakı silmə
+Rust-ı və `rustup`-ı silmək üçün shell-inizdə aşağıdakı silmə
 skriptini işə salın:
 
 ```console
@@ -141,11 +138,11 @@ $ rustup self uninstall
 ### Lokal dokumentasiyanın oxunması
 
 Rust quraşdırılarkən dokumentasiyanın lokal surəti də quraşdırılır ki, onu
-oflayn oxuya biləsiniz. Lokal dokumentasiyanı brauzerinizdə (browser) açmaq
+oflayn oxuya biləsiniz. Lokal dokumentasiyanı brauzerinizdə açmaq
 üçün `rustup doc` komandasını işə salın.
 
-Standart kitabxananın (standard library) təqdim etdiyi hər hansı tipin (type)
-və ya funksiyanın (function) nə etdiyinə və ya ondan necə istifadə edəcəyinizə
+Standart kitabxananın təqdim etdiyi hər hansı tipin
+və ya funksiyanın nə etdiyinə və ya ondan necə istifadə edəcəyinizə
 əmin olmadığınız hər an bunu öyrənmək üçün proqramlaşdırma interfeysinin
 (application programming interface, API) dokumentasiyasından istifadə edin!
 
@@ -155,7 +152,7 @@ və ya funksiyanın (function) nə etdiyinə və ya ondan necə istifadə edəc�
 ### Mətn redaktorları və IDE-lərdən istifadə
 
 Bu kitab Rust kodu yazmaq üçün hansı alətlərdən istifadə etdiyiniz barədə heç
-bir fərziyyə etmir. Demək olar ki, istənilən mətn redaktoru (text editor) işinizi
+bir fərziyyə etmir. Demək olar ki, istənilən mətn redaktoru işinizi
 görəcək! Bununla belə, bir çox mətn redaktorlarında və inteqrasiya olunmuş
 inkişaf mühitlərində (integrated development environments, IDEs) daxili Rust
 dəstəyi var. Bir çox redaktor və IDE-nin kifayət qədər aktual siyahısını həmişə
@@ -184,12 +181,11 @@ $ cd get-dependencies
 $ cargo add rand@0.10.1 trpl@0.2.0
 ```
 
-Bu, həmin paketlərin yüklənmiş fayllarını keşləyəcək (cache), beləliklə onları
+Bu, həmin paketlərin yüklənmiş fayllarını keşləyəcək, beləliklə onları
 sonra yenidən yükləməyə ehtiyac olmayacaq. Bu komandanı işə saldıqdan sonra
-`get-dependencies` direktoriyasını (directory) saxlamağa ehtiyac yoxdur. Bu
+`get-dependencies` direktoriyasını saxlamağa ehtiyac yoxdur. Bu
 komandanı işə salmısınızsa, kitabın qalan hissəsində bütün `cargo` komandaları
-ilə `--offline` flag-indən (bayraq) istifadə edə bilərsiniz; onda şəbəkəyə
-(network) qoşulmağa cəhd etmək əvəzinə bu keşlənmiş versiyalar istifadə
+ilə `--offline` flag-indən (bayraq) istifadə edə bilərsiniz; onda şəbəkəyə qoşulmağa cəhd etmək əvəzinə bu keşlənmiş versiyalar istifadə
 olunacaq.
 
 [otherinstall]: https://forge.rust-lang.org/infra/other-installation-methods.html

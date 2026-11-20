@@ -47,13 +47,11 @@ _hello_cargo_ direktoriyasına keçin və fayllara baxın. Cargo-nun bizim üç�
 fayl və bir direktoriya yaratdığını görəcəksiniz: _Cargo.toml_ faylı və içində
 _main.rs_ faylı olan _src_ direktoriyası.
 
-O, həmçinin _.gitignore_ faylı ilə birlikdə yeni Git repozitoriyası
-(repository) da yaradıb. `cargo new` komandasını mövcud Git repozitoriyasının
+O, həmçinin _.gitignore_ faylı ilə birlikdə yeni Git repozitoriyası da yaradıb. `cargo new` komandasını mövcud Git repozitoriyasının
 içində işə salsanız, Git faylları yaradılmayacaq; bu davranışı
 `cargo new --vcs=git` istifadə edərək dəyişə bilərsiniz.
 
-> Qeyd: Git geniş yayılmış versiya nəzarəti sistemidir (version control
-> system). `--vcs` flag-i ilə `cargo new`-un başqa versiya nəzarəti sistemindən
+> Qeyd: Git geniş yayılmış versiya nəzarəti sistemidir. `--vcs` flag-i ilə `cargo new`-un başqa versiya nəzarəti sistemindən
 > istifadə etməsini və ya heç bir versiya nəzarəti sistemindən istifadə
 > etməməsini təyin edə bilərsiniz. Mövcud seçimləri görmək üçün
 > `cargo new --help` komandasını işə salın.
@@ -74,7 +72,7 @@ edition = "2024"
 
 </Listing>
 
-Bu fayl Cargo-nun konfiqurasiya (configuration) formatı olan
+Bu fayl Cargo-nun konfiqurasiya formatı olan
 [_TOML_][toml]<!-- ignore --> (_Tom’s Obvious, Minimal Language_) formatındadır.
 
 Birinci sətir, `[package]`, sonrakı bəyanatların (statements) paketi
@@ -104,7 +102,7 @@ fn main() {
 Cargo sizin üçün eynilə Listing 1-1-də yazdığımız kimi “Hello, world!” proqramı
 yaradıb! İndiyədək bizim layihə ilə Cargo-nun yaratdığı layihə arasındakı
 fərqlər bunlardır: Cargo kodu _src_ direktoriyasına yerləşdirib, bizim isə kök
-direktoriyada (top-level directory) _Cargo.toml_ konfiqurasiya faylımız var.
+direktoriyada _Cargo.toml_ konfiqurasiya faylımız var.
 
 Cargo mənbə fayllarınızın _src_ direktoriyasının içində olmasını gözləyir.
 Layihənin kök direktoriyası yalnız README faylları, lisenziya məlumatı,
@@ -214,16 +212,14 @@ Linux və macOS üçün, Windows üçün ayrıca təlimatlar verməyəcəyik.
 
 ### Reliz üçün build
 
-Layihəniz nəhayət reliz (release) üçün hazır olduqda, onu optimizasiyalarla
-(optimizations) kompilyasiya etmək üçün `cargo build
+Layihəniz nəhayət reliz üçün hazır olduqda, onu optimizasiyalarla kompilyasiya etmək üçün `cargo build
 --release` istifadə edə bilərsiniz. Bu komanda icra olunan faylı _target/debug_
 əvəzinə _target/release_ direktoriyasında yaradacaq. Optimizasiyalar Rust
 kodunuzun daha sürətli işləməsini təmin edir, lakin onları aktivləşdirmək
-proqramınızın kompilyasiya müddətini uzadır. Buna görə iki fərqli profil
-(profile) var: biri tez-tez və sürətlə yenidən build etmək istədiyiniz inkişaf
+proqramınızın kompilyasiya müddətini uzadır. Buna görə iki fərqli profil var: biri tez-tez və sürətlə yenidən build etmək istədiyiniz inkişaf
 mərhələsi üçün, digəri isə istifadəçiyə verəcəyiniz, təkrar-təkrar yenidən
 build edilməyəcək və mümkün qədər sürətli işləyəcək son proqramı build etmək
-üçün. Kodunuzun icra müddətini bençmark (benchmark) edirsinizsə, mütləq
+üçün. Kodunuzun icra müddətini bençmark edirsinizsə, mütləq
 `cargo build --release` işə salın və _target/release_ içindəki icra olunan
 fayl ilə bençmark edin.
 

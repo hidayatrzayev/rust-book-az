@@ -22,9 +22,9 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | mutability | —saxlanılır— (dəyişə bilmə) | İngiliscə qalır, çünki *mutable*/*immutable* də belədir. 3-cü fəsil başlığı: "Mutability (dəyişə bilmə)". | təsdiqlənib |
 | constant | sabit | `const`. | təsdiqlənib |
 | shadowing | —saxlanılır— (kölgələmə) | Rust-a məxsus: eyni adlı yeni dəyişənin köhnəsini "kölgədə qoyması". | təsdiqlənib |
-| function | funksiya | | təsdiqlənib |
-| parameter | parametr | Funksiya təsvirindəki ad. | təsdiqlənib |
-| argument | arqument | Funksiyaya verilən real dəyər. | təsdiqlənib |
+| function | funksiya | [gündəlik] | təsdiqlənib |
+| parameter | parametr | [gündəlik] Funksiya təsvirindəki ad. | təsdiqlənib |
+| argument | arqument | [gündəlik] Funksiyaya verilən real dəyər. | təsdiqlənib |
 | return value | qaytarılan dəyər | | təsdiqlənib |
 | statement | bəyanat | `let y = 6;` kimi dəyər qaytarmayan konstruksiya. *ifadə* yalnız expression üçündür. | təsdiqlənib |
 | expression | ifadə | Dəyər qaytaran konstruksiya. | təsdiqlənib |
@@ -43,11 +43,11 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | string | sətir | `String` və `&str` tipləri kodda olduğu kimi qalır. | təsdiqlənib |
 | struct | struktur | `struct` açar sözü kodda qalır. | təsdiqlənib |
 | field | sahə | Struktur sahəsi. | təsdiqlənib |
-| method | metod | | təsdiqlənib |
+| method | metod | [gündəlik] | təsdiqlənib |
 | associated function | —saxlanılır— (əlaqəli funksiya) | Rust-a məxsus: *associated function (əlaqəli funksiya)*. | təsdiqlənib |
 | enum | —saxlanılır— | Azərbaycan proqramçıları ingiliscə deyir: *enum-un*, *enum-lar*. Alternativ: *sayma tipi*. | təsdiqlənib |
 | variant | variant | Enum-un variantı. Yazılışı ingiliscə ilə eynidir. | təsdiqlənib |
-| pattern | şablon | Alternativ: *nümunə*. | təsdiqlənib |
+| pattern | şablon | [gündəlik] Alternativ: *nümunə*. | təsdiqlənib |
 | pattern matching | şablon uyğunlaşdırılması | *şablon* (pattern) sözü ilə uyğundur. | təsdiqlənib |
 | match | —saxlanılır— | `match` açar sözü: *match ifadəsi*. | təsdiqlənib |
 | crate | —saxlanılır— | Dizayn sənədində nümunə kimi göstərilib: *crate-ə*. | təsdiqlənib |
@@ -59,7 +59,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | hash map | heş cədvəli | `HashMap<K, V>`. Alternativ: ingiliscə saxlamaq. | təsdiqlənib |
 | array | massiv | | təsdiqlənib |
 | tuple | —saxlanılır— | Tərcümə olunmur: *tuple-lar*, *tuple-ın*. | təsdiqlənib |
-| error | xəta | | təsdiqlənib |
+| error | xəta | [gündəlik] | təsdiqlənib |
 | recoverable error | bərpa olunan xəta | `Result`. | təsdiqlənib |
 | unrecoverable error | bərpa olunmayan xəta | `panic!`. | təsdiqlənib |
 | panic | —saxlanılır— | Termin kimi ingiliscə qalır (*panic-lər*, `panic!` makrosu). Mətndə anlayışı izah edərkən adi dildə *panika* sözündən istifadə etmək olar (məs. "proqram panikaya düşür"), amma termin özü *panic* yazılır. | təsdiqlənib |
@@ -71,64 +71,64 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | iterator | iterator | Yazılışı ingiliscə ilə eynidir. | təsdiqlənib |
 | smart pointer | ağıllı göstərici | | təsdiqlənib |
 | thread | axın | Ümumi anlayışdır: ilk işlənmədə *axın (thread)*. *main thread* → *əsas axın*, *spawn a thread* → *axın yaratmaq*, *thread pool* → *axın hovuzu*. `thread::spawn` kimi kod dəyişmir. *stream* ingiliscə qaldığı üçün qarışmır; *idarəetmə axını* (control flow) başqa anlayışdır. | təsdiqlənib |
-| compiler | kompilyator | | təsdiqlənib |
+| compiler | kompilyator | [gündəlik] | təsdiqlənib |
 | stack | —saxlanılır— | Tərcümə olunmur: *stack-də*, *stack-dən*. Kontekstdə bunun yaddaşa aid olduğu izah edilir (məs. "yaddaşın stack hissəsi"). *heap* ilə qarışmır (Türk tərcüməsində ikisi də *yığın* idi). | təsdiqlənib |
 | heap | —saxlanılır— | *stack*-dən fərqli: *heap-də*. Kontekstdə yaddaşa aid olduğu izah edilir. | təsdiqlənib |
-| type | tip | | təsdiqlənib |
+| type | tip | [gündəlik] | təsdiqlənib |
 | integer | tam ədəd | | təsdiqlənib |
 | floating-point number | üzən nöqtəli ədəd | Alternativ: *həqiqi ədəd*. | təsdiqlənib |
-| macro | makro | `println!`, `vec!` kimi makroların adları kodda qalır. | təsdiqlənib |
+| macro | makro | [gündəlik] `println!`, `vec!` kimi makroların adları kodda qalır. | təsdiqlənib |
 | attribute | atribut | `#[derive(...)]` və s. | təsdiqlənib |
 | test | test | Yazılışı ingiliscə ilə eynidir. | təsdiqlənib |
 | keyword | açar söz | | təsdiqlənib |
 | loop | dövr | | təsdiqlənib |
 | branch | budaq | `if` budaqları. | təsdiqlənib |
 | comment | şərh | | təsdiqlənib |
-| library | kitabxana | | təsdiqlənib |
+| library | kitabxana | [gündəlik] | təsdiqlənib |
 | command line | komanda sətri | | təsdiqlənib |
-| directory | direktoriya | Fayl sistemi direktoriyası; ingiliscə "folder" də bu sözlə tərcümə olunur (*qovluq* yox: proqramçılar *direktoriya* deyir). Kitabın bütün mətnində və README-də bu işlədilir. `cd`, `mkdir` kimi əmrlər kodda qalır. | təsdiqlənib |
+| directory | direktoriya | [gündəlik] Fayl sistemi direktoriyası; ingiliscə "folder" də bu sözlə tərcümə olunur (*qovluq* yox: proqramçılar *direktoriya* deyir). Kitabın bütün mətnində və README-də bu işlədilir. `cd`, `mkdir` kimi əmrlər kodda qalır. | təsdiqlənib |
 
 ## Yeni təkliflər: ön söz, giriş və 1-ci fəsil (Task 9)
 
 | English | Azərbaycanca | Qeyd | Status |
 | ------- | ------------ | ---- | ------ |
 | build | —saxlanılır— | Proqramçılar belə deyir: *build etmək*, *debug build-i*, *build sistemi*, *build aləti*. Alternativ: *yığmaq / yığım*. | təsdiqlənib |
-| compile | kompilyasiya etmək | İsim: *kompilyasiya*. `compiler` → *kompilyator* ilə uyğundur. | təsdiqlənib |
-| package manager | paket meneceri | Cargo: "Rust-ın paket meneceri və build sistemi". | təsdiqlənib |
+| compile | kompilyasiya etmək | [gündəlik] İsim: *kompilyasiya*. `compiler` → *kompilyator* ilə uyğundur. | təsdiqlənib |
+| package manager | paket meneceri | [gündəlik] Cargo: "Rust-ın paket meneceri və build sistemi". | təsdiqlənib |
 | dependency | asılılıq | *asılılıqlar*; "kodunuzun asılı olduğu kitabxanalar". | təsdiqlənib |
-| executable | icra olunan fayl | "binary executable" → *icra olunan binar fayl*. | təsdiqlənib |
-| binary | binar fayl | Kontekstdə sadəcə *binar*: "binar faylı işə salmaq". Gələcəkdə *binary crate* → *binar crate*. | təsdiqlənib |
-| source code | mənbə kodu | *source file* → *mənbə faylı*. Alternativ: *qaynaq kodu*. | təsdiqlənib |
-| release | reliz | *reliz üçün build*, *reliz profili*. "yeni versiya" kimi adi mənada *versiya* (*buraxılış* edition üçündür). | təsdiqlənib |
+| executable | icra olunan fayl | [gündəlik] "binary executable" → *icra olunan binar fayl*. | təsdiqlənib |
+| binary | binar fayl | [gündəlik] Kontekstdə sadəcə *binar*: "binar faylı işə salmaq". Gələcəkdə *binary crate* → *binar crate*. | təsdiqlənib |
+| source code | mənbə kodu | [gündəlik] *source file* → *mənbə faylı*. Alternativ: *qaynaq kodu*. | təsdiqlənib |
+| release | reliz | [gündəlik] *reliz üçün build*, *reliz profili*. "yeni versiya" kimi adi mənada *versiya* (*buraxılış* edition üçündür). | təsdiqlənib |
 | debug | —saxlanılır— | *debug build-i*, *debug məlumatı*. Alternativ: *sazlama*. | təsdiqlənib |
-| optimization | optimizasiya | optimizasiya etmək, optimizasiya olunmuş | təsdiqlənib |
-| profile | profil | Cargo profili: *dev*, *release*. | təsdiqlənib |
+| optimization | optimizasiya | [gündəlik] optimizasiya etmək, optimizasiya olunmuş | təsdiqlənib |
+| profile | profil | [gündəlik] Cargo profili: *dev*, *release*. | təsdiqlənib |
 | stable | stabil | *stabil versiya*. Alternativ: *sabit* (amma *sabit* = constant). | təsdiqlənib |
 | edition | buraxılış | Rust-ın buraxılışları (2015, 2018, 2021, 2024): *Rust-ın 2015 il buraxılışı*, *2024 buraxılışı*. `edition` açarı kod kimi qalır. Kitabın nəşri isə *nəşr*. | təsdiqlənib |
-| memory | yaddaş | | təsdiqlənib |
+| memory | yaddaş | [gündəlik] | təsdiqlənib |
 | memory safety | yaddaş təhlükəsizliyi | | təsdiqlənib |
-| systems programming | sistem proqramlaşdırması | | təsdiqlənib |
-| low-level | aşağı səviyyəli | *high-level* → *yüksək səviyyəli*. | təsdiqlənib |
+| systems programming | sistem proqramlaşdırması | [gündəlik] | təsdiqlənib |
+| low-level | aşağı səviyyəli | [gündəlik] *high-level* → *yüksək səviyyəli*. | təsdiqlənib |
 | zero-cost abstraction | sıfır xərcli abstraksiya | | təsdiqlənib |
 | concurrency | —saxlanılır— (eyni vaxtlılıq) | Proqramçılara tanış termindir; lazım olduqda kontekstdə izah edilir: *concurrency-ni*, *concurrent proqramlaşdırma*. 16-cı fəsildə *paralellik* (parallelism) ilə fərqləndirilir. | təsdiqlənib |
-| parallelism | paralellik | *concurrency*-dən fərqli anlayışdır. | təsdiqlənib |
-| standard library | standart kitabxana | | təsdiqlənib |
+| parallelism | paralellik | [gündəlik] *concurrency*-dən fərqli anlayışdır. | təsdiqlənib |
+| standard library | standart kitabxana | [gündəlik] | təsdiqlənib |
 | application programming interface (API) | proqramlaşdırma interfeysi (API) | İlk dəfədən sonra sadəcə *API*. | təsdiqlənib |
 | integrated development environment (IDE) | inteqrasiya olunmuş inkişaf mühiti (IDE) | İlk dəfədən sonra sadəcə *IDE*. | təsdiqlənib |
 | shell | —saxlanılır— | *shell-də*. Kitab *terminal* və *shell* sözlərini yanaşı işlədir; *terminal* yazılışı eynidir. | təsdiqlənib |
 | linker | —saxlanılır— | Alternativ: *əlaqələndirici* (akademik səslənir). | təsdiqlənib |
 | flag | —saxlanılır— (bayraq) | Komanda sətri flag-i: `--vcs` flag-i, `--release` flag-i ilə. | təsdiqlənib |
 | Rustacean | —saxlanılır— | Rust icmasının özünə verdiyi zarafatyana ad: *Rustacean-lar*. | təsdiqlənib |
-| version control system | versiya nəzarəti sistemi | | təsdiqlənib |
-| repository | repozitoriya | README-də artıq işlədilib. | təsdiqlənib |
-| bug | baq | Proqramçı dilində *baq*; *xəta* (error) ilə fərqləndirilir. Alternativ: *səhv*. | təsdiqlənib |
-| error message | xəta mesajı | *warning* → *xəbərdarlıq*. | təsdiqlənib |
-| refactoring | refaktorinq | | təsdiqlənib |
-| code review | kod revyu | *kod revyusu*, *kod revyusunda*, *kod revyu zamanı*. | təsdiqlənib |
-| open source | açıq mənbə | *açıq mənbəli layihələr*. | təsdiqlənib |
-| implementation | realizasiya | Fel: *realizə etmək*. Vacibdir: 5-ci və 10-cu fəsillərdə *implement a trait* → *trait-i realizə etmək*. Alternativ: *implementasiya*. | təsdiqlənib |
-| syntax | sintaksis | | təsdiqlənib |
-| declaration | elan | "funksiyanı elan etmək". | təsdiqlənib |
+| version control system | versiya nəzarəti sistemi | [gündəlik] | təsdiqlənib |
+| repository | repozitoriya | [gündəlik] README-də artıq işlədilib. | təsdiqlənib |
+| bug | baq | [gündəlik] Proqramçı dilində *baq*; *xəta* (error) ilə fərqləndirilir. Alternativ: *səhv*. | təsdiqlənib |
+| error message | xəta mesajı | [gündəlik] *warning* → *xəbərdarlıq*. | təsdiqlənib |
+| refactoring | refaktorinq | [gündəlik] | təsdiqlənib |
+| code review | kod revyu | [gündəlik] *kod revyusu*, *kod revyusunda*, *kod revyu zamanı*. | təsdiqlənib |
+| open source | açıq mənbə | [gündəlik] *açıq mənbəli layihələr*. | təsdiqlənib |
+| implementation | realizasiya | [gündəlik] Fel: *realizə etmək*. Vacibdir: 5-ci və 10-cu fəsillərdə *implement a trait* → *trait-i realizə etmək*. Alternativ: *implementasiya*. | təsdiqlənib |
+| syntax | sintaksis | [gündəlik] | təsdiqlənib |
+| declaration | elan | [gündəlik] "funksiyanı elan etmək". | təsdiqlənib |
 | function body | funksiyanın gövdəsi | *gövdə*. | təsdiqlənib |
 | data structure | data strukturu | Proqramçıların gündəlik dilinə yaxın forma. | təsdiqlənib |
 | collection | kolleksiya | | təsdiqlənib |
@@ -145,52 +145,52 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | nightly Rust | —saxlanılır— | | təsdiqlənib |
 | derivable trait | derive edilə bilən trait | `#[derive]` atributu ilə. | təsdiqlənib |
 | ahead-of-time compiled | əvvəlcədən kompilyasiya olunan | | təsdiqlənib |
-| cache | keş | | təsdiqlənib |
+| cache | keş | [gündəlik] | təsdiqlənib |
 
 ## Yeni təkliflər 2: 1-ci fəsil üçün əlavə terminlər (Task 9)
 
 | English | Azərbaycanca | Qeyd | Status |
 | ------- | ------------ | ---- | ------ |
-| install | quraşdırmaq | *quraşdırma* (installation), *quraşdırılıb* (installed), *installer* → *quraşdırıcı*. *yükləmək* yalnız download üçündür; ikisi eyni cümlədə ayrı addımlardır. | təsdiqlənib |
-| uninstall | silmək | "Rust-ı silmək". | təsdiqlənib |
-| update | yeniləmək | *yeniləmə*. | təsdiqlənib |
-| download | yükləmək | İnternetdən götürmək: *yükləmə*, *yüklənmiş*. Install mənasında işlədilmir (bax *quraşdırmaq*). | təsdiqlənib |
-| operating system | əməliyyat sistemi | | təsdiqlənib |
-| documentation | dokumentasiya | Proqramçı dili. Alternativ: *sənədlər*. | təsdiqlənib |
-| script | skript | | təsdiqlənib |
-| text editor | mətn redaktoru | | təsdiqlənib |
-| configuration | konfiqurasiya | *konfiqurasiya faylı*. | təsdiqlənib |
-| output | çıxış | Proqramın/komandanın çıxışı. STYLE.md-də artıq işlədilib. | təsdiqlənib |
+| install | quraşdırmaq | [gündəlik] *quraşdırma* (installation), *quraşdırılıb* (installed), *installer* → *quraşdırıcı*. *yükləmək* yalnız download üçündür; ikisi eyni cümlədə ayrı addımlardır. | təsdiqlənib |
+| uninstall | silmək | [gündəlik] "Rust-ı silmək". | təsdiqlənib |
+| update | yeniləmək | [gündəlik] *yeniləmə*. | təsdiqlənib |
+| download | yükləmək | [gündəlik] İnternetdən götürmək: *yükləmə*, *yüklənmiş*. Install mənasında işlədilmir (bax *quraşdırmaq*). | təsdiqlənib |
+| operating system | əməliyyat sistemi | [gündəlik] | təsdiqlənib |
+| documentation | dokumentasiya | [gündəlik] Proqramçı dili. Alternativ: *sənədlər*. | təsdiqlənib |
+| script | skript | [gündəlik] | təsdiqlənib |
+| text editor | mətn redaktoru | [gündəlik] | təsdiqlənib |
+| configuration | konfiqurasiya | [gündəlik] *konfiqurasiya faylı*. | təsdiqlənib |
+| output | çıxış | [gündəlik] Proqramın/komandanın çıxışı. STYLE.md-də artıq işlədilib. | təsdiqlənib |
 | prompt | —saxlanılır— | Komanda sətri prompt-u (`$`). Alternativ: *dəvət*. | təsdiqlənib |
-| file extension | fayl genişlənməsi | Konkret genişlənmədən danışarkən: *.rs genişlənməsi*, *.rs genişlənməli fayl*. | təsdiqlənib |
-| home directory | ev direktoriyası | | təsdiqlənib |
-| top-level directory | kök direktoriya | Layihənin kök direktoriyası. | təsdiqlənib |
-| underscore | alt xətt | `_`. | təsdiqlənib |
-| semicolon | nöqtəli vergül | `;`. | təsdiqlənib |
-| curly brackets | fiqurlu mötərizələr | `{}`. | təsdiqlənib |
-| parentheses | mötərizələr | `()`; dəqiqlik lazımdırsa *dairəvi mötərizələr*. | təsdiqlənib |
-| ecosystem | ekosistem | | təsdiqlənib |
-| tool | alət | *tooling* → *alətlər*. *build tool* → *build aləti*. | təsdiqlənib |
-| formatter | formatlama aləti | *format* (fel) → *formatlamaq*. | təsdiqlənib |
-| code completion | kodun avtomatik tamamlanması | | təsdiqlənib |
+| file extension | fayl genişlənməsi | [gündəlik] Konkret genişlənmədən danışarkən: *.rs genişlənməsi*, *.rs genişlənməli fayl*. | təsdiqlənib |
+| home directory | ev direktoriyası | [gündəlik] | təsdiqlənib |
+| top-level directory | kök direktoriya | [gündəlik] Layihənin kök direktoriyası. | təsdiqlənib |
+| underscore | alt xətt | [gündəlik] `_`. | təsdiqlənib |
+| semicolon | nöqtəli vergül | [gündəlik] `;`. | təsdiqlənib |
+| curly brackets | fiqurlu mötərizələr | [gündəlik] `{}`. | təsdiqlənib |
+| parentheses | mötərizələr | [gündəlik] `()`; dəqiqlik lazımdırsa *dairəvi mötərizələr*. | təsdiqlənib |
+| ecosystem | ekosistem | [gündəlik] | təsdiqlənib |
+| tool | alət | [gündəlik] *tooling* → *alətlər*. *build tool* → *build aləti*. | təsdiqlənib |
+| formatter | formatlama aləti | [gündəlik] *format* (fel) → *formatlamaq*. | təsdiqlənib |
+| code completion | kodun avtomatik tamamlanması | [gündəlik] | təsdiqlənib |
 | developer | developer | Proqramçılar özləri belə deyir: *developer-lər*. *programmer* → *proqramçı*. Alternativ: hər ikisi *proqramçı*. | təsdiqlənib |
-| software | proqram təminatı | | təsdiqlənib |
+| software | proqram təminatı | [gündəlik] | təsdiqlənib |
 | production | production | "production-da işlətmək". Alternativ: *real istifadə mühiti*. | təsdiqlənib |
-| web server | veb server | | təsdiqlənib |
-| web service | veb servis | | təsdiqlənib |
-| browser | brauzer | | təsdiqlənib |
+| web server | veb server | [gündəlik] | təsdiqlənib |
+| web service | veb servis | [gündəlik] | təsdiqlənib |
+| browser | brauzer | [gündəlik] | təsdiqlənib |
 | multithreaded | çoxaxınlı | *single-threaded* → *təkaxınlı*. *axın* (thread) ilə uyğundur. | təsdiqlənib |
 | async / await | —saxlanılır— | `async`/`await` açar sözləri; anlayış kimi də ingiliscə. *asynchronous programming* → *asinxron proqramlaşdırma*. | təsdiqlənib |
 | idiom | idiom | Rust idiomları. | təsdiqlənib |
 | operator | operator | Yazılışı eynidir. | təsdiqlənib |
-| network | şəbəkə | | təsdiqlənib |
+| network | şəbəkə | [gündəlik] | təsdiqlənib |
 | system variable | sistem dəyişəni | `%PATH%`. *environment variable* → *mühit dəyişəni* (12-ci fəsil). | təsdiqlənib |
-| commit hash | commit heşi | Git commit-i: *commit-in*. | təsdiqlənib |
-| dynamic language | dinamik proqramlaşdırma dili | Ruby, Python, JavaScript. Adətən tam forma; eyni cümlədə təkrar olunarsa və ya kontekst aydındırsa qısaca *dinamik dil*. | təsdiqlənib |
+| commit hash | commit heşi | [gündəlik] Git commit-i: *commit-in*. | təsdiqlənib |
+| dynamic language | dinamik proqramlaşdırma dili | [gündəlik] Ruby, Python, JavaScript. Adətən tam forma; eyni cümlədə təkrar olunarsa və ya kontekst aydındırsa qısaca *dinamik dil*. | təsdiqlənib |
 | legacy code | legacy kod | Proqramçı dili: *legacy kodu dəyişmək*. *köhnə kod* sadəcə "əvvəlki versiya" mənasında işlədilə bilər. | təsdiqlənib |
 | contribute | töhfə vermək | [gündəlik] *contributor* → *töhfə verən*; *Rust icmasının töhfələri ilə*. | təsdiqlənib |
 | machine learning | maşın öyrənməsi | | təsdiqlənib |
-| embedded device | daxili qurğu | *daxili qurğular*. *embedded system* → *daxili sistem*. | təsdiqlənib |
+| embedded device | daxili (embedded) qurğu | İlk işlənmədə ingiliscə söz terminin içində: *daxili (embedded) qurğular*; sonra *daxili qurğu*. *embedded system* → *daxili sistem*. | təsdiqlənib |
 | Internet of Things (IoT) | Əşyaların İnterneti (IoT) | Mötərizədə ingiliscə abreviatura; *IoT tətbiqləri*. | təsdiqlənib |
-| benchmark | bençmark | Fel: *bençmark etmək*; *bençmark testləri*. `#[bench]` kimi kod dəyişmir. | təsdiqlənib |
-| troubleshooting | problemlərin aradan qaldırılması | 1.1 bölməsinin başlığı; lövbər `#problemlərin-aradan-qaldırılması`. | təsdiqlənib |
+| benchmark | bençmark | [gündəlik] Fel: *bençmark etmək*; *bençmark testləri*. `#[bench]` kimi kod dəyişmir. | təsdiqlənib |
+| troubleshooting | problemlərin aradan qaldırılması | [gündəlik] 1.1 bölməsinin başlığı; lövbər `#problemlərin-aradan-qaldırılması`. | təsdiqlənib |

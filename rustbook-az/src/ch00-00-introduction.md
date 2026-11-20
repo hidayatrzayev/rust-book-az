@@ -9,11 +9,11 @@
 
 Rust haqqında giriş kitabı olan _Rust Proqramlaşdırma Dili_ kitabına xoş
 gəlmisiniz. Rust proqramlaşdırma dili daha sürətli və daha etibarlı proqram
-təminatı (software) yazmağınıza kömək edir. Proqramlaşdırma dillərinin
-dizaynında yüksək səviyyəli erqonomika ilə aşağı səviyyəli (low-level)
+təminatı yazmağınıza kömək edir. Proqramlaşdırma dillərinin
+dizaynında yüksək səviyyəli erqonomika ilə aşağı səviyyəli
 idarəetmə çox vaxt bir-biri ilə ziddiyyət təşkil edir; Rust bu ziddiyyətə meydan
 oxuyur. Güclü texniki imkanlarla əla developer təcrübəsi arasında tarazlıq
-yaradaraq Rust sizə aşağı səviyyəli təfərrüatları — məsələn, yaddaşdan (memory)
+yaradaraq Rust sizə aşağı səviyyəli təfərrüatları — məsələn, yaddaşdan
 istifadəni — ənənəvi olaraq belə idarəetmə ilə bağlı olan çətinliklər olmadan
 idarə etmək imkanı verir.
 
@@ -24,14 +24,13 @@ neçəsinə baxaq.
 
 ### Developer komandaları
 
-Rust sistem proqramlaşdırması (systems programming) üzrə bilikləri müxtəlif
-səviyyədə olan böyük developer komandalarının birgə işi üçün məhsuldar alət
-(tool) olduğunu sübut edir. Aşağı səviyyəli kodda müxtəlif incə baqlar (bugs)
+Rust sistem proqramlaşdırması üzrə bilikləri müxtəlif
+səviyyədə olan böyük developer komandalarının birgə işi üçün məhsuldar alət olduğunu sübut edir. Aşağı səviyyəli kodda müxtəlif incə baqlar
 yaranmağa meyllidir; əksər digər dillərdə onları yalnız geniş testlər və
-təcrübəli developerlərin diqqətli kod revyusu (code review) ilə tutmaq olar. Rust-da isə
-nəzarətçi rolunu kompilyator (compiler) oynayır: tərkibində belə çətin tutulan
+təcrübəli developerlərin diqqətli kod revyusu ilə tutmaq olar. Rust-da isə
+nəzarətçi rolunu kompilyator oynayır: tərkibində belə çətin tutulan
 baqlar, o cümlədən concurrency (eyni vaxtlılıq) ilə bağlı baqlar olan kodu
-kompilyasiya etməkdən (compile) imtina edir. Kompilyatorla birlikdə işləyərək komanda
+kompilyasiya etməkdən imtina edir. Kompilyatorla birlikdə işləyərək komanda
 vaxtını baqların arxasınca qaçmağa deyil, proqramın məntiqinə fokuslanmağa sərf
 edə bilər.
 
@@ -40,11 +39,11 @@ gətirir:
 
 - Cargo — Rust ilə birlikdə gələn build aləti və asılılıqları (dependencies)
   idarə edən alət — asılılıqları əlavə etməyi, kompilyasiya etməyi və idarə
-  etməyi bütün Rust ekosistemində (ecosystem) problemsiz və eyni cür edir.
-- `rustfmt` formatlama aləti (formatter) developerlər arasında vahid kod
+  etməyi bütün Rust ekosistemində problemsiz və eyni cür edir.
+- `rustfmt` formatlama aləti developerlər arasında vahid kod
   üslubunu təmin edir.
-- Rust Language Server kodun avtomatik tamamlanması (code completion) və
-  redaktorda kodun yanında göstərilən xəta mesajları (error messages) üçün inteqrasiya olunmuş inkişaf
+- Rust Language Server kodun avtomatik tamamlanması və
+  redaktorda kodun yanında göstərilən xəta mesajları üçün inteqrasiya olunmuş inkişaf
   mühiti (integrated development environment, IDE) inteqrasiyasını təmin edir.
 
 Rust ekosistemindəki bu və digər alətlərdən istifadə edərək developerlər sistem
@@ -53,8 +52,7 @@ səviyyəli kod yazarkən də məhsuldar ola bilərlər.
 ### Tələbələr
 
 Rust tələbələr və sistem anlayışlarını öyrənməyə maraq göstərənlər üçündür.
-Rust-dan istifadə edərək bir çox insan əməliyyat sistemlərinin (operating
-systems) hazırlanması kimi mövzuları öyrənib. İcma çox qonaqpərvərdir və
+Rust-dan istifadə edərək bir çox insan əməliyyat sistemlərinin hazırlanması kimi mövzuları öyrənib. İcma çox qonaqpərvərdir və
 tələbələrin suallarını məmnuniyyətlə cavablandırır. Bu kitab kimi səylər
 vasitəsilə Rust komandaları sistem anlayışlarını daha çox insan, xüsusən
 proqramlaşdırmaya yeni başlayanlar üçün daha əlçatan etmək istəyir.
@@ -62,25 +60,24 @@ proqramlaşdırmaya yeni başlayanlar üçün daha əlçatan etmək istəyir.
 ### Şirkətlər
 
 Böyük və kiçik yüzlərlə şirkət Rust-ı production-da müxtəlif tapşırıqlar üçün
-istifadə edir: komanda sətri (command line) alətləri, veb servislər (web
-services), DevOps alətləri, daxili qurğular (embedded devices), audio və video
+istifadə edir: komanda sətri (command line) alətləri, veb servislər, DevOps alətləri, daxili (embedded) qurğular, audio və video
 analizi və transkodlaşdırma, kriptovalyutalar, bioinformatika, axtarış
 sistemləri, Əşyaların İnterneti (Internet of Things, IoT) tətbiqləri, maşın
-öyrənməsi (machine learning) və hətta Firefox brauzerinin (browser) əsas
+öyrənməsi (machine learning) və hətta Firefox brauzerinin əsas
 hissələri.
 
 ### Açıq mənbə developerləri
 
 Rust, Rust proqramlaşdırma dilini, icmasını, developer alətlərini və
-kitabxanalarını (libraries) inkişaf etdirmək istəyən insanlar üçündür. Rust
-dilinə töhfə verməyinizi (contribute) çox istərdik.
+kitabxanalarını inkişaf etdirmək istəyən insanlar üçündür. Rust
+dilinə töhfə verməyinizi çox istərdik.
 
 ### Sürətə və stabilliyə dəyər verən insanlar
 
 Rust sürətli və stabil (stable) dil arzulayan insanlar üçündür. Sürət dedikdə
 həm Rust kodunun nə qədər tez işləyə bildiyini, həm də Rust-ın proqramları nə
 qədər tez yazmağa imkan verdiyini nəzərdə tuturuq. Rust kompilyatorunun
-yoxlamaları yeni imkanlar əlavə edildikdə və refaktorinq (refactoring) zamanı
+yoxlamaları yeni imkanlar əlavə edildikdə və refaktorinq zamanı
 stabilliyi təmin edir. Bu, belə yoxlamaları olmayan dillərdəki kövrək legacy
 koddan (legacy code) fərqlidir; developerlər çox vaxt belə kodu dəyişməkdən
 qorxurlar. Sıfır xərcli abstraksiyalara (zero-cost abstractions), yəni əl ilə
@@ -118,8 +115,8 @@ Layihə fəsillərində isə indiyədək öyrəndiklərinizi tətbiq edərək bi
 proqramlar yazacağıq. 2-ci, 12-ci və 21-ci fəsillər layihə fəsilləridir;
 qalanları anlayış fəsilləridir.
 
-**1-ci fəsil** Rust-ı necə quraşdırmağı (install), “Hello, world!” proqramını
-necə yazmağı və Rust-ın paket meneceri (package manager) və build aləti olan
+**1-ci fəsil** Rust-ı necə quraşdırmağı, “Hello, world!” proqramını
+necə yazmağı və Rust-ın paket meneceri və build aləti olan
 Cargo-dan necə istifadə etməyi izah edir. **2-ci fəsil** Rust-da proqram
 yazmağa praktiki girişdir: burada ədəd tapma oyunu yazacaqsınız. Burada
 anlayışları ümumi şəkildə əhatə edirik, sonrakı fəsillər isə əlavə təfərrüatlar
@@ -131,19 +128,19 @@ bilərsiniz; sonra öyrəndiyiniz təfərrüatları tətbiq edən layihə üzər
 işləmək istədikdə 2-ci fəslə qayıda bilərsiniz.
 
 **4-cü fəsildə** Rust-ın ownership (sahiblik) sistemi haqqında öyrənəcəksiniz.
-**5-ci fəsil** strukturları (structs) və metodları (methods) müzakirə edir.
+**5-ci fəsil** strukturları (structs) və metodları müzakirə edir.
 **6-cı fəsil** enum-ları, `match` ifadələrini (expressions), həmçinin `if let`
 və `let...else` idarəetmə axını (control flow) konstruksiyalarını əhatə edir.
-Öz tiplərinizi (types) yaratmaq üçün strukturlardan və enum-lardan istifadə
+Öz tiplərinizi yaratmaq üçün strukturlardan və enum-lardan istifadə
 edəcəksiniz.
 
 **7-ci fəsildə** Rust-ın modul (module) sistemi, həmçinin kodunuzu və onun
 public (açıq) proqramlaşdırma interfeysini (application programming interface,
 API) təşkil etmək üçün məxfilik (privacy) qaydaları haqqında öyrənəcəksiniz.
-**8-ci fəsil** standart kitabxananın (standard library) təqdim etdiyi bəzi
+**8-ci fəsil** standart kitabxananın təqdim etdiyi bəzi
 geniş yayılmış kolleksiya (collection) data strukturlarını (data structures)
 müzakirə edir: vektorlar (vectors), sətirlər (strings) və heş cədvəlləri (hash
-maps). **9-cu fəsil** Rust-ın xətaların (errors) emalı fəlsəfəsini və üsullarını
+maps). **9-cu fəsil** Rust-ın xətaların emalı fəlsəfəsini və üsullarını
 araşdırır.
 
 **10-cu fəsil** bir neçə tipə aid ola bilən kodu təyin etmək gücü verən
@@ -151,8 +148,7 @@ generic-lərə, trait-lərə və lifetime-lara (ömür müddəti) dərindən nə
 **11-ci fəsil** tamamilə testlərə həsr olunub; Rust-ın təhlükəsizlik
 zəmanətlərinə baxmayaraq, proqramınızın məntiqinin düzgün olmasını təmin etmək
 üçün testlər lazımdır. **12-ci fəsildə** fayllarda mətn axtaran `grep` komanda
-sətri alətinin funksionallığının bir hissəsinin öz realizasiyamızı
-(implementation) yazacağıq. Bunun üçün əvvəlki fəsillərdə müzakirə etdiyimiz
+sətri alətinin funksionallığının bir hissəsinin öz realizasiyamızı yazacağıq. Bunun üçün əvvəlki fəsillərdə müzakirə etdiyimiz
 bir çox anlayışdan istifadə edəcəyik.
 
 **13-cü fəsil** closure-ları və iteratorları, yəni Rust-ın funksional
@@ -165,20 +161,19 @@ onların funksionallığını təmin edən trait-ləri müzakirə edir.
 **16-cı fəsildə** concurrent proqramlaşdırmanın müxtəlif modellərini nəzərdən
 keçirəcək və Rust-ın bir neçə axında (threads) qorxmadan proqramlaşdırmağa necə
 kömək etdiyindən danışacağıq. **17-ci fəsildə** bunun üzərinə Rust-ın async və
-await sintaksisini (syntax), həmçinin task-ları, future-ləri, stream-ləri və
+await sintaksisini, həmçinin task-ları, future-ləri, stream-ləri və
 onların imkan verdiyi yüngül concurrency modelini araşdıraraq davam edirik.
 
 **18-ci fəsil** Rust idiomlarının sizə tanış ola biləcək obyektyönümlü
 proqramlaşdırma (object-oriented programming) prinsipləri ilə necə müqayisə
 olunduğuna baxır. **19-cu fəsil** Rust proqramlarında fikirləri çatdırmağın
-güclü üsulları olan şablonlar (patterns) və şablon uyğunlaşdırılması (pattern
+güclü üsulları olan şablonlar və şablon uyğunlaşdırılması (pattern
 matching) üzrə məlumat bələdçisidir. **20-ci fəsildə** maraqlı qabaqcıl
-mövzulardan ibarət rəngarəng toplu var: unsafe Rust, makrolar (macros),
-həmçinin lifetime-lar, trait-lər, tiplər, funksiyalar (functions) və
+mövzulardan ibarət rəngarəng toplu var: unsafe Rust, makrolar,
+həmçinin lifetime-lar, trait-lər, tiplər, funksiyalar və
 closure-lar haqqında əlavə məlumat.
 
-**21-ci fəsildə** aşağı səviyyəli çoxaxınlı (multithreaded) veb server (web
-server) realizə edəcəyimiz layihəni tamamlayacağıq!
+**21-ci fəsildə** aşağı səviyyəli çoxaxınlı (multithreaded) veb server realizə edəcəyimiz layihəni tamamlayacağıq!
 
 Nəhayət, bəzi əlavələrdə dil haqqında məlumat kitabçası formatında faydalı
 məlumatlar var. **Əlavə A** Rust-ın açar sözlərini (keywords), **Əlavə B**
