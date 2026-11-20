@@ -179,8 +179,7 @@ Nəhayət, bəzi əlavələrdə dil haqqında məlumat kitabçası formatında f
 məlumatlar var. **Əlavə A** Rust-ın açar sözlərini (keywords), **Əlavə B**
 Rust-ın operatorlarını və simvollarını, **Əlavə C** standart kitabxananın
 təqdim etdiyi derive edilə bilən trait-ləri (derivable traits), **Əlavə D** bəzi
-faydalı developer alətlərini əhatə edir, **Əlavə E** isə Rust buraxılışlarını
-(editions) izah edir. **Əlavə F**-də kitabın tərcümələrini tapa bilərsiniz,
+faydalı developer alətlərini əhatə edir, **Əlavə E** isə Rust buraxılışlarını izah edir. **Əlavə F**-də kitabın tərcümələrini tapa bilərsiniz,
 **Əlavə G**-də isə Rust-ın necə yaradıldığını və nightly Rust-ın nə olduğunu
 izah edəcəyik.
 

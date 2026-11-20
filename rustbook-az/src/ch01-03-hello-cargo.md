@@ -81,7 +81,7 @@ konfiqurasiya etdiyini göstərən bölmə başlığıdır. Bu fayla daha çox m
 
 Sonrakı üç sətir Cargo-nun proqramınızı kompilyasiya etmək üçün ehtiyac duyduğu
 konfiqurasiya məlumatını təyin edir: ad, versiya və istifadə olunacaq Rust
-buraxılışı (edition). `edition` açarından [Əlavə E-də][appendix-e]<!-- ignore -->
+buraxılışı. `edition` açarından [Əlavə E-də][appendix-e]<!-- ignore -->
 danışacağıq.
 
 Son sətir, `[dependencies]`, layihənizin bütün asılılıqlarını sadalamağınız
