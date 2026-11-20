@@ -159,7 +159,7 @@ Yenicə yaradılmış proqramı işə saldınız, gəlin indi prosesin hər add�
 nəzərdən keçirək.
 
 Rust proqramını işə salmazdan əvvəl onu Rust kompilyatoru ilə kompilyasiya
-etməlisiniz: `rustc` komandasını daxil edib ona mənbə faylınızın adını ötürün,
+etməlisiniz: `rustc` komandasını daxil edib, ona mənbə faylınızın adını ötürün,
 belə:
 
 ```console
@@ -204,7 +204,7 @@ world!` çap edir.
 
 Ruby, Python və ya JavaScript kimi dinamik proqramlaşdırma dili ilə daha çox tanışsınızsa, proqramı ayrı addımlarla kompilyasiya edib
 işə salmağa öyrəşməmiş ola bilərsiniz. Rust _əvvəlcədən kompilyasiya olunan
-(ahead-of-time compiled)_ dildir; yəni proqramı kompilyasiya edib icra olunan
+(ahead-of-time compiled)_ dildir; yəni proqramı kompilyasiya edib, icra olunan
 faylı başqasına verə bilərsiniz və o, Rust quraşdırılmamış olsa belə, onu işə
 sala bilər. Kiməsə _.rb_, _.py_ və ya _.js_ faylı versəniz, onda müvafiq olaraq
 Ruby, Python və ya JavaScript realizasiyası quraşdırılmış

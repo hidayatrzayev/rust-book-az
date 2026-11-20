@@ -13,7 +13,7 @@ təminatı yazmağınıza kömək edir. Proqramlaşdırma dillərinin
 dizaynında yüksək səviyyəli erqonomika ilə aşağı səviyyəli
 idarəetmə çox vaxt bir-biri ilə ziddiyyət təşkil edir; Rust bu ziddiyyətə meydan
 oxuyur. Güclü texniki imkanlarla əla developer təcrübəsi arasında tarazlıq
-yaradaraq Rust sizə aşağı səviyyəli təfərrüatları — məsələn, yaddaşdan
+yaradaraq, Rust sizə aşağı səviyyəli təfərrüatları — məsələn, yaddaşdan
 istifadəni — ənənəvi olaraq belə idarəetmə ilə bağlı olan çətinliklər olmadan
 idarə etmək imkanı verir.
 
@@ -30,7 +30,7 @@ yaranmağa meyllidir; əksər digər dillərdə onları yalnız geniş testlər 
 təcrübəli developerlərin diqqətli kod revyusu ilə tutmaq olar. Rust-da isə
 nəzarətçi rolunu kompilyator oynayır: tərkibində belə çətin tutulan
 baqlar, o cümlədən concurrency (eyni vaxtlılıq) ilə bağlı baqlar olan kodu
-kompilyasiya etməkdən imtina edir. Kompilyatorla birlikdə işləyərək komanda
+kompilyasiya etməkdən imtina edir. Kompilyatorla birlikdə işləyərək, komanda
 vaxtını baqların arxasınca qaçmağa deyil, proqramın məntiqinə fokuslanmağa sərf
 edə bilər.
 
@@ -46,13 +46,13 @@ gətirir:
   Development Environment, IDE) kodun avtomatik tamamlanmasını və redaktorda
   kodun yanında göstərilən xəta mesajlarını təmin edir.
 
-Rust ekosistemindəki bu və digər alətlərdən istifadə edərək developerlər sistem
+Rust ekosistemindəki bu və digər alətlərdən istifadə edərək, developerlər sistem
 səviyyəli kod yazarkən də məhsuldar ola bilərlər.
 
 ### Tələbələr
 
 Rust tələbələr və sistem anlayışlarını öyrənməyə maraq göstərənlər üçündür.
-Rust-dan istifadə edərək bir çox insan əməliyyat sistemlərinin hazırlanması kimi mövzuları öyrənib. İcma çox qonaqpərvərdir və
+Rust-dan istifadə edərək, bir çox insan əməliyyat sistemlərinin hazırlanması kimi mövzuları öyrənib. İcma çox qonaqpərvərdir və
 tələbələrin suallarını məmnuniyyətlə cavablandırır. Bu kitab kimi səylər
 vasitəsilə Rust komandaları sistem anlayışlarını daha çox insan, xüsusən
 proqramlaşdırmaya yeni başlayanlar üçün daha əlçatan etmək istəyir.
@@ -88,7 +88,7 @@ olunur və əl ilə yazılmış kod qədər sürətli işləyir.
 Rust dili bir çox başqa istifadəçiləri də dəstəkləməyə ümid edir; burada adı
 çəkilənlər ən böyük maraqlı tərəflərdən sadəcə bəziləridir. Ümumilikdə Rust-ın
 ən böyük ambisiyası təhlükəsizlik _və_ məhsuldarlıq, sürət _və_ erqonomika təmin
-edərək proqramçıların onilliklərdir razılaşdığı kompromisləri aradan
+edərək, proqramçıların onilliklərdir razılaşdığı kompromisləri aradan
 qaldırmaqdır. Rust-ı sınayın və onun seçimlərinin sizə uyğun olub-olmadığını
 görün.
 
@@ -111,7 +111,7 @@ sonrakı fəsildə yenidən qayıdacağıq.
 
 Bu kitabda iki növ fəsil tapacaqsınız: anlayış fəsilləri və layihə fəsilləri.
 Anlayış fəsillərində Rust-ın hər hansı bir cəhəti haqqında öyrənəcəksiniz.
-Layihə fəsillərində isə indiyədək öyrəndiklərinizi tətbiq edərək birlikdə kiçik
+Layihə fəsillərində isə indiyədək öyrəndiklərinizi tətbiq edərək, birlikdə kiçik
 proqramlar yazacağıq. 2-ci, 12-ci və 21-ci fəsillər layihə fəsilləridir;
 qalanları anlayış fəsilləridir.
 
@@ -122,7 +122,7 @@ yazmağa praktiki girişdir: burada ədəd tapma oyunu yazacaqsınız. Burada
 anlayışları ümumi şəkildə əhatə edirik, sonrakı fəsillər isə əlavə təfərrüatlar
 verəcək. Dərhal işə girişmək istəyirsinizsə, 2-ci fəsil məhz bunun üçündür.
 Növbəti mövzuya keçməzdən əvvəl hər təfərrüatı öyrənməyi üstün tutan xüsusilə
-diqqətli oxucusunuzsa, 2-ci fəsli ötürüb birbaşa digər proqramlaşdırma
+diqqətli oxucusunuzsa, 2-ci fəsli ötürüb, birbaşa digər proqramlaşdırma
 dillərindəkinə bənzəyən Rust imkanlarını əhatə edən **3-cü fəslə** keçə
 bilərsiniz; sonra öyrəndiyiniz təfərrüatları tətbiq edən layihə üzərində
 işləmək istədikdə 2-ci fəslə qayıda bilərsiniz.

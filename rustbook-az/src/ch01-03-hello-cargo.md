@@ -146,7 +146,7 @@ dəqiq versiyalarını izləyir. Bu layihənin asılılıqları yoxdur, ona gör
 demək olar ki, boşdur. Bu faylı heç vaxt əl ilə dəyişməli olmayacaqsınız; Cargo
 onun məzmununu sizin üçün idarə edir.
 
-Layihəni indicə `cargo build` ilə build edib `./target/debug/hello_cargo` ilə
+Layihəni indicə `cargo build` ilə build edib, `./target/debug/hello_cargo` ilə
 işə saldıq, lakin kodu kompilyasiya edib alınan icra olunan faylı işə salmaq
 üçün bunların hamısını bir komandada edən `cargo run`-dan da istifadə edə
 bilərik:
@@ -207,7 +207,7 @@ Gəlin Cargo haqqında indiyədək öyrəndiklərimizi xülasə edək:
   direktoriyasında saxlayır.
 
 Cargo-dan istifadənin əlavə üstünlüyü ondadır ki, hansı əməliyyat sistemində
-işləməyinizdən asılı olmayaraq komandalar eynidir. Ona görə də bundan sonra
+işləməyinizdən asılı olmayaraq, komandalar eynidir. Ona görə də bundan sonra
 Linux və macOS üçün, Windows üçün ayrıca təlimatlar verməyəcəyik.
 
 ### Reliz üçün build
@@ -254,8 +254,8 @@ Rust səyahətinizə artıq əla başlanğıc verdiniz! Bu fəsildə bunları ö
 - `rustup` ilə Rust-ın ən son stabil versiyasını quraşdırmaq.
 - Rust-ı daha yeni versiyaya yeniləmək.
 - Lokal quraşdırılmış dokumentasiyanı açmaq.
-- Birbaşa `rustc` istifadə edərək “Hello, world!” proqramı yazıb işə salmaq.
-- Cargo konvensiyalarından istifadə edərək yeni layihə yaradıb işə salmaq.
+- Birbaşa `rustc` istifadə edərək, “Hello, world!” proqramı yazıb işə salmaq.
+- Cargo konvensiyalarından istifadə edərək, yeni layihə yaradıb işə salmaq.
 
 Rust kodunu oxumağa və yazmağa öyrəşmək üçün daha ciddi proqram yazmağın tam
 vaxtıdır. Ona görə də 2-ci fəsildə ədəd tapma oyunu proqramı yazacağıq. Ümumi

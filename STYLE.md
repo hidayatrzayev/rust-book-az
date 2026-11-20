@@ -39,6 +39,20 @@ Kompilyatorun çıxışı və xəta mesajları kod bloklarında **ingiliscə** q
 
 `> Note: ` ilə başlayan qeyd blokları `> Qeyd: ` kimi yazılır (dəqiq bu formada, iki nöqtə və boşluqla); `tools/az_note.py` onları qeyd qutusuna çevirir.
 
+## Durğu işarələri
+
+Rəsmi normativ mənbə (AMEA-nın *Azərbaycan dilinin orfoqrafiya qaydaları*, 2017 layihəsi; 1977-ci il *Azərbaycan dilində durğu işarələri*) durğu işarələrini tam əhatə etmir, ona görə qaydalar aşağıdakı mənbələrə əsaslanır: AMEA orfoqrafiya qaydaları layihəsi (edebiyyat-az.com, 2018), az.wikipedia.org “Vergül” və “Dırnaq işarəsi”, Təhsil Nazirliyinin pedaqoji dərsliyi, mir.az “Feili bağlama”.
+
+- **Bağlayıcılar**: *amma, ancaq, lakin, hətta, yəni, çünki* cümlə daxilində özündən əvvəl vergül tələb edir; *ki*-dən sonra vergül qoyulur (*Bilin ki, …*). *və* birləşdirmə bağlayıcısından əvvəl vergül qoyulmur.
+- **Ara sözlər** (*məsələn, əslində, beləliklə, ümumiyyətlə, yəqin, görünür, çox güman ki…*): cümlənin əvvəlində sonra, ortasında hər iki tərəfdən vergül. *sanki*, *elə bil* vergülsüz.
+- **Şərt budağı** (*-sa/-sə*, *əgər*): budaq cümlədən sonra vergül.
+- **Mübtəda *o / bu***: ardınca feildən başqa söz gəlirsə vergül (*O, artıq sizdə var*; *Bu, sizi … edir*); feildən əvvəl vergül yoxdur (*O getdi*). Təyin kimi (*bu gün*, *bu dəfə*) vergülsüz.
+- **Feli bağlama**: tərzi-hərəkət / səbəb-məqsəd mənalı feli bağlama tərkibi xəbərdən başqa üzvlərlə ayrılırsa, ondan sonra vergül (*Kompilyatorla birlikdə işləyərək, komanda…*). Bilavasitə xəbərin yanında gəlirsə vergül yoxdur (*`--vcs=git` istifadə edərək dəyişə bilərsiniz*). *-ıb/-ib* həmcins xəbər olduqda (öz tamamlığı ilə ayrıca hərəkət) sonra vergül (*komandasını daxil edib, ona … ötürün*); sıx cüt hərəkətdə (*kompilyasiya edib işə salmaq*) vergül yoxdur. Mənbələr bu sahədə tam razı deyil; bu kitab yuxarıdakı qaydanı izləyir.
+- **Dırnaq**: “ ” (ingilis qoşa dırnaq, müasir praktikada əsas forma); daxili sitat üçün ‘ ’. Dırnaqdakı ada artırılan şəkilçi dırnaqdan kənarda yazılır: “Hello, world!” proqramı, “Quraşdırma”nın.
+- **Defis**: rəqəm və abreviaturadan sonra şəkilçi defislə (*2-ci*, *1-1-dəki*, *IDE-nin*, *API-ni*); ingiliscə saxlanılan terminlərdən sonra da defis (bax “Terminlər”).
+- **Tire**: əlavə izah üçün hər iki tərəfdən boşluqla ( — ).
+- Durğu işarələri yeni sətrə keçirilmir.
+
 ## Başlıqlar
 
 Başlıqlar tərcümə olunur. mdBook lövbərləri başlıqdan yaradıldığı üçün həmin fəsildəki və digər fəsillərdəki `#lövbər` keçidləri yeni lövbərə uyğun yenilənir. `python tools/check_chapter.py` mövcud olmayan lövbərləri tapır. Başlıqda ingiliscə mötərizə yazılmır (ilk işlənmə qaydası mətn hissəsinə aiddir).
@@ -59,4 +73,5 @@ Kod nümunələrindəki şərhlər (`//`, `///`, `//!`, `/* */`) **tərcümə ol
 - Terms kept in English take hyphenated suffixes (*trait-in*, *crate-ə*), chosen by the English pronunciation (*crate-i*, *future-lər*).
 - Never touch code, inline code, directives, `<Listing>` attributes (only `caption` text is translated), link targets (only `#anchor` follows translated headings), `<!-- ignore -->`, ANCHOR lines, `output.txt`.
 - Notes: `> Note: ` becomes exactly `> Qeyd: ` (rendered as a note box by `tools/az_note.py`).
+- Punctuation: see “Durğu işarələri” (comma before amma/lakin/çünki/yəni, after ki and -sa clauses, after detached converb phrases; “ ” quotes with suffixes outside; hyphen after numbers/abbreviations).
 - Compiler output stays English; the prose around it is translated. Comments in code listings are translated.

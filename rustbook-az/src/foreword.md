@@ -39,7 +39,7 @@ Rust səyahəti əməkdaşlıq, öyrənmə və təkmilləşdirmə səyahəti olu
 onun ekosisteminin böyüməsi onun arxasında dayanan canlı və rəngarəng
 icmanın birbaşa əksidir. Dilin əsas dizaynerlərindən tutmuş arabir kömək
 edənlərədək minlərlə developerin əməyi Rust-ı bu qədər unikal və güclü alət edir.
-Bu kitabı əlinizə almaqla siz sadəcə yeni proqramlaşdırma dili öyrənmirsiniz,
+Bu kitabı əlinizə almaqla, siz sadəcə yeni proqramlaşdırma dili öyrənmirsiniz,
 həm də proqram təminatını daha yaxşı, daha təhlükəsiz və onunla
 işləməyi daha xoş etmək üçün yaranmış hərəkata qoşulursunuz.
 
