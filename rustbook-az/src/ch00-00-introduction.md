@@ -138,8 +138,8 @@ edəcəksiniz.
 public (açıq) proqramlaşdırma interfeysini (application programming interface,
 API) təşkil etmək üçün məxfilik (privacy) qaydaları haqqında öyrənəcəksiniz.
 **8-ci fəsil** standart kitabxananın təqdim etdiyi bəzi
-geniş yayılmış kolleksiya (collection) data strukturlarını (data structures)
-müzakirə edir: vektorlar (vectors), sətirlər (strings) və heş cədvəlləri (hash
+geniş yayılmış kolleksiya data strukturlarını
+müzakirə edir: vektorlar, sətirlər (strings) və heş cədvəlləri (hash
 maps). **9-cu fəsil** Rust-ın xətaların emalı fəlsəfəsini və üsullarını
 araşdırır.
 

@@ -55,7 +55,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | module | modul | | təsdiqlənib |
 | path | yol | Modul yolu. Fayl yolu da *yol*-dur; kontekstdən aydın olur. | təsdiqlənib |
 | scope | əhatə dairəsi | Alternativ: *görünmə sahəsi*. *sahə* (field) ilə qarışmasın deyə seçilməyib. | təsdiqlənib |
-| vector | vektor | `Vec<T>`. | təsdiqlənib |
+| vector | vektor | [gündəlik] `Vec<T>`. | təsdiqlənib |
 | hash map | heş cədvəli | `HashMap<K, V>`. Alternativ: ingiliscə saxlamaq. | təsdiqlənib |
 | array | massiv | | təsdiqlənib |
 | tuple | —saxlanılır— | Tərcümə olunmur: *tuple-lar*, *tuple-ın*. | təsdiqlənib |
@@ -130,8 +130,8 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | syntax | sintaksis | [gündəlik] | təsdiqlənib |
 | declaration | elan | [gündəlik] "funksiyanı elan etmək". | təsdiqlənib |
 | function body | funksiyanın gövdəsi | *gövdə*. | təsdiqlənib |
-| data structure | data strukturu | Proqramçıların gündəlik dilinə yaxın forma. | təsdiqlənib |
-| collection | kolleksiya | | təsdiqlənib |
+| data structure | data strukturu | [gündəlik] Proqramçıların gündəlik dilinə yaxın forma. | təsdiqlənib |
+| collection | kolleksiya | [gündəlik] | təsdiqlənib |
 | control flow | idarəetmə axını | | təsdiqlənib |
 | functional programming | funksional proqramlaşdırma | | təsdiqlənib |
 | object-oriented programming | obyektyönümlü proqramlaşdırma | | təsdiqlənib |
