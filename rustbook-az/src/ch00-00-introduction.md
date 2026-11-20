@@ -94,8 +94,8 @@ görün.
 
 ## Bu kitab kimin üçündür
 
-Bu kitab sizin artıq başqa bir proqramlaşdırma dilində kod yazdığınızı fərz
-edir, amma hansı dil olduğu barədə heç bir fərziyyə etmir. Materialı müxtəlif
+Bu kitab sizin artıq başqa bir proqramlaşdırma dilində kod yazdığınızı güman
+edir, amma bunun hansı dil olmasının fərqi yoxdur. Materialı müxtəlif
 proqramlaşdırma təcrübəsi olan insanlar üçün geniş şəkildə əlçatan etməyə
 çalışmışıq. Proqramlaşdırmanın nə _olduğu_ və ya bu barədə necə düşünmək
 lazım olduğu haqqında çox danışmırıq. Proqramlaşdırmada tamamilə yenisinizsə,
@@ -104,7 +104,7 @@ faydalı olar.
 
 ## Bu kitabdan necə istifadə etməli
 
-Ümumiyyətlə, bu kitab sizin onu əvvəldən sonadək ardıcıl oxuduğunuzu fərz edir.
+Ümumiyyətlə, bu kitab sizin onu əvvəldən sonadək ardıcıl oxuduğunuzu güman edir.
 Sonrakı fəsillər əvvəlki fəsillərdəki anlayışlar üzərində qurulur; əvvəlki
 fəsillər müəyyən mövzunun təfərrüatlarına girməyə bilər, amma həmin mövzuya
 sonrakı fəsildə yenidən qayıdacağıq.

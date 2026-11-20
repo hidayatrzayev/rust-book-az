@@ -4,7 +4,7 @@ Rust-ı quraşdırdığınıza görə ilk Rust proqramınızı yazmağın vaxtı
 öyrənərkən ekrana `Hello, world!` mətnini çap edən kiçik proqram yazmaq
 ənənədir, ona görə biz də burada eyni şeyi edəcəyik!
 
-> Qeyd: Bu kitab komanda sətri ilə ilkin tanışlığınızın olduğunu fərz edir.
+> Qeyd: Bu kitab komanda sətri ilə ilkin tanışlığınızın olduğunu güman edir.
 > Rust kodu necə redaktə etdiyinizə, hansı alətlərdən istifadə etdiyinizə və ya
 > kodunuzun harada saxlandığına xüsusi tələblər qoymur, ona görə də komanda
 > sətri əvəzinə IDE istifadə etməyi üstün tutursunuzsa, sevimli IDE-nizdən

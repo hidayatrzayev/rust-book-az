@@ -13,7 +13,7 @@ yazdıqca asılılıqlar əlavə edəcəksiniz və layihəyə Cargo ilə başlas
 asılılıq əlavə etmək xeyli asan olacaq.
 
 Rust layihələrinin böyük əksəriyyəti Cargo-dan istifadə etdiyi üçün kitabın
-qalan hissəsi sizin də Cargo-dan istifadə etdiyinizi fərz edir.
+qalan hissəsi sizin də Cargo-dan istifadə etdiyinizi güman edir.
 [“Quraşdırma”][installation]<!-- ignore --> bölməsində müzakirə olunan rəsmi
 quraşdırıcılardan istifadə etmisinizsə, Cargo Rust ilə birlikdə quraşdırılıb.
 Rust-ı başqa üsulla quraşdırmısınızsa, terminalınıza aşağıdakını daxil edərək
