@@ -44,7 +44,7 @@ gətirir:
   üslubunu təmin edir.
 - Rust Language Server kodun avtomatik tamamlanması və
   redaktorda kodun yanında göstərilən xəta mesajları üçün inteqrasiya olunmuş inkişaf
-  mühiti (integrated development environment, IDE) inteqrasiyasını təmin edir.
+  mühiti (Integrated Development Environment, IDE) inteqrasiyasını təmin edir.
 
 Rust ekosistemindəki bu və digər alətlərdən istifadə edərək developerlər sistem
 səviyyəli kod yazarkən də məhsuldar ola bilərlər.

@@ -154,7 +154,7 @@ və ya funksiyanın nə etdiyinə və ya ondan necə istifadə edəcəyinizə
 Bu kitab Rust kodu yazmaq üçün hansı alətlərdən istifadə etdiyiniz barədə heç
 bir fərziyyə etmir. Demək olar ki, istənilən mətn redaktoru işinizi
 görəcək! Bununla belə, bir çox mətn redaktorlarında və inteqrasiya olunmuş
-inkişaf mühitlərində (integrated development environments, IDEs) daxili Rust
+inkişaf mühitlərində (Integrated Development Environments, IDEs) daxili Rust
 dəstəyi var. Bir çox redaktor və IDE-nin kifayət qədər aktual siyahısını həmişə
 Rust veb saytındakı [alətlər səhifəsində][tools] tapa bilərsiniz.
 
