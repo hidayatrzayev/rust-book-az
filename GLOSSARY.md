@@ -133,7 +133,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | data structure | data strukturu | [gündəlik] Proqramçıların gündəlik dilinə yaxın forma. | təsdiqlənib |
 | collection | kolleksiya | [gündəlik] | təsdiqlənib |
 | control flow | idarəetmə axını | | təsdiqlənib |
-| functional programming | funksional proqramlaşdırma | | təsdiqlənib |
+| functional programming | funksional proqramlaşdırma | [gündəlik] | təsdiqlənib |
 | object-oriented programming | obyektyönümlü proqramlaşdırma | | təsdiqlənib |
 | privacy | məxfilik | 7-ci fəsil: *məxfilik qaydaları*. | təsdiqlənib |
 | public | —saxlanılır— (açıq) | `pub`. Anlayış kimi: *public (açıq)*. "public API" kimi birləşmələrdə Azərbaycanca əvvəl gəlir: *açıq (public) proqramlaşdırma interfeysi*. | təsdiqlənib |

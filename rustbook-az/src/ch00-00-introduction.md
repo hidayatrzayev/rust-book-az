@@ -152,7 +152,7 @@ sətri alətinin funksionallığının bir hissəsinin öz realizasiyamızı yaz
 bir çox anlayışdan istifadə edəcəyik.
 
 **13-cü fəsil** closure-ları və iteratorları, yəni Rust-ın funksional
-proqramlaşdırma (functional programming) dillərindən gələn imkanlarını
+proqramlaşdırma dillərindən gələn imkanlarını
 araşdırır. **14-cü fəsildə** Cargo-ya daha ətraflı baxacaq və kitabxanalarınızı
 başqaları ilə paylaşmağın ən yaxşı təcrübələrindən danışacağıq. **15-ci fəsil**
 standart kitabxananın təqdim etdiyi ağıllı göstəriciləri (smart pointers) və
