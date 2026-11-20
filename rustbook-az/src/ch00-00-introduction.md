@@ -95,7 +95,7 @@ görün.
 ## Bu kitab kimin üçündür
 
 Bu kitab sizin artıq başqa bir proqramlaşdırma dilində kod yazdığınızı güman
-edir, amma bunun hansı dil olmasının fərqi yoxdur. Materialı müxtəlif
+edir, amma hansı dil olduğu barədə heç bir fərziyyə etmir. Materialı müxtəlif
 proqramlaşdırma təcrübəsi olan insanlar üçün geniş şəkildə əlçatan etməyə
 çalışmışıq. Proqramlaşdırmanın nə _olduğu_ və ya bu barədə necə düşünmək
 lazım olduğu haqqında çox danışmırıq. Proqramlaşdırmada tamamilə yenisinizsə,
