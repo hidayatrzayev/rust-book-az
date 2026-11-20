@@ -147,7 +147,7 @@ makro çağırdığınızı bildirir və makrolar həmişə funksiyalarla eyni q
 İkincisi, `"Hello, world!"` sətrini görürsünüz. Bu sətri `println!`-ə arqument kimi ötürürük və sətir ekrana çap olunur.
 
 Üçüncüsü, sətri nöqtəli vergüllə, yəni `;` ilə bitiririk; bu,
-ifadənin (expression) bitdiyini və növbətinin başlamağa hazır olduğunu
+ifadənin bitdiyini və növbətinin başlamağa hazır olduğunu
 göstərir. Rust kodunun əksər sətirləri nöqtəli vergüllə bitir.
 
 <!-- Old headings. Do not remove or links may break. -->

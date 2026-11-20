@@ -129,7 +129,7 @@ işləmək istədikdə 2-ci fəslə qayıda bilərsiniz.
 
 **4-cü fəsildə** Rust-ın ownership (sahiblik) sistemi haqqında öyrənəcəksiniz.
 **5-ci fəsil** strukturları (structs) və metodları müzakirə edir.
-**6-cı fəsil** enum-ları, `match` ifadələrini (expressions), həmçinin `if let`
+**6-cı fəsil** enum-ları, `match` ifadələrini, həmçinin `if let`
 və `let...else` idarəetmə axını (control flow) konstruksiyalarını əhatə edir.
 Öz tiplərinizi yaratmaq üçün strukturlardan və enum-lardan istifadə
 edəcəksiniz.

@@ -27,7 +27,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | argument | arqument | [gündəlik] Funksiyaya verilən real dəyər. | təsdiqlənib |
 | return value | qaytarılan dəyər | | təsdiqlənib |
 | statement | bəyanat | `let y = 6;` kimi dəyər qaytarmayan konstruksiya. *ifadə* yalnız expression üçündür. | təsdiqlənib |
-| expression | ifadə | Dəyər qaytaran konstruksiya. | təsdiqlənib |
+| expression | ifadə | [gündəlik] Dəyər qaytaran konstruksiya. | təsdiqlənib |
 | value | dəyər | | təsdiqlənib |
 | ownership | —saxlanılır— (sahiblik) | Rust-a məxsus anlayış: *ownership (sahiblik)*. | təsdiqlənib |
 | move | ötürmə | *Köçürmə* seçilmədi, çünki Azərbaycan IT dilində "copy" mənasında da işlənir. Alternativ: *daşıma*. | təsdiqlənib |
