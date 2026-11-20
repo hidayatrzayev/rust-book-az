@@ -8,7 +8,7 @@ lazımdır.
 > seçimlər üçün [Rust-ın digər quraşdırma üsulları səhifəsinə][otherinstall]
 > baxın.
 
-Aşağıdakı addımlar Rust kompilyatorunun ən son stabil (stable)
+Aşağıdakı addımlar Rust kompilyatorunun ən son stabil
 versiyasını quraşdırır. Rust-ın stabillik zəmanətləri kitabdakı kompilyasiya
 olunan bütün nümunələrin Rust-ın daha yeni versiyalarında da
 kompilyasiya olunmağa davam edəcəyini təmin edir. Çıxış versiyadan

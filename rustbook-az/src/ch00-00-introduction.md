@@ -74,7 +74,7 @@ dilinə töhfə verməyinizi çox istərdik.
 
 ### Sürətə və stabilliyə dəyər verən insanlar
 
-Rust sürətli və stabil (stable) dil arzulayan insanlar üçündür. Sürət dedikdə
+Rust sürətli və stabil dil arzulayan insanlar üçündür. Sürət dedikdə
 həm Rust kodunun nə qədər tez işləyə bildiyini, həm də Rust-ın proqramları nə
 qədər tez yazmağa imkan verdiyini nəzərdə tuturuq. Rust kompilyatorunun
 yoxlamaları yeni imkanlar əlavə edildikdə və refaktorinq zamanı

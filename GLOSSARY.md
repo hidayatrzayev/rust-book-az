@@ -103,7 +103,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | debug | —saxlanılır— | *debug build-i*, *debug məlumatı*. Alternativ: *sazlama*. | təsdiqlənib |
 | optimization | optimizasiya | [gündəlik] optimizasiya etmək, optimizasiya olunmuş | təsdiqlənib |
 | profile | profil | [gündəlik] Cargo profili: *dev*, *release*. | təsdiqlənib |
-| stable | stabil | *stabil versiya*. Alternativ: *sabit* (amma *sabit* = constant). | təsdiqlənib |
+| stable | stabil | [gündəlik] *stabil versiya*. Alternativ: *sabit* (amma *sabit* = constant). | təsdiqlənib |
 | edition | buraxılış | Rust-ın buraxılışları (2015, 2018, 2021, 2024): *Rust-ın 2015 il buraxılışı*, *2024 buraxılışı*. `edition` açarı kod kimi qalır. Kitabın nəşri isə *nəşr*. | təsdiqlənib |
 | memory | yaddaş | [gündəlik] | təsdiqlənib |
 | memory safety | yaddaş təhlükəsizliyi | | təsdiqlənib |
