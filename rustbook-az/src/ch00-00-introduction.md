@@ -29,9 +29,9 @@ səviyyədə olan böyük developer komandalarının birgə işi üçün məhsul
 (tool) olduğunu sübut edir. Aşağı səviyyəli kodda müxtəlif incə baqlar (bugs)
 yaranmağa meyllidir; əksər digər dillərdə onları yalnız geniş testlər və
 təcrübəli developerlərin diqqətli kod revyusu (code review) ilə tutmaq olar. Rust-da
-kompilyator (compiler) bu çətin tutulan baqları, o cümlədən concurrency (eyni
-vaxtlılıq) ilə bağlı baqları ehtiva edən kodu kompilyasiya etməkdən (compile)
-imtina edərək qapıçı rolunu oynayır. Kompilyatorla birlikdə işləyərək komanda
+kompilyator (compiler) nəzarətçi rolunu oynayır: tərkibində belə çətin tutulan
+baqlar, o cümlədən concurrency (eyni vaxtlılıq) ilə bağlı baqlar olan kodu
+kompilyasiya etməkdən (compile) imtina edir. Kompilyatorla birlikdə işləyərək komanda
 vaxtını baqların arxasınca qaçmağa deyil, proqramın məntiqinə fokuslanmağa sərf
 edə bilər.
 

@@ -47,7 +47,7 @@ Rust is installed now. Great!
 Sizə həmçinin _linker_ lazım olacaq — bu, Rust-ın kompilyasiya nəticələrini bir
 faylda birləşdirmək üçün istifadə etdiyi proqramdır. Çox güman ki, o, sizdə
 artıq var. Linker xətaları (errors) alırsınızsa, C kompilyatoru
-quraşdırmalısınız; o, adətən linker-i də ehtiva edir. C kompilyatoru həm də ona
+quraşdırmalısınız; onun tərkibində adətən linker də olur. C kompilyatoru həm də ona
 görə faydalıdır ki, bəzi geniş yayılmış Rust paketləri (packages) C kodundan
 asılıdır və C kompilyatoru tələb edir.
 
