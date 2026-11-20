@@ -16,7 +16,7 @@ sürət, *həm də* mehriban kompilyator, *həm də* əla alətlər
 olsun? Bu gün gördüyünüz Rust dili sistem proqramlaşdırması üzrə illərlə
 aparılmış tədqiqatları canlı və həvəsli icmanın praktik təcrübəsi ilə birləşdirir.
 Bu dil məqsədyönlü şəkildə layihələndirilib və diqqətlə hazırlanıb; o,
-developerlərə təhlükəsiz, sürətli və etibarlı kod yazmağı asanlaşdıran alət
+*developer*-lərə təhlükəsiz, sürətli və etibarlı kod yazmağı asanlaşdıran alət
 təqdim edir.
 
 Lakin Rust-ı həqiqətən xüsusi edən onun kökündə sizi, yəni istifadəçini,
@@ -32,13 +32,13 @@ investisiya qoyur.
 inkişafını əks etdirən və faydalı yeni məlumatlar verən, əsaslı şəkildə yenidən
 işlənmiş versiyadır. Lakin bu, sadəcə sintaksis və kitabxanalar üzrə bələdçi deyil, həm də keyfiyyətə, performansa və düşünülmüş
 dizayna önəm verən icmaya qoşulmaq üçün dəvətdir. İstər Rust-ı ilk dəfə kəşf
-etmək istəyən təcrübəli developer, istərsə də bacarıqlarını cilalamaq istəyən
-təcrübəli Rustacean olun, bu nəşrdə hər kəs üçün nəsə var.
+etmək istəyən təcrübəli *developer*, istərsə də bacarıqlarını cilalamaq istəyən
+təcrübəli *Rustacean* olun, bu nəşrdə hər kəs üçün nəsə var.
 
 Rust səyahəti əməkdaşlıq, öyrənmə və təkmilləşdirmə səyahəti olub. Dilin və
 onun ekosisteminin böyüməsi onun arxasında dayanan canlı və rəngarəng
 icmanın birbaşa əksidir. Dilin əsas dizaynerlərindən tutmuş arabir kömək
-edənlərədək minlərlə developerin əməyi Rust-ı bu qədər unikal və güclü alət edir.
+edənlərədək minlərlə *developer*-in əməyi Rust-ı bu qədər unikal və güclü alət edir.
 Bu kitabı əlinizə almaqla, siz sadəcə yeni proqramlaşdırma dili öyrənmirsiniz,
 həm də proqram təminatını daha yaxşı, daha təhlükəsiz və onunla
 işləməyi daha xoş etmək üçün yaranmış hərəkata qoşulursunuz.

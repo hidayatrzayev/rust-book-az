@@ -199,11 +199,11 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None, first_use: bo
             if first_use and not t.everyday and t.gloss and key not in seen:
                 longer = [m.span() for o in terms if o.keep_english and fold(o.en) != key and key in fold(o.en)
                           for m in re.finditer(r"(?<!\w)" + _ws(fold(o.en)) + r"(?!\w)", heading_blank)]
-                first = next((m for m in re.finditer(r"(?<!\w)" + _ws(key) + r"(?:-[^\W\d_]+)?(?!\w)", heading_blank)
+                first = next((m for m in re.finditer(r"(?<!\w)" + _ws(key) + r"[*_]*(?:-[^\W\d_]+)?(?!\w)", heading_blank)
                               if not any(a <= m.start() and m.end() <= b for a, b in longer)), None)
                 if first:
                     seen.add(key)
-                    if not re.match(r"\s*\(\s*" + _ws(fold(t.gloss)) + r"[^)]*\)", original[first.end():]):
+                    if not re.match(r"[*_]*\s*\(\s*" + _ws(fold(t.gloss)) + r"[^)]*\)", original[first.end():]):
                         issues.append(Issue(_line_of(md, first.start()), "ilk-istifadə",
                                             f"`{md[first.start():first.end()]}` bu fəsildə ilk dəfə işlənir: "
                                             f"ardınca `({t.gloss})` yazılmalıdır"))
@@ -241,7 +241,7 @@ def lint(md: str, terms: list[Term], seen: set[str] | None = None, first_use: bo
         after = original[m.end():]
         en_alts = "|".join(_ws(x) for x in [key, *sorted(_plurals(key))])
         light = r"(?:\s+(?:et|ver|ol|edil)[^\W\d_]*)?"
-        if not re.match(r"(?:-[^\W\d_]+)?" + light + r"\s*\(\s*(?:" + en_alts + r")[^)]*\)", after):
+        if not re.match(r"[*_]*(?:-[^\W\d_]+)?" + light + r"\s*\(\s*(?:" + en_alts + r")[^)]*\)", after):
             issues.append(Issue(_line_of(md, m.start()), "ilk-istifadə",
                                 f"`{md[m.start():m.end()]}` bu fəsildə ilk dəfə işlənir: "
                                 f"ardınca `({t.en})` yazılmalıdır"))

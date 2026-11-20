@@ -5,5 +5,5 @@ başlayır. Bu fəsildə bunları müzakirə edəcəyik:
 
 - Rust-ı Linux, macOS və Windows-da quraşdırmaq
 - Ekrana `Hello, world!` yazan proqram yazmaq
-- Rust-ın paket meneceri və build sistemi olan `cargo`-dan
+- Rust-ın paket meneceri və *build* sistemi olan `cargo`-dan
   istifadə etmək

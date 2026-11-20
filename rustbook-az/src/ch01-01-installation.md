@@ -22,7 +22,7 @@ məzmunu ilə gözlənildiyi kimi işləməlidir.
 > Bu fəsildə və bütün kitab boyu terminalda işlədilən bəzi komandaları
 > göstərəcəyik. Terminala daxil etməli olduğunuz komandaların hamısı `$` ilə
 > başlayır. `$` simvolunu yazmağa ehtiyac yoxdur; bu, hər komandanın başlanğıcını
-> göstərən komanda sətri prompt-udur. `$` ilə başlamayanlar adətən əvvəlki
+> göstərən komanda sətri *prompt*-udur. `$` ilə başlamayanlar adətən əvvəlki
 > komandanın çıxışını göstərir. Bundan əlavə, PowerShell-ə aid nümunələrdə `$`
 > əvəzinə `>` işlədiləcək.
 
@@ -45,8 +45,8 @@ Rust is installed now. Great!
 
 Sizə həmçinin _linker_ lazım olacaq — bu, Rust-ın kompilyasiya nəticələrini bir
 faylda birləşdirmək üçün istifadə etdiyi proqramdır. Çox güman ki, o, sizdə
-artıq var. Linker xətaları alırsınızsa, C kompilyatoru
-quraşdırmalısınız; onun tərkibində adətən linker də olur. C kompilyatoru həm də ona
+artıq var. *Linker* xətaları alırsınızsa, C kompilyatoru
+quraşdırmalısınız; onun tərkibində adətən *linker* də olur. C kompilyatoru həm də ona
 görə faydalıdır ki, bəzi geniş yayılmış Rust paketləri (packages) C kodundan
 asılıdır və C kompilyatoru tələb edir.
 
@@ -64,7 +64,7 @@ Ubuntu istifadə edirsinizsə, `build-essential` paketini quraşdıra bilərsini
 Windows-da [https://www.rust-lang.org/tools/install][install]<!-- ignore
 --> ünvanına keçin və Rust-ın quraşdırılması üçün təlimatlara əməl edin.
 Quraşdırmanın müəyyən mərhələsində sizdən Visual Studio quraşdırmaq istəniləcək.
-O, proqramları kompilyasiya etmək üçün lazım olan linker-i və yerli
+O, proqramları kompilyasiya etmək üçün lazım olan *linker*-i və yerli
 kitabxanaları təmin edir. Bu addımla bağlı əlavə köməyə ehtiyacınız
 varsa,
 [https://rust-lang.github.io/rustup/installation/windows-msvc.html][msvc]<!--
@@ -76,7 +76,7 @@ etməli olduğunuzu izah edəcəyik.
 
 ### Problemlərin aradan qaldırılması
 
-Rust-ın düzgün quraşdırılıb-quraşdırılmadığını yoxlamaq üçün shell açın və
+Rust-ın düzgün quraşdırılıb-quraşdırılmadığını yoxlamaq üçün *shell* açın və
 bunu daxil edin:
 
 ```console
@@ -112,20 +112,20 @@ $ echo $PATH
 ```
 
 Hər şey düzgündürsə və Rust yenə də işləmirsə, kömək ala biləcəyiniz bir sıra
-yerlər var. Digər Rustacean-larla (özümüzə verdiyimiz zarafatyana ləqəb) necə
+yerlər var. Digər *Rustacean*-larla (özümüzə verdiyimiz zarafatyana ləqəb) necə
 əlaqə saxlamağı [icma səhifəsindən][community] öyrənin.
 
 ### Yeniləmə və silmə
 
 Rust `rustup` vasitəsilə quraşdırıldıqdan sonra onu yeni çıxmış versiyaya
-yeniləmək asandır. Shell-inizdə aşağıdakı yeniləmə skriptini işə
+yeniləmək asandır. *Shell*-inizdə aşağıdakı yeniləmə skriptini işə
 salın:
 
 ```console
 $ rustup update
 ```
 
-Rust-ı və `rustup`-ı silmək üçün shell-inizdə aşağıdakı silmə
+Rust-ı və `rustup`-ı silmək üçün *shell*-inizdə aşağıdakı silmə
 skriptini işə salın:
 
 ```console
@@ -185,7 +185,7 @@ Bu, həmin paketlərin yüklənmiş fayllarını keşləyəcək, beləliklə onl
 sonra yenidən yükləməyə ehtiyac olmayacaq. Bu komandanı işə saldıqdan sonra
 `get-dependencies` direktoriyasını saxlamağa ehtiyac yoxdur. Bu
 komandanı işə salmısınızsa, kitabın qalan hissəsində bütün `cargo` komandaları
-ilə `--offline` flag-indən (bayraq) istifadə edə bilərsiniz; onda şəbəkəyə qoşulmağa cəhd etmək əvəzinə bu keşlənmiş versiyalar istifadə
+ilə `--offline` *flag*-indən (bayraq) istifadə edə bilərsiniz; onda şəbəkəyə qoşulmağa cəhd etmək əvəzinə bu keşlənmiş versiyalar istifadə
 olunacaq.
 
 [otherinstall]: https://forge.rust-lang.org/infra/other-installation-methods.html

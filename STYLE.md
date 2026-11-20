@@ -20,6 +20,7 @@
 - **Titul səhifəsi və ön söz** (`title-page.md`, `foreword.md`) texniki mətn deyil: orada heç bir terminə mötərizə yazılmır.
 - **Rust-a məxsus terminlər və varlıqlar ingiliscə qalır, Azərbaycanca qarşılığı mötərizədə verilir** (hər fəsildə ilk işlənmədə): *borrow checker (borc yoxlayıcısı)*, *mutable (dəyişə bilən)*. Ümumi proqramlaşdırma terminləri isə Azərbaycanca yazılır, ingiliscəsi mötərizədə: *funksiya (function)*. Hansı terminin hansı qrupa aid olduğunu `GLOSSARY.md` göstərir (`—saxlanılır— (söz)`).
 - Tərcümə olunmayan Rust terminləri (`—saxlanılır—`) ingiliscə qalır, Azərbaycan şəkilçiləri **defislə** yazılır: *trait-in*, *crate-ə*, *enum-lar*. Şəkilçi sözün **ingiliscə tələffüzünə** görə seçilir: *crate-i* ("kreyt"), *future-lər* ("fyuçer").
+- **İngiliscə terminlər mətndə kursivlə** yazılır: ingiliscə saxlanılan terminlər (*trait*, *crate*, *build*, *Rustacean*…), sadə söz kimi yazılmış açar sözlər (*async*, *await*) və *developer*, *production*, *legacy* kimi ingilis sözləri. Kursiv yalnız sözün özünü əhatə edir, şəkilçi defisdən sonra düz yazılır: *trait*-lər, *developer*-lərin. Mötərizədəki ingiliscə qarşılıqlar (*kod revyusu (code review)*), xüsusi adlar (Rust, Cargo, Git, Linux, Ferris, IDE, API), başlıqlar və kod (`match`) kursivlə yazılmır.
 - Terminin Azərbaycanca şəkilçi aldığı hallarda (*sahibliyin*, *dəyişənə*) lüğət formasından istifadə edilir.
 
 ## Toxunulmaz hissələr
@@ -70,6 +71,7 @@ Kod nümunələrindəki şərhlər (`//`, `///`, `//!`, `/* */`) **tərcümə ol
 - Technical terms only from `GLOSSARY.md`; new term → propose a row, never invent silently.
 - General terms: Azerbaijani first, English in parentheses on first use per chapter. Rust-specific terms (borrow checker, ownership, mutable…): English kept, Azerbaijani gloss in parentheses on first use; later uses English only.
 - Everyday words (tagged `[gündəlik]` in the glossary's note column) never get English in parentheses; the title page and foreword get no parentheses at all.
+- English terms in prose are italic, word only, suffix upright after the hyphen (*trait*-lər, *developer*-lərin); not English in parentheses, names (Rust, Cargo, Git, IDE, API), headings or code.
 - Terms kept in English take hyphenated suffixes (*trait-in*, *crate-ə*), chosen by the English pronunciation (*crate-i*, *future-lər*).
 - Never touch code, inline code, directives, `<Listing>` attributes (only `caption` text is translated), link targets (only `#anchor` follows translated headings), `<!-- ignore -->`, ANCHOR lines, `output.txt`.
 - Notes: `> Note: ` becomes exactly `> Qeyd: ` (rendered as a note box by `tools/az_note.py`).

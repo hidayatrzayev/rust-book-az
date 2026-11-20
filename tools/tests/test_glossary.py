@@ -230,3 +230,11 @@ def test_inline_gloss_inside_term():
     assert lint("Rust daxili (embedded) qurğularda işləyir. Daxili qurğular kiçikdir.", [t]) == []
     issues = lint("Rust daxili qurğularda işləyir.", [t])
     assert [i.kind for i in issues] == ["ilk-istifadə"] and "daxili (embedded) qurğu" in issues[0].message
+
+
+def test_italic_english_terms():
+    terms = [Term("lifetime", "", keep_english=True, gloss="ömür müddəti"), Term("trait", "", keep_english=True),
+             Term("dependency", "asılılıq")]
+    assert lint("*lifetime*-lara (ömür müddəti) və *trait*-lər; asılılıq (dependency).", terms) == []
+    assert lint("*Lifetime* (ömür müddəti) vacibdir.", terms) == []
+    assert [i.kind for i in lint("*lifetime*-lar vacibdir.", terms)] == ["ilk-istifadə"]

@@ -30,7 +30,8 @@ edit it). Target: `rustbook-az/src/<file>.md` (same file name; it starts as a co
    later uses Azerbaijani only. Rust-specific terms (glossary notation `—saxlanılır— (söz)`) are the reverse:
    English stays and the Azerbaijani gloss goes in parentheses on first use, *borrow checker (borc yoxlayıcısı)*;
    later uses English only. Exceptions: terms tagged `[gündəlik]` (everyday words) never get parentheses, and
-   the title page and foreword get none at all. Terms marked `—saxlanılır—` stay English with a hyphenated suffix: *trait-in*, *crate-ə*.
+   the title page and foreword get none at all. English terms in prose are italic, word only: *trait*-lər
+   (not in parentheses, names, headings or code). Terms marked `—saxlanılır—` stay English with a hyphenated suffix: *trait-in*, *crate-ə*.
 6. **Headings and anchors**: headings are translated, so mdBook anchors change. Update every `#anchor`
    link to a translated heading (in this file and in others) to the new anchor.
 7. **Listing comments**: translate `//`, `///`, `//!`, `/* */` comments in the chapter's listings in

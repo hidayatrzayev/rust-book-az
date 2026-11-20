@@ -171,7 +171,7 @@ görəcəksiniz. Uğurlu kompilyasiyadan sonra Rust icra olunan binar fayl
 yaradır.
 
 Linux, macOS və Windows-dakı PowerShell-də icra olunan faylı
-shell-inizdə `ls` komandasını daxil etməklə görə bilərsiniz:
+*shell*-inizdə `ls` komandasını daxil etməklə görə bilərsiniz:
 
 ```console
 $ ls
@@ -191,7 +191,7 @@ main.rs
 
 Burada _.rs_ genişlənməli mənbə kodu faylı, icra olunan fayl
 (Windows-da _main.exe_, digər bütün platformalarda isə _main_) və Windows
-istifadə edərkən debug məlumatını saxlayan, _.pdb_ genişlənməli fayl görünür.
+istifadə edərkən *debug* məlumatını saxlayan, _.pdb_ genişlənməli fayl görünür.
 Buradan _main_ və ya _main.exe_ faylını belə işə salırsınız:
 
 ```console

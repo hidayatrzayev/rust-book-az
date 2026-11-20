@@ -1,14 +1,14 @@
 ## Hello, Cargo!
 
-Cargo Rust-ın build sistemi və paket meneceridir. Rustacean-ların çoxu Rust
+Cargo Rust-ın *build* sistemi və paket meneceridir. *Rustacean*-ların çoxu Rust
 layihələrini idarə etmək üçün bu alətdən istifadə edir, çünki Cargo sizin
-əvəzinizə bir çox işi görür: kodunuzu build edir, kodunuzun asılı olduğu
-kitabxanaları yükləyir və həmin kitabxanaları build edir. (Kodunuzun ehtiyac
+əvəzinizə bir çox işi görür: kodunuzu *build* edir, kodunuzun asılı olduğu
+kitabxanaları yükləyir və həmin kitabxanaları *build* edir. (Kodunuzun ehtiyac
 duyduğu kitabxanaları _asılılıqlar_ adlandırırıq.)
 
 İndiyədək yazdığımız kimi ən sadə Rust proqramlarının heç bir asılılığı yoxdur.
-“Hello, world!” layihəsini Cargo ilə build etsəydik, o, Cargo-nun yalnız
-kodunuzu build edən hissəsindən istifadə edərdi. Daha mürəkkəb Rust proqramları
+“Hello, world!” layihəsini Cargo ilə *build* etsəydik, o, Cargo-nun yalnız
+kodunuzu *build* edən hissəsindən istifadə edərdi. Daha mürəkkəb Rust proqramları
 yazdıqca asılılıqlar əlavə edəcəksiniz və layihəyə Cargo ilə başlasanız,
 asılılıq əlavə etmək xeyli asan olacaq.
 
@@ -51,7 +51,7 @@ O, həmçinin _.gitignore_ faylı ilə birlikdə yeni Git repozitoriyası da yar
 içində işə salsanız, Git faylları yaradılmayacaq; bu davranışı
 `cargo new --vcs=git` istifadə edərək dəyişə bilərsiniz.
 
-> Qeyd: Git geniş yayılmış versiya nəzarəti sistemidir. `--vcs` flag-i ilə `cargo new`-un başqa versiya nəzarəti sistemindən
+> Qeyd: Git geniş yayılmış versiya nəzarəti sistemidir. `--vcs` *flag*-i ilə `cargo new`-un başqa versiya nəzarəti sistemindən
 > istifadə etməsini və ya heç bir versiya nəzarəti sistemindən istifadə
 > etməməsini təyin edə bilərsiniz. Mövcud seçimləri görmək üçün
 > `cargo new --help` komandasını işə salın.
@@ -86,7 +86,7 @@ danışacağıq.
 
 Son sətir, `[dependencies]`, layihənizin bütün asılılıqlarını sadalamağınız
 üçün bölmənin başlanğıcıdır. Rust-da kod paketləri _crate_ adlanır. Bu layihə
-üçün başqa crate-lərə ehtiyacımız olmayacaq, amma 2-ci fəsildəki ilk layihədə
+üçün başqa *crate*-lərə ehtiyacımız olmayacaq, amma 2-ci fəsildəki ilk layihədə
 olacaq, ona görə də asılılıqlar bölməsindən o zaman istifadə edəcəyik.
 
 İndi _src/main.rs_ faylını açın və baxın:
@@ -118,9 +118,9 @@ salmaqdır; o, faylı sizin üçün avtomatik yaradacaq.
 
 ### Cargo layihəsinin build edilməsi və işə salınması
 
-İndi “Hello, world!” proqramını Cargo ilə build edib işə saldıqda nəyin fərqli
+İndi “Hello, world!” proqramını Cargo ilə *build* edib işə saldıqda nəyin fərqli
 olduğuna baxaq! _hello_cargo_ direktoriyanızda aşağıdakı komandanı daxil edərək
-layihənizi build edin:
+layihənizi *build* edin:
 
 ```console
 $ cargo build
@@ -130,7 +130,7 @@ $ cargo build
 
 Bu komanda icra olunan faylı cari direktoriyanızda deyil,
 _target/debug/hello_cargo_ (Windows-da _target\debug\hello_cargo.exe_)
-ünvanında yaradır. Defolt olaraq debug build-i yaradıldığı üçün Cargo binar
+ünvanında yaradır. Defolt olaraq *debug* *build*-i yaradıldığı üçün Cargo binar
 faylı _debug_ adlı direktoriyaya yerləşdirir. İcra olunan faylı bu komanda ilə
 işə sala bilərsiniz:
 
@@ -146,7 +146,7 @@ dəqiq versiyalarını izləyir. Bu layihənin asılılıqları yoxdur, ona gör
 demək olar ki, boşdur. Bu faylı heç vaxt əl ilə dəyişməli olmayacaqsınız; Cargo
 onun məzmununu sizin üçün idarə edir.
 
-Layihəni indicə `cargo build` ilə build edib, `./target/debug/hello_cargo` ilə
+Layihəni indicə `cargo build` ilə *build* edib, `./target/debug/hello_cargo` ilə
 işə saldıq, lakin kodu kompilyasiya edib alınan icra olunan faylı işə salmaq
 üçün bunların hamısını bir komandada edən `cargo run`-dan da istifadə edə
 bilərik:
@@ -160,13 +160,13 @@ Hello, world!
 
 `cargo run` istifadə etmək `cargo
 build` işə salmağı, sonra isə binar faylın tam yolunu (path) yazmağı yadda
-saxlamaqdan daha rahatdır, ona görə də developerlərin çoxu `cargo
+saxlamaqdan daha rahatdır, ona görə də *developer*-lərin çoxu `cargo
 run` istifadə edir.
 
 Diqqət edin ki, bu dəfə Cargo-nun `hello_cargo`-nu kompilyasiya etdiyini
 göstərən çıxış görmədik. Cargo faylların dəyişmədiyini müəyyən etdi, ona görə
-yenidən build etmədi, sadəcə binar faylı işə saldı. Mənbə kodunuzu dəyişsəydiniz,
-Cargo layihəni işə salmazdan əvvəl yenidən build edərdi və siz bu çıxışı
+yenidən *build* etmədi, sadəcə binar faylı işə saldı. Mənbə kodunuzu dəyişsəydiniz,
+Cargo layihəni işə salmazdan əvvəl yenidən *build* edərdi və siz bu çıxışı
 görərdiniz:
 
 ```console
@@ -191,7 +191,7 @@ Niyə icra olunan fayl istəməyəsiniz? Çox vaxt `cargo check` `cargo build`-d
 xeyli sürətlidir, çünki icra olunan faylın yaradılması addımını ötürür. Kod
 yazarkən işinizi daima yoxlayırsınızsa, `cargo check` istifadə etmək
 layihənizin hələ də kompilyasiya olunub-olunmadığını öyrənmə prosesini
-sürətləndirəcək! Buna görə də bir çox Rustacean proqramını yazarkən onun
+sürətləndirəcək! Buna görə də bir çox *Rustacean* proqramını yazarkən onun
 kompilyasiya olunduğuna əmin olmaq üçün vaxtaşırı `cargo check` işə salır.
 Sonra icra olunan fayldan istifadə etməyə hazır olduqda `cargo build` işə
 salırlar.
@@ -199,11 +199,11 @@ salırlar.
 Gəlin Cargo haqqında indiyədək öyrəndiklərimizi xülasə edək:
 
 - `cargo new` ilə layihə yarada bilərik.
-- `cargo build` ilə layihəni build edə bilərik.
-- `cargo run` ilə layihəni bir addımda build edib işə sala bilərik.
+- `cargo build` ilə layihəni *build* edə bilərik.
+- `cargo run` ilə layihəni bir addımda *build* edib işə sala bilərik.
 - `cargo check` ilə binar fayl yaratmadan layihəni xətalara görə yoxlaya
   bilərik.
-- Cargo build nəticəsini kodumuzla eyni direktoriyada deyil, _target/debug_
+- Cargo *build* nəticəsini kodumuzla eyni direktoriyada deyil, _target/debug_
   direktoriyasında saxlayır.
 
 Cargo-dan istifadənin əlavə üstünlüyü ondadır ki, hansı əməliyyat sistemində
@@ -216,9 +216,9 @@ Layihəniz nəhayət reliz üçün hazır olduqda, onu optimizasiyalarla kompily
 --release` istifadə edə bilərsiniz. Bu komanda icra olunan faylı _target/debug_
 əvəzinə _target/release_ direktoriyasında yaradacaq. Optimizasiyalar Rust
 kodunuzun daha sürətli işləməsini təmin edir, lakin onları aktivləşdirmək
-proqramınızın kompilyasiya müddətini uzadır. Buna görə iki fərqli profil var: biri tez-tez və sürətlə yenidən build etmək istədiyiniz inkişaf
+proqramınızın kompilyasiya müddətini uzadır. Buna görə iki fərqli profil var: biri tez-tez və sürətlə yenidən *build* etmək istədiyiniz inkişaf
 mərhələsi üçün, digəri isə istifadəçiyə verəcəyiniz, təkrar-təkrar yenidən
-build edilməyəcək və mümkün qədər sürətli işləyəcək son proqramı build etmək
+*build* edilməyəcək və mümkün qədər sürətli işləyəcək son proqramı *build* etmək
 üçün. Kodunuzun icra müddətini bençmark edirsinizsə, mütləq
 `cargo build --release` işə salın və _target/release_ içindəki icra olunan
 fayl ilə bençmark edin.
@@ -231,12 +231,12 @@ fayl ilə bençmark edin.
 Sadə layihələrdə Cargo sadəcə `rustc` istifadə etməklə müqayisədə çox da
 fayda vermir, lakin proqramlarınız mürəkkəbləşdikcə öz faydasını göstərəcək.
 Proqramlar bir neçə fayldan ibarət olduqda və ya asılılığa ehtiyac duyduqda
-build prosesini Cargo-ya həvalə etmək xeyli asandır.
+*build* prosesini Cargo-ya həvalə etmək xeyli asandır.
 
 `hello_cargo` layihəsi sadə olsa da, o, artıq Rust karyeranızın qalan
 hissəsində istifadə edəcəyiniz real alətlərin çoxundan istifadə edir. Əslində,
 istənilən mövcud layihə üzərində işləmək üçün kodu Git ilə əldə etmək, həmin
-layihənin direktoriyasına keçmək və build etmək üçün aşağıdakı komandalardan
+layihənin direktoriyasına keçmək və *build* etmək üçün aşağıdakı komandalardan
 istifadə edə bilərsiniz:
 
 ```console
