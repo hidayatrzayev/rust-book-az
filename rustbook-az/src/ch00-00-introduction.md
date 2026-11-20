@@ -147,7 +147,7 @@ generic-lərə, trait-lərə və lifetime-lara (ömür müddəti) dərindən nə
 **11-ci fəsil** tamamilə testlərə həsr olunub; Rust-ın təhlükəsizlik
 zəmanətlərinə baxmayaraq, proqramınızın məntiqinin düzgün olmasını təmin etmək
 üçün testlər lazımdır. **12-ci fəsildə** fayllarda mətn axtaran `grep` komanda
-sətri alətinin funksionallığının bir hissəsinin öz realizasiyamızı yazacağıq. Bunun üçün əvvəlki fəsillərdə müzakirə etdiyimiz
+sətri alətinin funksionallığının bir hissəsini özümüz realizə edəcəyik. Bunun üçün əvvəlki fəsillərdə müzakirə etdiyimiz
 bir çox anlayışdan istifadə edəcəyik.
 
 **13-cü fəsil** closure-ları və iteratorları, yəni Rust-ın funksional
