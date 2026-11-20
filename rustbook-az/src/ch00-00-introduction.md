@@ -59,7 +59,7 @@ proqramlaşdırmaya yeni başlayanlar üçün daha əlçatan etmək istəyir.
 
 ### Şirkətlər
 
-Böyük və kiçik yüzlərlə şirkət Rust-ı production-da müxtəlif tapşırıqlar üçün
+Yüzlərlə böyük və kiçik şirkət Rust-ı production-da müxtəlif tapşırıqlar üçün
 istifadə edir: komanda sətri (command line) alətləri, veb servislər, DevOps alətləri, daxili (embedded) qurğular, audio və video
 analizi və transkodlaşdırma, kriptovalyutalar, bioinformatika, axtarış
 sistemləri, Əşyaların İnterneti (Internet of Things, IoT) tətbiqləri, maşın
