@@ -6,7 +6,6 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | ------------ | ------- |
 | açar söz | keyword |
 | açıq mənbə | open source |
-| ağıllı göstərici | smart pointer |
 | axın | thread |
 | alət | tool |
 | alt xətt | underscore |
@@ -143,6 +142,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | sistem dəyişəni | system variable |
 | sistem proqramlaşdırması | systems programming |
 | skript | script |
+| smart pointer (ağıllı göstərici) *(ingiliscə qalır)* | smart pointer |
 | stabil | stable |
 | stack *(ingiliscə qalır)* | stack |
 | standart kitabxana | standard library |

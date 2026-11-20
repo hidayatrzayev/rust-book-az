@@ -69,7 +69,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | lifetime | —saxlanılır— (ömür müddəti) | Rust-a məxsus; `'a` kimi annotasiyalar kodda qalır. | təsdiqlənib |
 | closure | —saxlanılır— | Tərcümə olunmur: *closure-lar*, *closure-ları*, *closure-ın* (qalın sait şəkilçisi, insan tərəfindən təsdiqlənib). Türk tərcüməsində bu termin *kapanma/kapanış/kapama* kimi üç cür verilmişdi; ingiliscə saxlamaq bu problemi aradan qaldırır. | təsdiqlənib |
 | iterator | iterator | Yazılışı ingiliscə ilə eynidir. | təsdiqlənib |
-| smart pointer | ağıllı göstərici | | təsdiqlənib |
+| smart pointer | —saxlanılır— (ağıllı göstərici) | İngiliscə qalır, ilk işlənmədə Azərbaycanca qarşılığı mötərizədə: *smart pointer-lər (ağıllı göstəricilər)*. Şəkilçi tələffüzə görə: *pointer-lər*. | təsdiqlənib |
 | thread | axın | Ümumi anlayışdır: ilk işlənmədə *axın (thread)*. *main thread* → *əsas axın*, *spawn a thread* → *axın yaratmaq*, *thread pool* → *axın hovuzu*. `thread::spawn` kimi kod dəyişmir. *stream* ingiliscə qaldığı üçün qarışmır; *idarəetmə axını* (control flow) başqa anlayışdır. | təsdiqlənib |
 | compiler | kompilyator | [gündəlik] | təsdiqlənib |
 | stack | —saxlanılır— | Tərcümə olunmur: *stack-də*, *stack-dən*. Kontekstdə bunun yaddaşa aid olduğu izah edilir (məs. "yaddaşın stack hissəsi"). *heap* ilə qarışmır (Türk tərcüməsində ikisi də *yığın* idi). | təsdiqlənib |

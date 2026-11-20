@@ -155,7 +155,7 @@ bir çox anlayışdan istifadə edəcəyik.
 proqramlaşdırma dillərindən gələn imkanlarını
 araşdırır. **14-cü fəsildə** Cargo-ya daha ətraflı baxacaq və kitabxanalarınızı
 başqaları ilə paylaşmağın ən yaxşı təcrübələrindən danışacağıq. **15-ci fəsil**
-standart kitabxananın təqdim etdiyi ağıllı göstəriciləri (smart pointers) və
+standart kitabxananın təqdim etdiyi smart pointer-ləri (ağıllı göstəricilər) və
 onların funksionallığını təmin edən trait-ləri müzakirə edir.
 
 **16-cı fəsildə** concurrent proqramlaşdırmanın müxtəlif modellərini nəzərdən
