@@ -37,9 +37,9 @@ edə bilər.
 Rust həmçinin sistem proqramlaşdırması dünyasına müasir developer alətləri
 gətirir:
 
-- Cargo — Rust ilə birlikdə gələn build aləti və asılılıqları (dependencies)
-  idarə edən alət — asılılıqları əlavə etməyi, kompilyasiya etməyi və idarə
-  etməyi bütün Rust ekosistemində problemsiz və eyni cür edir.
+- Cargo Rust ilə birlikdə gələn build aləti və asılılıq (dependency)
+  meneceridir. Onun sayəsində asılılıqları əlavə etmək, kompilyasiya etmək və
+  idarə etmək asandır və bütün Rust ekosistemində eyni cür işləyir.
 - `rustfmt` formatlama aləti developerlər arasında vahid kod
   üslubunu təmin edir.
 - Rust Language Server inteqrasiya olunmuş inkişaf mühitlərində (Integrated
