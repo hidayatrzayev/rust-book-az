@@ -142,4 +142,4 @@
 
 ### Task 10: Publish
 
-- [ ] Create `hidayatrzayev/rust-book-az` on GitHub (`gh repo create hidayatrzayev/rust-book-az --public --source . --push` if `gh` is installed and logged in; otherwise the user creates the empty repo on github.com and Claude runs `git remote add origin … && git push -u origin main`). Enable Pages with source "GitHub Actions" (`gh api -X POST repos/hidayatrzayev/rust-book-az/pages -f build_type=workflow`, or the user does it under Settings → Pages).
+- [x] Create `hidayatrzayev/rust-book-az` on GitHub (`gh repo create hidayatrzayev/rust-book-az --public --source . --push` if `gh` is installed and logged in; otherwise the user creates the empty repo on github.com and Claude runs `git remote add origin … && git push -u origin main`). Enable Pages with source "GitHub Actions" (`gh api -X POST repos/hidayatrzayev/rust-book-az/pages -f build_type=workflow`, or the user does it under Settings → Pages).
