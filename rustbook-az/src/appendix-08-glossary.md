@@ -130,7 +130,7 @@ Bu əlavə kitabda işlənən texniki terminlərin Azərbaycanca və ingiliscə 
 | refaktorinq | refactoring |
 | reliz | release |
 | repozitoriya | repository |
-| Rustacean *(ingiliscə qalır)* | Rustacean |
+| Rust-çı | Rustacean |
 | sabit | constant |
 | sahə | field |
 | sətir | string |

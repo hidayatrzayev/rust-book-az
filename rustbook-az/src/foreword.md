@@ -10,8 +10,8 @@ mənbə icmalarına yayıldı və müxtəlif sənayelərdə Rust-ın geniş tət
 verdi.
 
 Bu gün Rust-a marağın və onun istifadəsinin bu kəskin artımını dilin
-gözəl xüsusiyyətləri ilə izah etmək asandır. Kim istəməz ki, bir çox digər gözəl
-xüsusiyyətlə yanaşı yaddaş təhlükəsizliyi, *həm də* yüksək
+gözəl xüsusiyyətləri ilə izah etmək asandır. Kim istəməz ki, bir çox digər üstünlüklə
+yanaşı yaddaş təhlükəsizliyi, *həm də* yüksək
 sürət, *həm də* mehriban kompilyator, *həm də* əla alətlər
 olsun? Bu gün gördüyünüz Rust dili sistem proqramlaşdırması üzrə illərlə
 aparılmış tədqiqatları canlı və həvəsli icmanın praktik təcrübəsi ilə birləşdirir.
@@ -22,21 +22,21 @@ təqdim edir.
 Lakin Rust-ı həqiqətən xüsusi edən başqa şeydir: onun təməlində sizə, yəni
 istifadəçiyə, məqsədlərinizə çatmaqda kömək etmək ideyası dayanır. Bu dil sizin
 uğur qazanmağınızı istəyir. Bu prinsip dili yaradan, dəstəkləyən və təbliğ edən
-icmanın da əsasını təşkil edir. Bu mötəbər kitabın əvvəlki
-nəşrindən bəri Rust həqiqətən qlobal və etibarlı dilə çevrilib. Rust Project
-indi Rust Foundation-dan möhkəm dəstək alır; fond həmçinin Rust-ın
+icmanın da əsasını təşkil edir. Bu kitabın əvvəlki
+nəşrindən bəri Rust həqiqətən qlobal və etibarlı dilə çevrilib. Rust layihəsi
+indi *Rust Foundation*-dan möhkəm dəstək alır; fond həmçinin Rust-ın
 təhlükəsiz, stabil və davamlı olmasını təmin edən əsas təşəbbüslərə
 investisiya qoyur.
 
 *Rust Proqramlaşdırma Dili* kitabının bu nəşri əsaslı şəkildə yenidən işlənib:
 o, dilin illər ərzindəki inkişafını əks etdirir və faydalı yeni məlumatlar
-verir. Lakin bu, sadəcə sintaksis və kitabxanalar üzrə bələdçi deyil, həm də
+verir. Lakin bu kitab sadəcə sintaksis və kitabxanalar üzrə bələdçi deyil, həm də
 keyfiyyətə, performansa və düşünülmüş dizayna önəm verən icmaya qoşulmaq üçün
 dəvətdir. İstər Rust-ı ilk dəfə kəşf edən təcrübəli *developer*, istərsə də
-bacarıqlarını təkmilləşdirmək istəyən *Rustacean* olun, bu nəşrdə hər kəs özü
+bacarıqlarını təkmilləşdirmək istəyən Rust-çı olun, bu nəşrdə hər kəs özü
 üçün nəsə tapacaq.
 
-Rust əməkdaşlıq, öyrənmə və davamlı təkmilləşdirmə sayəsində bu günə gəlib.
+Rust-ın keçdiyi yol əməkdaşlıq, öyrənmə və davamlı təkmilləşdirmə yolu olub.
 Dilin və ekosisteminin böyüməsi onun arxasındakı canlı və rəngarəng icmanın
 birbaşa əksidir. Dilin əsas dizaynerlərindən tutmuş arabir kömək
 edənlərədək minlərlə *developer*-in əməyi Rust-ı bu qədər unikal və güclü alət edir.
@@ -46,4 +46,4 @@ işləməyi daha xoş etmək üçün yaranmış hərəkata qoşulursunuz.
 
 Rust icmasına xoş gəlmisiniz!
 
-- Bec Rumbul, Rust Foundation-un icraçı direktoru
+- Bec Rumbul, *Rust Foundation*-un icraçı direktoru

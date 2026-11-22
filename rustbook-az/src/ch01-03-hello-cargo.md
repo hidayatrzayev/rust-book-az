@@ -1,6 +1,6 @@
 ## Hello, Cargo!
 
-Cargo Rust-ın *build* sistemi və paket meneceridir. *Rustacean*-ların çoxu Rust
+Cargo Rust-ın *build* sistemi və paket meneceridir. Rust-çıların çoxu Rust
 layihələrini idarə etmək üçün bu alətdən istifadə edir, çünki Cargo sizin
 əvəzinizə bir çox işi görür: kodunuzu *build* edir, kodunuzun asılı olduğu
 kitabxanaları yükləyir və həmin kitabxanaları *build* edir. (Kodunuzun ehtiyac
@@ -189,7 +189,7 @@ $ cargo check
 Niyə icra olunan fayl istəməyəsiniz? Çox vaxt `cargo check` `cargo build`-dən
 xeyli sürətlidir, çünki icra olunan faylın yaradılması addımını ötürür. Kod
 yazarkən işinizi tez-tez yoxlayırsınızsa, `cargo check` layihənin hələ də
-kompilyasiya olunub-olunmadığını daha tez öyrənməyə imkan verəcək! Buna görə də bir çox *Rustacean* proqramını yazarkən onun
+kompilyasiya olunub-olunmadığını daha tez öyrənməyə imkan verəcək! Buna görə də bir çox Rust-çı proqramını yazarkən onun
 kompilyasiya olunduğuna əmin olmaq üçün vaxtaşırı `cargo check` işə salır.
 Sonra icra olunan fayldan istifadə etməyə hazır olduqda `cargo build` işə
 salırlar.

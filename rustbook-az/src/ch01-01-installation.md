@@ -111,7 +111,7 @@ $ echo $PATH
 ```
 
 Hər şey düzgündürsə və Rust yenə də işləmirsə, kömək ala biləcəyiniz bir sıra
-yerlər var. Digər *Rustacean*-larla (özümüzə verdiyimiz zarafatyana ləqəb) necə
+yerlər var. Digər Rust-çılarla (Rustacean, özümüzə verdiyimiz zarafatyana ləqəb) necə
 əlaqə saxlamağı [icma səhifəsindən][community] öyrənin.
 
 ### Yeniləmə və silmə

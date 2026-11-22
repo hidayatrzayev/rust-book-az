@@ -117,5 +117,5 @@ faylı `KÖHNƏLİB` kimi göstərir.
 | ch21-01-single-threaded.md | başlanmayıb | 8aa0d003e6499d733d639de32d70f590efa48657 |
 | ch21-02-multithreaded.md | başlanmayıb | 8aa0d003e6499d733d639de32d70f590efa48657 |
 | ch21-03-graceful-shutdown-and-cleanup.md | başlanmayıb | 8aa0d003e6499d733d639de32d70f590efa48657 |
-| foreword.md | qaralama | 112ceaedfa51d79327e33057c9806d0ea370004a |
+| foreword.md | yoxlanılıb | 112ceaedfa51d79327e33057c9806d0ea370004a |
 | title-page.md | yoxlanılıb | 852f28bd5f7e7fbe3ce447df4ba7742ab4af1713 |

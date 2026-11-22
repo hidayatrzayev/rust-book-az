@@ -118,7 +118,7 @@ Hər ingilis texniki termininin **bir** Azərbaycanca qarşılığı var və bü
 | shell | —saxlanılır— | *shell-də*. Kitab *terminal* və *shell* sözlərini yanaşı işlədir; *terminal* yazılışı eynidir. | təsdiqlənib |
 | linker | —saxlanılır— | Alternativ: *əlaqələndirici* (akademik səslənir). | təsdiqlənib |
 | flag | —saxlanılır— (bayraq) | Komanda sətri flag-i: `--vcs` flag-i, `--release` flag-i ilə. | təsdiqlənib |
-| Rustacean | —saxlanılır— | Rust icmasının özünə verdiyi zarafatyana ad: *Rustacean-lar*. | təsdiqlənib |
+| Rustacean | Rust-çı | Rust icmasının özünə verdiyi zarafatyana ad (*crustacean* “xərçəngkimilər” sözü ilə söz oyunu): *Rust-çılar*, *Rust-çıların*. İngiliscə adı yalnız ch01-01-də bir dəfə verilir. | təsdiqlənib |
 | version control system | versiya nəzarəti sistemi | [gündəlik] | təsdiqlənib |
 | repository | repozitoriya | [gündəlik] README-də artıq işlədilib. | təsdiqlənib |
 | bug | baq | [gündəlik] Proqramçı dilində *baq*; *xəta* (error) ilə fərqləndirilir. Alternativ: *səhv*. | təsdiqlənib |
