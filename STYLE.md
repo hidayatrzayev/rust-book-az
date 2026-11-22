@@ -68,7 +68,7 @@ Rəsmi normativ mənbə (AMEA-nın *Azərbaycan dilinin orfoqrafiya qaydaları*,
 - Eyni söz mübtəda və tamamlıq kimi yan-yana gəlmir (✗ *Rust, Rust proqramlaşdırma dilini…*); geri istinad olunur: ✓ *Rust həm də dilin özünü, icmasını … inkişaf etdirmək istəyən insanlar üçündür.* Adi isim mübtədadan sonra vergül qoyulmur.
 
 **Söz seçimi**
-- Hərfi tərcümə yox, mənanın təbii ifadəsi: *stakeholders* → ✗ *maraqlı tərəflər*, ✓ *burada onlardan yalnız ən əsaslarını qeyd etdik*; *hopes to support* → ✓ *faydalı olmağa ümid edir*.
+- Hərfi tərcümə yox, mənanın təbii ifadəsi: *stakeholders* → ✗ *maraqlı tərəflər*, ✓ *burada onlardan yalnız ən əsaslarını qeyd etdik*; *hopes to support* → ✓ *faydalı olmağa ümid edir*; *explosion in interest and adoption* → ✓ *marağın və istifadəsinin kəskin artımı* (✗ *maraqdakı və istifadədəki sıçrayış*).
 - Kitab dili sözləri yox, sadə sözlər: *ehtiva etmək* → *tərkibində … olmaq*; *gatekeeper* → *nəzarətçi* (✗ *qapıçı*); *assume* → *güman etmək* (✗ *fərz etmək*); *makes no assumptions* → *heç bir fərziyyə irəli sürmür* (✗ *fərziyyə etmir*); *such* → *bu kimi* (✗ *belə*); *build our own implementation of* → *özümüz realizə edəcəyik*.
 - Tavtologiya yoxdur: ✗ *inteqrasiya olunmuş inkişaf mühiti … inteqrasiyasını*; ✗ *fərz edir … fərziyyə etmir*; ✗ *səyahəti … səyahəti*.
 - Felin idarəsi düzgün: *ümid etmək* + yönlük hal (*olmağa ümid edir*).

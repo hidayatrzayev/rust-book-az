@@ -9,8 +9,8 @@ qlobal maraq və yeniliklər dalğasına çevriləcəyi qaçılmaz deyildi: bu d
 mənbə icmalarına yayıldı və müxtəlif sənayelərdə Rust-ın geniş tətbiqinə təkan
 verdi.
 
-Bu gün maraqdakı və istifadədəki bu sıçrayışı Rust-ın gözəl
-xüsusiyyətləri ilə izah etmək asandır. Kim istəməz ki, bir çox digər gözəl
+Bu gün Rust-a marağın və onun istifadəsinin bu kəskin artımını dilin
+gözəl xüsusiyyətləri ilə izah etmək asandır. Kim istəməz ki, bir çox digər gözəl
 xüsusiyyətlə yanaşı yaddaş təhlükəsizliyi, *həm də* yüksək
 sürət, *həm də* mehriban kompilyator, *həm də* əla alətlər
 olsun? Bu gün gördüyünüz Rust dili sistem proqramlaşdırması üzrə illərlə
