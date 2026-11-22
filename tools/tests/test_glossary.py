@@ -238,3 +238,13 @@ def test_italic_english_terms():
     assert lint("*lifetime*-lara (ömür müddəti) və *trait*-lər; asılılıq (dependency).", terms) == []
     assert lint("*Lifetime* (ömür müddəti) vacibdir.", terms) == []
     assert [i.kind for i in lint("*lifetime*-lar vacibdir.", terms)] == ["ilk-istifadə"]
+
+
+def test_english_in_parentheses_followed_by_note():
+    # "(ownership, …)": the English term may be followed by a note after a comma or semicolon
+    assert kinds("Bu sahiblik (ownership, Rust-ın əsas ideyası) qaydalarıdır.") == []
+    assert kinds("Bu sahiblik (ownership; əsas ideya) qaydalarıdır.") == []
+    # an untranslated term inside the note is still flagged
+    assert "ingilis" in kinds("Bu sahiblik (ownership, closure ilə bağlı) qaydalarıdır.")
+    # English not at the start of the parentheses is not a gloss
+    assert "ingilis" in kinds("Bu sahiblik (bax: ownership) qaydalarıdır.")

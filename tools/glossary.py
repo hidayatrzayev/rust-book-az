@@ -139,9 +139,23 @@ def mask_protected(md: str, en_terms: set[str]) -> str:
         text = re.sub(r"[\w.~-]*[/\\][\w./\\~-]*", _blank, text)  # file paths: target/release
         text = re.sub(r'(?:number|file-name)="[^"]*"', _blank, text)
         text = re.sub(r"<[^>\n]+>", _blank, text)
-        text = re.sub(r"\(([^()]+)\)", lambda m: _blank(m) if _is_en_term(m.group(1), en_terms) else m.group(0), text)
+        text = re.sub(r"\(([^()]+)\)", lambda m: _mask_gloss(m, en_terms), text)
         out.append(text)
     return "\n".join(out)
+
+
+def _mask_gloss(m: re.Match[str], en_terms: set[str]) -> str:
+    """Blank an English gloss in parentheses: `(term)`, or `(term, note)` / `(term; note)`,
+    where only `(term` is blanked so the note is still linted."""
+    inner = m.group(1)
+    if _is_en_term(inner, en_terms):
+        return _blank(m)
+    head = re.match(r"[^,;]*(?=[,;])", inner)
+    if head and _is_en_term(head.group(0), en_terms):
+        head = head.group(0)
+        n = 1 + len(head)
+        return re.sub(r"[^\n]", " ", m.group(0)[:n]) + m.group(0)[n:]
+    return m.group(0)
 
 
 def _is_en_term(s: str, en_terms: set[str]) -> bool:
