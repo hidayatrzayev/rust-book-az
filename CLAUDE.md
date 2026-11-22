@@ -25,6 +25,13 @@ GLOSSARY.md           term table; STYLE.md style rules
 - Only a human marks a file `yoxlanılıb`. Workflow per file: draft → checks → `qaralama` → human review → corrections feed back into `GLOSSARY.md`/skill.
 - Never edit `rustbook-en/`.
 
+## Git workflow
+
+- New chapter drafts go on a branch (`translate/chNN`) and a PR, so the human reviews the draft in the
+  PR diff and it reaches the live site only when merged.
+- Review fixes, glossary/style changes and tooling go straight to `main`.
+- Pages deploys from `main` only after all CI checks pass.
+
 ## Commands
 
 ```bash
