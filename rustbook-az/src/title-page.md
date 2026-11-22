@@ -11,7 +11,7 @@ təlimatlar üçün [1-ci fəslin “Quraşdırma” bölməsinə][install]<!-- 
 buraxılışlar haqqında məlumat üçün isə [Əlavə E-yə][appendix-e]<!-- ignore -->
 baxın.
 
-HTML formatı onlayn olaraq
+HTML formatı ingilis dilində onlayn olaraq
 [https://doc.rust-lang.org/stable/book/](https://doc.rust-lang.org/stable/book/)
 ünvanında, oflayn olaraq isə `rustup` ilə quraşdırılmış Rust-da mövcuddur;
 açmaq üçün `rustup doc
@@ -19,14 +19,14 @@ açmaq üçün `rustup doc
 
 İcmanın hazırladığı bir neçə [tərcümə][translations] də mövcuddur.
 
-Bu mətn [No Starch Press-dən kağız və elektron kitab formatında][nsprust] əldə
-edilə bilər.
+Bu mətn ingilis dilində [No Starch Press-dən kağız və elektron kitab
+formatında][nsprust] əldə edilə bilər.
 
 [install]: ch01-01-installation.html
 [appendix-e]: appendix-05-editions.html
 [nsprust]: https://nostarch.com/rust-programming-language-3rd-edition
 [translations]: appendix-06-translation.html
 
-> **🚨 Daha interaktiv öyrənmə təcrübəsi istəyirsiniz? Rust kitabının başqa
-> versiyasını sınayın: sual-cavab testləri, vurğulamalar, vizuallaşdırmalar və
-> daha çox şey**: <https://rust-book.cs.brown.edu>
+> **🚨 Daha interaktiv öyrənmə təcrübəsi istəyirsiniz? Rust kitabının ingilis
+> dilindəki başqa versiyasını sınayın: sual-cavab testləri, vurğulamalar,
+> vizuallaşdırmalar və daha çox şey**: <https://rust-book.cs.brown.edu>
